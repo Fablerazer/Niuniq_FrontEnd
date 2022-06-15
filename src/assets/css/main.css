@@ -1,0 +1,31 @@
+#app {
+    font-family: 'Inter', sans-serif;
+}
+
+p.informasiproduk {
+    color: darkgray;
+}
+
+.router-link-exact-active {
+    font-weight: bold;
+}
+
+/*
+li {
+    color:black;
+}
+
+.container-fluid{
+    color: black;
+    color-adjust: black;
+}
+
+nav.justify-content-end{
+    color: black;
+    color-adjust: black;
+}
+
+li.nav-item{
+    color: black;
+    color-adjust: black;
+} */
