@@ -1,9 +1,9 @@
 <template>
-  <div class="row mt-4">
+  <div class="container-fluid mt-4">
     <div class="card">
       <div class="card-body">
-        <h5 style="color: dodgerblue">
-          <strong>Informasi Produk</strong>
+        <h5 class="informasiproduk">
+          Informasi Produksi
         </h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk
@@ -35,7 +35,7 @@
 
 <script>
 export default {
-  name: "Detail",
+  name: "CDetail",
 };
 </script>
 

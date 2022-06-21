@@ -1,22 +1,31 @@
 <template>
   <div class="home">
-    <Navbar />
+    <CNavbar />
     <div class="container">
-      <Detail />
+      <CDetail />
+      <CCarousel />
+      <CCard />
+      <CVideo />
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import Navbar from '@/components/Navbar.vue'
-import Detail from '@/components/Detail.vue'
+import CNavbar from '@/components/Navbar.vue'
+import CDetail from '@/components/Detail.vue'
+import CCarousel from '@/components/Carousel.vue'
+import CCard from '@/components/Card.vue'
+import CVideo from '@/components/Video.vue'
 
 export default {
   name: 'HomeView',
   components: {
-    Navbar,
-    Detail
+    CNavbar,
+    CDetail,
+    CCarousel,
+    CCard,
+    CVideo
   }
 }
 </script>

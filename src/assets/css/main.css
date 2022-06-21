@@ -2,6 +2,22 @@
     font-family: 'Inter', sans-serif;
 }
 
+h5.informasiproduk {
+    color: dodgerblue;
+    font-weight: 450;
+}
+
+h5.card-title {
+    color: dodgerblue;
+    font-weight: 450;
+}
+
+h4.informasiproduk {
+    color: black;
+    font-weight: 500;
+    letter-spacing: 0.6px;
+}
+
 p.informasiproduk {
     color: darkgray;
 }
