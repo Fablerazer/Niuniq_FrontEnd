@@ -7,13 +7,13 @@
           Informasi produksi merupakan keterangan dari sebuah produk untuk
           membuktikan bahwa produk tersebut asli.
         </p>
-        <div class="mb-4">
-          <button type="button" class="btn btn-success">Kunjungi Shopee</button>
-          <button type="button" class="btn btn-success ml-3">
+        <div class="mb-3">
+          <button type="button" class="btn btn-success btn-sm">Kunjungi Shopee</button>
+          <button type="button" class="btn btn-success ml-3 btn-sm">
             Kunjungi Tokopedia
           </button>
         </div>
-        <div class="mb-3">
+        <div class="mb-4">
           <img
             src="@/assets/img/picture1.png"
             class="img-detail"
@@ -30,7 +30,7 @@
           </thead>
           <tbody>
             <tr>
-              <td>Rumah Bamboe</td>
+              <td><img class="img-table mr-3" src="@/assets/img/picture1.png">Rumah Bamboe</td>
               <td>2018</td>
               <td>
                 Desa, Gontor 1, Gontor, Kec.Mlarak, Kabupaten Ponorogo, Jawa
