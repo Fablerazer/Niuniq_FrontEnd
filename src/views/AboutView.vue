@@ -1,7 +1,7 @@
 <template>
   <div class="feature">
     <CNavbar />
-    <h1>This is an about page</h1>
+    <h1>This is an tentang page</h1>
   </div>
 </template>
 

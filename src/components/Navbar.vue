@@ -19,7 +19,7 @@
           <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
         </li>
         <li class="nav-item">
-            <router-link class='nav-link' to="/aboutview">About</router-link>
+            <router-link class='nav-link' to="/aboutview">Tentang</router-link>
           <!-- <a class="nav-link" href="#">About</a> -->
         </li>
         <li class="nav-item">

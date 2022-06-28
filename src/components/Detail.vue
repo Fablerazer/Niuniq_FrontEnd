@@ -2,13 +2,24 @@
   <div class="container-fluid mt-4">
     <div class="card">
       <div class="card-body">
-        <h5 class="informasiproduk">
-          Informasi Produksi
-        </h5>
+        <h5 class="informasiproduk">Informasi Produksi</h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk
           membuktikan bahwa produk tersebut asli.
         </p>
+        <div class="mb-4">
+          <button type="button" class="btn btn-success">Kunjungi Shopee</button>
+          <button type="button" class="btn btn-success ml-3">
+            Kunjungi Tokopedia
+          </button>
+        </div>
+        <div class="mb-3">
+          <img
+            src="@/assets/img/picture1.png"
+            class="img-detail"
+            alt="Responsive image"
+          />
+        </div>
         <table class="table table-striped">
           <thead>
             <tr>
@@ -39,5 +50,4 @@ export default {
 };
 </script>
 
-<style>
-</style>
+<style></style>

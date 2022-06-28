@@ -3,12 +3,23 @@
 }
 
 h5.informasiproduk {
-    color: dodgerblue;
+    color: #4e944f;
     font-weight: 450;
 }
 
+.btn-success {
+    background-color: #4e944f;
+    color: #f9f9f9;
+}
+
+.img-detail {
+    width: 1040px;
+    height: 250px;
+    object-fit: cover;
+}
+
 h5.card-title {
-    color: dodgerblue;
+    color: #4e944f;
     font-weight: 450;
 }
 
