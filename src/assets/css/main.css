@@ -11,6 +11,10 @@ section.bgtentang {
     background-image: url('@/assets/img/tentang-bg.png');
 }
 
+.nav-link {
+    color: #242e33;
+}
+
 .btn-success {
     background-color: #4e944f;
     color: #f9f9f9;
@@ -54,23 +58,3 @@ p.informasiproduk {
 .router-link-exact-active {
     font-weight: bold;
 }
-
-/*
-li {
-    color:black;
-}
-
-.container-fluid{
-    color: black;
-    color-adjust: black;
-}
-
-nav.justify-content-end{
-    color: black;
-    color-adjust: black;
-}
-
-li.nav-item{
-    color: black;
-    color-adjust: black;
-} */

@@ -1,7 +1,7 @@
 <template>
-  <nav class="navbar navbar-expand-lg">
+  <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Logo</a>
+      <a class="navbar-brand" href="#"><img class="img-table mr-3" src="@/assets/img/logo.png"></a>
       <button
         class="navbar-toggler"
         type="button"

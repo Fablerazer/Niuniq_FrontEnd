@@ -30,7 +30,7 @@
           </thead>
           <tbody>
             <tr style="background: white">
-              <td><img class="img-table mr-3" src="@/assets/img/picture1.png">Rumah Bamboe</td>
+              <td><img class="img-table mr-3" src="@/assets/img/logo.png">Rumah Bamboe</td>
               <td>2018</td>
               <td>
                 Desa, Gontor 1, Gontor, Kec.Mlarak, Kabupaten Ponorogo, Jawa

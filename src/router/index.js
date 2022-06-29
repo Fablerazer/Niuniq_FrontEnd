@@ -1,8 +1,8 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import DetailView from '../views/DetailView.vue'
 import TentangView from '../views/TentangView.vue'
-import FeatureView from '../views/FeatureView.vue'
+import HomeView from '../views/HomeView.vue'
 
 
 Vue.use(VueRouter)
@@ -11,17 +11,22 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: DetailView
   },
+  // {
+  //   path: '/detailview',
+  //   name: 'DetailView',
+  //   component: DetailView
+  // },
   {
     path: '/tentangview',
     name: 'TentangView',
     component: TentangView
   },
   {
-    path: '/featureview',
-    name: 'FeatureView',
-    component: FeatureView
+    path: '/homeview',
+    name: 'HomeView',
+    component: HomeView
   },
   // {
   //   path: '/about',

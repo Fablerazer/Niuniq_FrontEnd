@@ -1,5 +1,5 @@
 <template>
-  <div class="feature">
+  <div>
     <CNavbar />
     <CAbout />
   </div>
