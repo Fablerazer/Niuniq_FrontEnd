@@ -1,23 +1,25 @@
 <template>
   <div>
-      <CNavbar />
-    <h1>This is an feature page</h1>
+    <CNavbar />
+    <Qrcodeid />
     <div class="container">
-      <CCarousel />
+      <CStorepreview />
     </div>
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
-import CNavbar from '@/components/Navbar.vue'
-import CCarousel from '@/components/Carousel.vue'
+import CNavbar from "@/components/Navbar.vue";
+import Qrcodeid from "@/components/Qrcodeid.vue";
+import CStorepreview from "@/components/Storepreview.vue";
 
 export default {
-  name: 'HomeView',
+  name: "HomeView",
   components: {
     CNavbar,
-    CCarousel
-  }
-}
+    Qrcodeid,
+    CStorepreview,
+  },
+};
 </script>

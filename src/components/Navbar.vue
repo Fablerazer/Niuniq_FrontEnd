@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="img-table mr-3" src="@/assets/img/logo.png"></a>
+      <a class="navbar-brand" href="#"><img class="img-table mr-3" src="@/assets/img/logo-niuniq.png"></a>
       <button
         class="navbar-toggler"
         type="button"
