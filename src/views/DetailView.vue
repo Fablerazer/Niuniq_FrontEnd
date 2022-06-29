@@ -2,7 +2,7 @@
   <div>
     <CNavbar />
     <div class="container">
-      <CDetail />
+      <CInfoproduksi />
       <CCarousel />
       <CCard />
       <CVideo />
@@ -13,7 +13,7 @@
 <script>
 // @ is an alias to /src
 import CNavbar from '@/components/Navbar.vue'
-import CDetail from '@/components/Detail.vue'
+import CInfoproduksi from '@/components/Infoproduksi.vue'
 import CCarousel from '@/components/Carousel.vue'
 import CCard from '@/components/Card.vue'
 import CVideo from '@/components/Video.vue'
@@ -22,7 +22,7 @@ export default {
   name: 'HomeView',
   components: {
     CNavbar,
-    CDetail,
+    CInfoproduksi,
     CCarousel,
     CCard,
     CVideo

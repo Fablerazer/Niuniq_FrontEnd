@@ -46,7 +46,7 @@
 
 <script>
 export default {
-  name: "CDetail",
+  name: "CInfoproduksi",
 };
 </script>
 
