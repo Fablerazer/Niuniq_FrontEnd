@@ -21,7 +21,7 @@
           />
         </div>
         <table class="table table-striped">
-          <thead>
+          <thead style="background: #edf4ed">
             <tr>
               <th scope="col">Diproduksi Oleh</th>
               <th scope="col">Tahun Produksi</th>
@@ -29,7 +29,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr>
+            <tr style="background: white">
               <td><img class="img-table mr-3" src="@/assets/img/picture1.png">Rumah Bamboe</td>
               <td>2018</td>
               <td>

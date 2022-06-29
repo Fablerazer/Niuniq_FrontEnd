@@ -7,6 +7,10 @@ h5.informasiproduk {
     font-weight: 450;
 }
 
+section.bgtentang {
+    background-image: url('@/assets/img/tentang-bg.png');
+}
+
 .btn-success {
     background-color: #4e944f;
     color: #f9f9f9;

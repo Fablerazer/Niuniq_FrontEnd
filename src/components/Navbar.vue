@@ -16,16 +16,13 @@
       <ul class="nav justify-content-end">
         <li class="nav-item">
             <router-link class='nav-link' to="/">Home</router-link>
-          <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
         </li>
         <li class="nav-item">
-            <router-link class='nav-link' to="/aboutview">Tentang</router-link>
-          <!-- <a class="nav-link" href="#">About</a> -->
+            <router-link class='nav-link' to="/tentangview">Tentang</router-link>
         </li>
-        <li class="nav-item">
+        <!-- <li class="nav-item">
             <router-link class='nav-link' to="/featureview">Features</router-link>
-          <!-- <a class="nav-link" href="#">Features</a> -->
-        </li>
+        </li> -->
       </ul>
     </div>
   </nav>

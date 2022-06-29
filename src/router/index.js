@@ -1,7 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
 import HomeView from '../views/HomeView.vue'
-import AboutView from '../views/AboutView.vue'
+import TentangView from '../views/TentangView.vue'
 import FeatureView from '../views/FeatureView.vue'
 
 
@@ -14,9 +14,9 @@ const routes = [
     component: HomeView
   },
   {
-    path: '/aboutview',
-    name: 'AboutView',
-    component: AboutView
+    path: '/tentangview',
+    name: 'TentangView',
+    component: TentangView
   },
   {
     path: '/featureview',

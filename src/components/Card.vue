@@ -1,8 +1,18 @@
 <template>
   <div class="row mt-4">
+    <div
+      style="
+        background: #cadfca;
+        width: 100vw;
+        height: 60%;
+        position: absolute;
+        left: 0;
+      "
+    ></div>
     <div class="col-md-6">
       <div class="card" style="width: 32rem">
-        <div class="card-body">
+        <div class="card-body" style="text-align: start">
+          <img class="img-table mr-3" src="@/assets/img/icon.png" />
           <h5 class="card-title">Cara Menyimpan Produk</h5>
           <ul>
             <li>
@@ -19,7 +29,8 @@
     </div>
     <div class="col-md-6">
       <div class="card" style="width: 32rem">
-        <div class="card-body">
+        <div class="card-body" style="text-align: start">
+          <img class="img-table mr-3" src="@/assets/img/icon.png" />
           <h5 class="card-title">Bahan Baku Produk</h5>
           <div class="row">
             <div class="col-md-6">
