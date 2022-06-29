@@ -1,20 +1,20 @@
 <template>
   <div>
     <CNavbar />
-    <CAbout />
+    <CAboutpage />
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import CNavbar from '@/components/Navbar.vue'
-import CAbout from '@/components/About.vue'
+import CAboutpage from '@/components/Aboutpage.vue'
 
 export default {
   name: 'TentangView',
   components: {
     CNavbar,
-    CAbout
+    CAboutpage
   }
 }
 </script>
