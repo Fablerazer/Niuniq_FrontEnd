@@ -3,18 +3,17 @@
   <header class="masthead">
     <div class="container">
       <div class="row mt-4">
-        <div class="col-md-6">
-          <div class="masthead-subheading">Welcome To Our Studio!</div>
-          <div class="masthead-heading text-uppercase">
-            It's Nice To Meet You
-          </div>
-          <a class="btn btn-primary btn-xl text-uppercase" href="#services"
-            >Tell Me More</a
-          >
+        <div class="col-md-6" style="align-self: center">
+          <h1 style="text-align: left">
+            Lihat detail produk dengan memasukkan ID QRCode
+          </h1>
+          <p style="text-align: left">
+            Masukan ID QRCode untuk mendapatkan detail produk
+          </p>
         </div>
         <div class="col-md-6">
           <img
-            src="@/assets/img/tentang-pict.png"
+            src="@/assets/img/home-pict.png"
             class="img-fluid"
             alt="Responsive image"
           />

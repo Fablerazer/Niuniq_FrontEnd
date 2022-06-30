@@ -8,7 +8,14 @@ h5.informasiproduk {
 }
 
 section.bgtentang {
+    padding-top: 10rem;
+    padding-bottom: 10rem;
+    text-align: center;
     background-image: url('@/assets/img/tentang-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
 }
 
 .nav-link {
@@ -21,8 +28,8 @@ section.bgtentang {
 } */
 
 header.masthead {
-    padding-top: 10.5rem;
-    padding-bottom: 6rem;
+    padding-top: 3.5rem;
+    padding-bottom: 3rem;
     text-align: center;
     color: #fff;
     background-image: url('@/assets/img/home-bg.png');

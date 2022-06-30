@@ -1,6 +1,5 @@
 <template>
-  <section class="bgtentang">
-    <!-- style="background-image: url(../assets/img/tentang-bg.png)" -->
+  <section class="bgtentang" style="text-align: -webkit-center">
     <div class="card" style="width: 32rem">
       <div class="row mt-4">
         <div class="col-md-6">
