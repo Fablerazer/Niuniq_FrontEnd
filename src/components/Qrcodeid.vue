@@ -10,6 +10,27 @@
           <p style="text-align: left">
             Masukan ID QRCode untuk mendapatkan detail produk
           </p>
+          <div class="card">
+            <div class="card-body">
+              <div class="row">
+                <div class="col-md-9">
+                  <div class="form-group">
+                    <label for="exampleInputEmail1">Email address</label>
+                    <input
+                      type="email"
+                      class="form-control"
+                      id="exampleInputEmail1"
+                      aria-describedby="emailHelp"
+                      placeholder="Masukkan ID produk"
+                    />
+                  </div>
+                </div>
+                <div class="col-md-3">
+                  <button type="submit" class="btn btn-primary">Cari</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
         <div class="col-md-6">
           <img

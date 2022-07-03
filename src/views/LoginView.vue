@@ -1,16 +1,25 @@
 <template>
   <div>
-    <CNavbar />
+    <div class="row">
+        <div class="col-md-6">
+            <CWelcomeimg />
+        </div>
+        <div class="col-md-6" style="align-self: center">
+            <CLogin />
+        </div>
+    </div>
   </div>
   </template>
 
 <script>
-import CNavbar from '@/components/Navbar.vue'
+import CWelcomeimg from '@/components/Welcomeimg.vue'
+import CLogin from '@/components/Login.vue'
 
 export default {
   name: "LoginView",
   components: {
-    CNavbar
+    CWelcomeimg,
+    CLogin
   },
 };
 </script>
