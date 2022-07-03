@@ -1,17 +1,18 @@
-import Vue from 'vue'
-import VueRouter from 'vue-router'
-import DetailView from '../views/DetailView.vue'
-import TentangView from '../views/TentangView.vue'
-import HomeView from '../views/HomeView.vue'
+import Vue from "vue";
+import VueRouter from "vue-router";
+import DetailView from "../views/DetailView.vue";
+import TentangView from "../views/TentangView.vue";
+import HomeView from "../views/HomeView.vue";
+import RegisterView from "../views/RegisterView.vue";
+import LoginView from "../views/LoginView.vue";
 
-
-Vue.use(VueRouter)
+Vue.use(VueRouter);
 
 const routes = [
   {
-    path: '/',
-    name: 'home',
-    component: DetailView
+    path: "/",
+    name: "home",
+    component: DetailView,
   },
   // {
   //   path: '/detailview',
@@ -19,14 +20,24 @@ const routes = [
   //   component: DetailView
   // },
   {
-    path: '/tentangview',
-    name: 'TentangView',
-    component: TentangView
+    path: "/tentangview",
+    name: "TentangView",
+    component: TentangView,
   },
   {
-    path: '/homeview',
-    name: 'HomeView',
-    component: HomeView
+    path: "/loginview",
+    name: "LoginView",
+    component: LoginView,
+  },
+  {
+    path: "/registerview",
+    name: "RegisterView",
+    component: RegisterView,
+  },
+  {
+    path: "/homeview",
+    name: "HomeView",
+    component: HomeView,
   },
   // {
   //   path: '/about',
@@ -36,12 +47,12 @@ const routes = [
   //   // which is lazy-loaded when the route is visited.
   //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
   // }
-]
+];
 
 const router = new VueRouter({
-  mode: 'history',
+  mode: "history",
   base: process.env.BASE_URL,
-  routes
-})
+  routes,
+});
 
-export default router
+export default router;

@@ -18,6 +18,17 @@ section.bgtentang {
     background-size: cover;
 }
 
+section.bglognreg {
+    padding-top: 9rem;
+    padding-bottom: 9rem;
+    text-align: center;
+    background-image: url('@/assets/img/lognreg-bg.png');
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+}
+
 .nav-link {
     color: #242e33;
 }
