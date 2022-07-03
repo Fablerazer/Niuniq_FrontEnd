@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid mt-4">
+  <div class="container-fluid mt-4" style="padding-left:0; padding-right:0">
     <div class="card">
       <div class="card-body">
         <h5 class="informasiproduk">Informasi Produksi</h5>
@@ -15,7 +15,7 @@
         </div>
         <div class="mb-4">
           <img
-            src="@/assets/img/picture1.png"
+            src="@/assets/img/infoproduk-pict.png"
             class="img-detail"
             alt="Responsive image"
           />
@@ -30,7 +30,7 @@
           </thead>
           <tbody>
             <tr style="background: white">
-              <td><img class="img-table mr-3" src="@/assets/img/logo-rmhbmb.png">Rumah Bamboe</td>
+              <td><img class="img-table mr-2" src="@/assets/img/logo-rmhbmb.png">Rumah Bamboe</td>
               <td>2018</td>
               <td>
                 Desa, Gontor 1, Gontor, Kec.Mlarak, Kabupaten Ponorogo, Jawa

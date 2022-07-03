@@ -45,7 +45,7 @@ header.masthead {
 }
 
 .img-detail {
-    width: 1040px;
+    width: -webkit-fill-available;
     height: 250px;
     object-fit: cover;
 }

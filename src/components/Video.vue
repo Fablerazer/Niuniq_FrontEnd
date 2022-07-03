@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-4">
+  <div class="row" style="margin-top: 6rem;">
     <div class="col-md-12">
       <h5 class="informasiproduk">Video Pembuatan Produk</h5>
       <p class="mb-video">

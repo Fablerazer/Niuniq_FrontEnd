@@ -4,16 +4,28 @@
       style="
         background: #cadfca;
         width: 100vw;
-        height: 60%;
+        height: 50%;
         position: absolute;
         left: 0;
       "
     ></div>
-    <div class="col-md-6">
-      <div class="card" style="width: 32rem">
-        <div class="card-body" style="text-align: start">
+    <div class="col-md-6 mt-5">
+      <div
+        class="card"
+        style="border-radius: 20px; width: 32rem; height: 18rem"
+      >
+        <div
+          class="card-body"
+          style="
+            text-align: start;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+          "
+        >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
-          <h5 class="card-title">Cara Menyimpan Produk</h5>
+          <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
           <ul>
             <li>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -27,11 +39,14 @@
         </div>
       </div>
     </div>
-    <div class="col-md-6">
-      <div class="card" style="width: 32rem">
+    <div class="col-md-6 mt-5" style="padding-right: 0; padding-left: 42px">
+      <div
+        class="card"
+        style="border-radius: 20px; width: 32rem; height: 18rem"
+      >
         <div class="card-body" style="text-align: start">
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
-          <h5 class="card-title">Bahan Baku Produk</h5>
+          <h5 class="card-title mt-3">Bahan Baku Produk</h5>
           <div class="row">
             <div class="col-md-6">
               <ul>
