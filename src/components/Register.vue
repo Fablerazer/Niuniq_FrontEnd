@@ -10,41 +10,56 @@
       <form>
         <div class="form-group">
           <label for="exampleInputTelepon1">No. Telepon</label>
-          <input
-            type="telepon"
-            class="form-control"
-            id="exampleInputTelepon1"
-            aria-describedby="teleponHelp"
-            placeholder="Masukkan no telepon anda"
-          />
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input
+              type="telepon"
+              class="form-control"
+              id="exampleInputTelepon1"
+              aria-describedby="teleponHelp"
+              placeholder="Masukkan no telepon anda"
+            />
+          </div>
         </div>
         <div class="form-group">
           <label for="exampleInputEmail1">Email</label>
-          <input
-            type="email"
-            class="form-control"
-            id="exampleInputEmail1"
-            aria-describedby="emailHelp"
-            placeholder="Masukkan email anda"
-          />
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input
+              type="email"
+              class="form-control"
+              id="exampleInputEmail1"
+              aria-describedby="emailHelp"
+              placeholder="Masukkan email anda"
+            />
+          </div>
         </div>
         <div class="form-group">
           <label for="exampleInputPassword1">Kata Sandi</label>
-          <input
-            type="password"
-            class="form-control"
-            id="exampleInputPassword1"
-            placeholder="Masukkan kata sandi anda"
-          />
+          <div class="input-group mb-2">
+            <div class="input-group-prepend">
+              <div class="input-group-text">@</div>
+            </div>
+            <input
+              type="password"
+              class="form-control"
+              id="exampleInputPassword1"
+              placeholder="Masukkan kata sandi anda"
+            />
+          </div>
         </div>
       </form>
       <div>
         <button type="submit" class="btn btn-success">Daftar</button>
         <hr />
-        <button type="button" class="btn btn-outline-success">Log in with google</button>
-        <p>
-            Sudah punya akun? <a href="#" class="card-link">Masuk disini</a>
-        </p>
+        <button type="button" class="btn btn-outline-success">
+          Log in with google
+        </button>
+        <p>Sudah punya akun? <a href="#" class="card-link">Masuk disini</a></p>
       </div>
     </div>
   </section>
