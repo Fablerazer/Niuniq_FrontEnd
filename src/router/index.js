@@ -5,6 +5,7 @@ import TentangView from "../views/TentangView.vue";
 import HomeView from "../views/HomeView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import LoginView from "../views/LoginView.vue";
+import NotificationView from "../views/NotificationView.vue";
 
 Vue.use(VueRouter);
 
@@ -28,6 +29,11 @@ const routes = [
     path: "/loginview",
     name: "LoginView",
     component: LoginView,
+  },
+  {
+    path: "/notificationview",
+    name: "NotificationView",
+    component: NotificationView,
   },
   {
     path: "/registerview",
