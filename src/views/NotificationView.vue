@@ -10,8 +10,8 @@
 
 <script>
 import CNavbar from "@/components/Navbar.vue";
-import CNotifSuccess from "@/components/Notifsuccess.vue";
-import CNotifFail from "@/components/Notiffail.vue";
+import CNotifSuccess from "@/components/NotifSuccess.vue";
+import CNotifFail from "@/components/NotifFail.vue";
 
 export default {
   name: "NotificationView",
