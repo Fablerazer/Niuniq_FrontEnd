@@ -17,10 +17,13 @@
       </button>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <router-link class="nav-link" to="/homeview">Home</router-link>
+          <router-link class="nav-link" to="/tentangviewpenjual">Tentang</router-link>
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/tentangview">Tentang</router-link>
+          <router-link class="nav-link" to="/notificationview"><b-icon-bell></b-icon-bell></router-link>
+        </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/profileview"><b-icon-person-circle></b-icon-person-circle></router-link>
         </li>
       </ul>
     </div>
@@ -29,7 +32,7 @@
 
 <script>
 export default {
-  name: "CNavbar",
+      name: "CNavbarPenjual",
 };
 </script>
 

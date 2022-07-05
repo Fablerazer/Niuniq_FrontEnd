@@ -1,6 +1,6 @@
 <template>
   <div>
-    <CNavbar />
+    <CNavbarPenjual />
     <div class="container">
       <h4>Pemberitahuan Status Produk</h4>
       <CNotifSuccess />
@@ -11,14 +11,14 @@
 </template>
 
 <script>
-import CNavbar from "@/components/Navbar.vue";
+import CNavbarPenjual from "@/components/Navbarpenjual.vue";
 import CNotifSuccess from "@/components/NotifSuccess.vue";
 import CNotifFail from "@/components/NotifFail.vue";
 
 export default {
   name: "NotificationView",
   components: {
-    CNavbar,
+    CNavbarPenjual,
     CNotifSuccess,
     CNotifFail,
   },
