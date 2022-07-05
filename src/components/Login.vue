@@ -37,9 +37,9 @@
         </div>
       </form>
       <div>
-        <button type="submit" class="btn btn-success">Masuk</button>
+        <button type="submit" class="btn btn-info">Masuk</button>
         <hr />
-        <button type="button" class="btn btn-outline-success">
+        <button type="button" class="btn btn-outline-info">
           Log in with google
         </button>
         <p>Belum punya akun? <a href="#" class="card-link">Daftar disini</a></p>

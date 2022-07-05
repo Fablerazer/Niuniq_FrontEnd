@@ -12,14 +12,14 @@ Vue.use(VueRouter);
 const routes = [
   {
     path: "/",
-    name: "home",
-    component: DetailView,
+    name: "Home",
+    component: HomeView,
   },
-  // {
-  //   path: '/detailview',
-  //   name: 'DetailView',
-  //   component: DetailView
-  // },
+  {
+    path: '/detailview',
+    name: 'DetailView',
+    component: DetailView
+  },
   {
     path: "/tentangview",
     name: "TentangView",

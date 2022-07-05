@@ -1,7 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#"><img class="img-table" src="@/assets/img/logo-niuniq.png"></a>
+      <a class="navbar-brand" href="/homeview"
+        ><img class="img-table-1" src="@/assets/img/logo-niuniq.png"
+      /></a>
       <button
         class="navbar-toggler"
         type="button"
@@ -15,10 +17,10 @@
       </button>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-            <router-link class='nav-link' to="/">Home</router-link>
+          <router-link class="nav-link" to="/homeview">Home</router-link>
         </li>
         <li class="nav-item">
-            <router-link class='nav-link' to="/tentangview">Tentang</router-link>
+          <router-link class="nav-link" to="/tentangview">Tentang</router-link>
         </li>
         <!-- <li class="nav-item">
             <router-link class='nav-link' to="/featureview">Features</router-link>
@@ -30,8 +32,8 @@
 
 <script>
 export default {
-  name: "CNavbar"
-}
+  name: "CNavbar",
+};
 </script>
 
 <style></style>

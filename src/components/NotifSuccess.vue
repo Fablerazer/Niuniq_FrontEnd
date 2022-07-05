@@ -1,22 +1,43 @@
 <template>
-  <div class="card" style="width: 18rem">
+  <div class="card" style="width: 100%; height: 75%">
     <div class="card-body">
       <div class="row">
-        <div class="col">
-<h5 class="card-title">Card title</h5>
+        <div class="col-md-6">
+          <h2>Nama Produk</h2>
         </div>
-        <div class="col">
-          
+        <div class="col-mr-6">
+          <button
+            type="button"
+            class="btn btn-success"
+            style="border-radius: 100px"
+          >
+            Verifikasi produk berhasil
+          </button>
         </div>
-        
       </div>
-      <h6 class="card-subtitle mb-2 text-muted">Card subtitle</h6>
-      <p class="card-text">
-        Some quick example text to build on the card title and make up the bulk
-        of the card's content.
-      </p>
-      <a href="#" class="card-link">Card link</a>
-      <a href="#" class="card-link">Another link</a>
+      <hr />
+      <div class="row">
+        <div class="col">
+          <img
+            src="@/assets/img/produk-1.png"
+            alt="foto-produk"
+            class="img-thumbnail"
+          />
+        </div>
+        <div class="col">
+          <h5>Deskripsi produk</h5>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
+            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
+            aliquip ex
+          </p>
+        </div>
+      </div>
+      <hr />
+      <a href="#" class="card-link" style="color: #28a745"
+        >Silahkan download hasil QRCode</a
+      >
     </div>
   </div>
 </template>

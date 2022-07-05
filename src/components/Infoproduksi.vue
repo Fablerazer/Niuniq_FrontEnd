@@ -1,5 +1,5 @@
 <template>
-  <div class="container-fluid mt-4" style="padding-left:0; padding-right:0">
+  <div class="container-fluid mt-4" style="padding-left: 0; padding-right: 0">
     <div class="card">
       <div class="card-body">
         <h5 class="informasiproduk">Informasi Produksi</h5>
@@ -8,8 +8,10 @@
           membuktikan bahwa produk tersebut asli.
         </p>
         <div class="mb-3">
-          <button type="button" class="btn btn-success btn-sm">Kunjungi Shopee</button>
-          <button type="button" class="btn btn-success ml-3 btn-sm">
+          <button type="button" class="btn btn-info btn-sm">
+            Kunjungi Shopee
+          </button>
+          <button type="button" class="btn btn-info ml-3 btn-sm">
             Kunjungi Tokopedia
           </button>
         </div>
@@ -30,7 +32,12 @@
           </thead>
           <tbody>
             <tr style="background: white">
-              <td><img class="img-table mr-2" src="@/assets/img/logo-rmhbmb.png">Rumah Bamboe</td>
+              <td>
+                <img
+                  class="img-table mr-2"
+                  src="@/assets/img/logo-rmhbmb.png"
+                />Rumah Bamboe
+              </td>
               <td>2018</td>
               <td>
                 Desa, Gontor 1, Gontor, Kec.Mlarak, Kabupaten Ponorogo, Jawa

@@ -4,6 +4,8 @@
     <div class="container">
       <h4>Pemberitahuan Status Produk</h4>
       <CNotifSuccess />
+      <br />
+      <CNotifFail />
     </div>
   </div>
 </template>
@@ -18,7 +20,7 @@ export default {
   components: {
     CNavbar,
     CNotifSuccess,
-    CNotifFail
+    CNotifFail,
   },
 };
 </script>

@@ -26,7 +26,7 @@
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <button type="submit" class="btn btn-primary">Cari</button>
+                  <button type="submit" class="btn btn-info">Cari</button>
                 </div>
               </div>
             </div>

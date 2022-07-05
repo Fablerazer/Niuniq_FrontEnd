@@ -54,9 +54,9 @@
         </div>
       </form>
       <div>
-        <button type="submit" class="btn btn-success">Daftar</button>
+        <button type="submit" class="btn btn-info">Daftar</button>
         <hr />
-        <button type="button" class="btn btn-outline-success">
+        <button type="button" class="btn btn-outline-info">
           Log in with google
         </button>
         <p>Sudah punya akun? <a href="#" class="card-link">Masuk disini</a></p>
