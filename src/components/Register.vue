@@ -54,12 +54,19 @@
         </div>
       </form>
       <div>
-        <button type="submit" class="btn btn-info">Daftar</button>
+        <a href="/">
+          <button type="submit" class="btn btn-info">Daftar</button>
+        </a>
         <hr />
-        <button type="button" class="btn btn-outline-info">
-          Log in with google
-        </button>
-        <p>Sudah punya akun? <a href="#" class="card-link">Masuk disini</a></p>
+        <a href="/">
+          <button type="button" class="btn btn-outline-info">
+            Log in with google
+          </button>
+        </a>
+        <p>
+          Sudah punya akun?
+          <a href="/loginview" class="card-link">Masuk disini</a>
+        </p>
       </div>
     </div>
   </section>

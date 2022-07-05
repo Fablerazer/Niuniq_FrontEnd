@@ -37,12 +37,19 @@
         </div>
       </form>
       <div>
-        <button type="submit" class="btn btn-info">Masuk</button>
+        <a href="/">
+          <button type="submit" class="btn btn-info">Masuk</button>
+        </a>
         <hr />
-        <button type="button" class="btn btn-outline-info">
-          Log in with google
-        </button>
-        <p>Belum punya akun? <a href="#" class="card-link">Daftar disini</a></p>
+        <a href="/">
+          <button type="button" class="btn btn-outline-info">
+            Log in with google
+          </button>
+        </a>
+        <p>
+          Belum punya akun?
+          <a href="/registerview" class="card-link">Daftar disini</a>
+        </p>
       </div>
     </div>
   </section>

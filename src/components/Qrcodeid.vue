@@ -26,7 +26,9 @@
                   </div>
                 </div>
                 <div class="col-md-3">
-                  <button type="submit" class="btn btn-info">Cari</button>
+                  <a href="/detailview">
+                    <button type="submit" class="btn btn-info">Cari</button>
+                  </a>
                 </div>
               </div>
             </div>
