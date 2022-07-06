@@ -13,6 +13,16 @@ section.bgtentang {
   background-size: cover;
 }
 
+section.bginputtoko {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+  background-image: url("@/assets/img/inputtoko-bg.png");
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: center center;
+  background-size: cover;
+}
+
 section.bglognreg {
   padding-top: 7rem;
   padding-bottom: 3rem;

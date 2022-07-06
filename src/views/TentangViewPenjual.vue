@@ -8,7 +8,7 @@
 <script>
 // @ is an alias to /src
 import CNavbarPenjual from '@/components/NavbarPenjual.vue'
-import CAboutpage from '@/components/AboutPage.vue'
+import CAboutpage from '@/components/Tentang.vue'
 
 export default {
   name: 'TentangViewPenjual',
