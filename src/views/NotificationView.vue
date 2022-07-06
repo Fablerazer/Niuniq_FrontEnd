@@ -11,7 +11,7 @@
 </template>
 
 <script>
-import CNavbarPenjual from "@/components/Navbarpenjual.vue";
+import CNavbarPenjual from "@/components/NavbarPenjual.vue";
 import CNotifSuccess from "@/components/NotifSuccess.vue";
 import CNotifFail from "@/components/NotifFail.vue";
 

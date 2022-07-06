@@ -6,7 +6,8 @@ import HomeView from "../views/HomeView.vue";
 import RegisterView from "../views/RegisterView.vue";
 import LoginView from "../views/LoginView.vue";
 import NotificationView from "../views/NotificationView.vue";
-import ProfileView from "../views/ProfileView.vue";
+import InputProdukView from "../views/InputProdukView.vue";
+import InputTokoView from "../views/InputTokoView.vue";
 import TentangViewPenjual from "../views/TentangViewPenjual.vue";
 
 Vue.use(VueRouter);
@@ -33,9 +34,14 @@ const routes = [
     component: TentangViewPenjual,
   },
   {
-    path: "/profileview",
-    name: "ProfileView",
-    component: ProfileView,
+    path: "/inputprodukview",
+    name: "InputProdukView",
+    component: InputProdukView,
+  },
+  {
+    path: "/inputtokoview",
+    name: "InputTokoView",
+    component: InputTokoView,
   },
   {
     path: "/loginview",
@@ -57,14 +63,6 @@ const routes = [
     name: "HomeView",
     component: HomeView,
   },
-  // {
-  //   path: '/about',
-  //   name: 'about',
-  //   // route level code-splitting
-  //   // this generates a separate chunk (about.[hash].js) for this route
-  //   // which is lazy-loaded when the route is visited.
-  //   component: () => import(/* webpackChunkName: "about" */ '../views/AboutView.vue')
-  // }
 ];
 
 const router = new VueRouter({

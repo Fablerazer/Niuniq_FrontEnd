@@ -12,7 +12,7 @@
 // @ is an alias to /src
 import CNavbar from "@/components/Navbar.vue";
 import Qrcodeid from "@/components/Qrcodeid.vue";
-import CStorepreview from "@/components/Storepreview.vue";
+import CStorepreview from "@/components/StorePreview.vue";
 
 export default {
   name: "HomeView",

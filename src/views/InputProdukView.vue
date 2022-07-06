@@ -9,12 +9,12 @@
 </template>
 
 <script>
-import CNavbarPenjual from "@/components/Navbarpenjual.vue";
-import CInputInfoDetail from "@/components/Inputinfodetail.vue";
-import CInputDokProduk from "@/components/Inputdokproduk.vue";
+import CNavbarPenjual from "@/components/NavbarPenjual.vue";
+import CInputInfoDetail from "@/components/InputInfoDetail.vue";
+import CInputDokProduk from "@/components/InputDokProduk.vue";
 
 export default {
-  name: "ProfileView",
+  name: "InputProdukView",
   components: {
     CNavbarPenjual,
     CInputInfoDetail,
