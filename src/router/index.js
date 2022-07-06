@@ -9,6 +9,7 @@ import NotificationView from "../views/NotificationView.vue";
 import InputProdukView from "../views/InputProdukView.vue";
 import InputTokoView from "../views/InputTokoView.vue";
 import TentangViewPenjual from "../views/TentangViewPenjual.vue";
+import PengaturanView from "../views/PengaturanView.vue";
 
 Vue.use(VueRouter);
 
@@ -22,6 +23,11 @@ const routes = [
     path: '/detailview',
     name: 'DetailView',
     component: DetailView
+  },
+  {
+    path: '/pengaturanview',
+    name: 'PengaturanView',
+    component: PengaturanView
   },
   {
     path: "/tentangview",
