@@ -55,7 +55,7 @@
           <label for="exampleInputTelepon1">Kata sandi saat ini</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              :type="inputTypeIcon"
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
@@ -73,7 +73,7 @@
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
             />
-            <div class="input-group-prepend">
+            <div class="input-group-append">
               <button
                 class="input-group-text"
                 @click.prevent="ToggleButtonIcon"
@@ -94,7 +94,7 @@
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
             />
-            <div class="input-group-prepend">
+            <div class="input-group-append">
               <button
                 class="input-group-text"
                 @click.prevent="ToggleButtonIcon"

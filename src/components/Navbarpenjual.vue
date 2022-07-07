@@ -17,14 +17,29 @@
       </button>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <router-link class="nav-link" to="/tentangviewpenjual">Tentang</router-link>
+          <router-link class="nav-link" to="/tentangviewpenjual"
+            >Tentang</router-link
+          >
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/notificationview"><b-icon-bell></b-icon-bell></router-link>
+          <router-link class="nav-link" to="/notificationview"
+            ><b-icon-bell></b-icon-bell
+          ></router-link>
         </li>
-        <li class="nav-item">
-          <router-link class="nav-link" to="/profileview"><b-icon-person-circle></b-icon-person-circle></router-link>
-        </li>
+        <!-- <li class="nav-item">
+          <router-link class="nav-link" to="/profileview"><b-icon-person-circle/></router-link>
+        </li> -->
+        <div>
+          <b-dropdown id="dropdown-right" right text="Right align" variant="link" toggle-class="text-decoration-none" no-caret>
+            <template #button-content>
+              <b-icon-person-circle style="color: #4e944f"/>
+            </template>
+            <b-dropdown-item href="#"><b-icon-person-fill/>  Profil Saya</b-dropdown-item>
+            <b-dropdown-item href="/pengaturanview"><b-icon-gear-fill/>  Pengaturan</b-dropdown-item>
+            <hr />
+            <b-dropdown-item href="#"><b-icon-box-arrow-right/>  Keluar</b-dropdown-item>
+          </b-dropdown>
+        </div>
       </ul>
     </div>
   </nav>
@@ -32,7 +47,7 @@
 
 <script>
 export default {
-      name: "CNavbarPenjual",
+  name: "CNavbarPenjual",
 };
 </script>
 

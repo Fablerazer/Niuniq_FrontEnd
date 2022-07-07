@@ -35,9 +35,10 @@
         </div>
       </div>
       <hr />
-      <a href="#" class="card-link" style="color: #28a745"
-        >Silahkan download hasil QRCode</a
-      >
+      <div>
+        <b-button v-b-modal.modal-lg variant="link" style="color: #28a745">Silahkan download hasil QRCode</b-button>
+        <b-modal id="modal-lg" size="lg" title="Large Modal">Hello Large Modal!</b-modal>
+      </div>
     </div>
   </div>
 </template>

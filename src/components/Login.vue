@@ -9,7 +9,7 @@
           <label for="exampleInputEmail1">Email</label>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
-              <div class="input-group-text">@</div>
+              <div class="input-group-text"><b-icon-envelope /></div>
             </div>
             <input
               type="email"
@@ -24,7 +24,7 @@
           <label for="exampleInputPassword1">Kata Sandi</label>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
-              <div class="input-group-text">@</div>
+              <div class="input-group-text"><b-icon-lock /></div>
             </div>
             <input
               type="password"
