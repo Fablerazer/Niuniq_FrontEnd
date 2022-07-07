@@ -67,24 +67,42 @@
           <label for="exampleInputTelepon1">Kata sandi baru</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              :type="inputTypeIcon"
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
             />
+            <div class="input-group-prepend">
+              <button
+                class="input-group-text"
+                @click.prevent="ToggleButtonIcon"
+              >
+                <i v-if="inputTypeIcon == 'password'"><b-icon-eye /></i>
+                <i v-else><b-icon-eye-slash /></i>
+              </button>
+            </div>
           </div>
         </div>
         <div class="form-group">
           <label for="exampleInputTelepon1">Konfirmasi kata sandi baru</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              :type="inputTypeIcon"
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
             />
+            <div class="input-group-prepend">
+              <button
+                class="input-group-text"
+                @click.prevent="ToggleButtonIcon"
+              >
+                <i v-if="inputTypeIcon == 'password'"><b-icon-eye /></i>
+                <i v-else><b-icon-eye-slash /></i>
+              </button>
+            </div>
           </div>
         </div>
         <button
@@ -100,9 +118,26 @@
 </template>
 
 <script>
-
 export default {
   name: "CPengaturan",
+
+  data() {
+    return {
+      inputType: "password",
+      inputTypeIcon: "password",
+      ShowPassword: "Show Password",
+      HidePassword: "Hide Password",
+    };
+  },
+  methods: {
+    ToggleButton() {
+      this.inputType = this.inputType === "password" ? "text" : "password";
+    },
+    ToggleButtonIcon() {
+      this.inputTypeIcon =
+        this.inputTypeIcon === "password" ? "text" : "password";
+    },
+  },
 };
 </script>
 
