@@ -13,7 +13,7 @@ export default {
   name: "PengaturanView",
   components: {
     CNavbarPenjual,
-    CPengaturan
+    CPengaturan,
   },
 };
 </script>

@@ -51,11 +51,11 @@
     </div>
     <br />
     <button
-        type="button"
-        class="btn btn-success btn-lg btn-block"
-        style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
-      >
-        Simpan
+      type="button"
+      class="btn btn-success btn-lg btn-block"
+      style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+    >
+      Simpan
     </button>
   </div>
 </template>

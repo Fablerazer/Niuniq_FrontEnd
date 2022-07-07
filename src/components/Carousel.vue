@@ -59,15 +59,15 @@
       </div>
     </div>
     <div class="col-md-6">
-      <h4 class="informasiproduk">
-        Nama Produk
-      </h4>
-      <hr>
-      <h5 class="informasiproduk">
-        Deskripsi Produk
-      </h5>
+      <h4 class="informasiproduk">Nama Produk</h4>
+      <hr />
+      <h5 class="informasiproduk">Deskripsi Produk</h5>
       <p class="informasiproduk">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. quis nostrud exercitation ullamco laboris nisi ut
+        aliquip ex ea commodo consequat.
       </p>
     </div>
   </div>

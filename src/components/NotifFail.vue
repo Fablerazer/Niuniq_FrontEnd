@@ -36,7 +36,7 @@
       </div>
       <br />
       <div>
-        <h5 style="color:#dc3545">Alasan gagal verifikasi produk</h5>
+        <h5 style="color: #dc3545">Alasan gagal verifikasi produk</h5>
         <p>
           Alasan produk anda gagal dalam verifikasi produk karena ada beberapa
           permasalahan, seperti: - Resolusi foto kurang jernih - Pencahayaan

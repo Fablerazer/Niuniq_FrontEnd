@@ -15,7 +15,7 @@ export default {
   name: "InputTokoView",
   components: {
     CInputToko,
-    CNavbarPenjual
+    CNavbarPenjual,
   },
 };
 </script>

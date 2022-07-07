@@ -20,14 +20,14 @@ const routes = [
     component: HomeView,
   },
   {
-    path: '/detailview',
-    name: 'DetailView',
-    component: DetailView
+    path: "/detailview",
+    name: "DetailView",
+    component: DetailView,
   },
   {
-    path: '/pengaturanview',
-    name: 'PengaturanView',
-    component: PengaturanView
+    path: "/pengaturanview",
+    name: "PengaturanView",
+    component: PengaturanView,
   },
   {
     path: "/tentangview",

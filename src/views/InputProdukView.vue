@@ -18,7 +18,7 @@ export default {
   components: {
     CNavbarPenjual,
     CInputInfoDetail,
-    CInputDokProduk
+    CInputDokProduk,
   },
 };
 </script>

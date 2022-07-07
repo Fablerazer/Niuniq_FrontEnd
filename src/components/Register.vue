@@ -54,7 +54,7 @@
         </div>
       </form>
       <div>
-        <a href="/">
+        <a href="/inputtokoview">
           <button type="submit" class="btn btn-info">Daftar</button>
         </a>
         <hr />

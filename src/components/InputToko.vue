@@ -145,17 +145,19 @@
               />
             </div>
           </div>
-          <button
-            type="button"
-            class="btn btn-success btn-lg btn-block mt-4 mb-2"
-            style="
-              background-color: #4e944f;
-              border-radius: 8px;
-              font-size: 16px;
-            "
-          >
-            Simpan
-          </button>
+          <a href="/inputtokoview">
+            <button
+              type="button"
+              class="btn btn-success btn-lg btn-block mt-4 mb-2"
+              style="
+                background-color: #4e944f;
+                border-radius: 8px;
+                font-size: 16px;
+              "
+            >
+              Simpan
+            </button>
+          </a>
         </div>
       </div>
       <br />
