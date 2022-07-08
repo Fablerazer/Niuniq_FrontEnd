@@ -36,12 +36,24 @@
       </div>
       <hr />
       <div>
-        <b-button v-b-modal.modal-lg variant="link" style="color: #28a745"
+        <b-button
+          id="show-btn"
+          variant="link"
+          style="color: #28a745"
+          @click="$bvModal.show('bv-modal-example')"
           >Silahkan download hasil QRCode</b-button
         >
-        <b-modal id="modal-lg" size="lg" title="Large Modal"
-          >Hello Large Modal!</b-modal
-        >
+        <b-modal id="bv-modal-example" hide-footer>
+          <div class="d-block text-center mt-2 mb-4">
+            <img
+              src="@/assets/img/popup-save.png"
+              alt="foto-produk"
+            />
+            <h6></h6>
+            <br />
+            <h4>QRCode berhasil di download</h4>
+          </div>
+        </b-modal>
       </div>
     </div>
   </div>
