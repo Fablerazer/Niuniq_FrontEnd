@@ -26,9 +26,6 @@
             ><b-icon-bell
           /></router-link>
         </li>
-        <!-- <li class="nav-item">
-          <router-link class="nav-link" to="/profileview"><b-icon-person-circle/></router-link>
-        </li> -->
         <div>
           <b-dropdown
             id="dropdown-right"

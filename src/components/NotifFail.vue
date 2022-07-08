@@ -49,6 +49,7 @@
           sudah diberikan
         </p>
       </div>
+      <a href="/inputprodukview">
       <button
         type="button"
         class="btn btn-success btn-lg btn-block"
@@ -56,6 +57,7 @@
       >
         Mengisi kembali informasi produk
       </button>
+      </a>
     </div>
   </div>
 </template>

@@ -145,7 +145,7 @@
               />
             </div>
           </div>
-          <a href="/inputtokoview">
+          <a href="/notificationview">
             <button
               type="button"
               class="btn btn-success btn-lg btn-block mt-4 mb-2"
