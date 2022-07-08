@@ -1,9 +1,11 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div class="container">
-      <CInputInfoDetail />
-      <CInputDokProduk />
+    <div style="background-color: #f9f9f9">
+      <div class="container">
+        <CInputInfoDetail />
+        <CInputDokProduk />
+      </div>
     </div>
   </div>
 </template>

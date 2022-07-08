@@ -1,11 +1,13 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div class="container">
-      <h4>Pemberitahuan Status Produk</h4>
-      <CNotifSuccess />
-      <br />
-      <CNotifFail />
+    <div style="background-color: #f9f9f9">
+      <div class="container">
+        <h4>Pemberitahuan Status Produk</h4>
+        <CNotifSuccess />
+        <br />
+        <CNotifFail />
+      </div>
     </div>
   </div>
 </template>

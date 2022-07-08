@@ -1,7 +1,11 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <CPengaturan />
+    <div style="background-color: #f9f9f9">
+      <div class="container">
+        <CPengaturan />
+      </div>
+    </div>
   </div>
 </template>
 
