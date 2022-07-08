@@ -14,8 +14,8 @@ section.bgtentang {
 }
 
 section.bginputtoko {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
   background-image: url("@/assets/img/inputtoko-bg.png");
   background-repeat: no-repeat;
   background-attachment: scroll;

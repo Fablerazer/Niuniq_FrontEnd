@@ -1,9 +1,11 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div>
-      <CInputToko />
-    </div>
+    <section class="bginputtoko">
+      <div class="container">
+        <CInputToko />
+      </div>
+    </section>
   </div>
 </template>
 

@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="card" style="width: 75%; height: 75%">
+    <div class="card" style="width: 100%; height: 85%">
       <div class="card-body">
         <div class="row">
           <div class="col-md-6">
@@ -43,7 +43,7 @@
       </div>
     </div>
     <br />
-    <div class="card mt-3" style="width: 75%; height: 75%">
+    <div class="card mt-3" style="width: 100%; height: 85%">
       <div class="card-body">
         <div class="row">
           <div class="col-md-6">
