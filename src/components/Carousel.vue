@@ -1,62 +1,75 @@
 <template>
   <div class="row mt-4">
     <div class="col-md-5">
-      <div
-        id="carouselExampleIndicators"
-        class="carousel slide"
-        data-ride="carousel"
+      <b-carousel
+        id="carousel-1"
+        v-model="slide"
+        :interval="4000"
+        controls
+        indicators
+        background="#ababab"
+        img-width="1024"
+        img-height="480"
+        style="text-shadow: 1px 1px 2px #333"
+        @sliding-start="onSlideStart"
+        @sliding-end="onSlideEnd"
       >
-        <ol class="carousel-indicators">
-          <li
-            data-target="#carouselExampleIndicators"
-            data-slide-to="0"
-            class="active"
-          ></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-          <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-        </ol>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
+        <!-- Slides with img slot -->
+        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+        <b-carousel-slide>
+          <template #img>
             <img
-              class="d-block w-100"
+              class="d-block img-fluid w-100"
+              width="1024"
+              height="480"
               src="@/assets/img/picture1.png"
-              alt="First slide"
+              alt="image slot"
             />
-          </div>
-          <div class="carousel-item">
+          </template>
+        </b-carousel-slide>
+
+        <!-- Slides with img slot -->
+        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+        <b-carousel-slide>
+          <template #img>
             <img
-              class="d-block w-100"
-              src="@/assets/img/picture2.png"
-              alt="Second slide"
+              class="d-block img-fluid w-100"
+              width="1024"
+              height="480"
+              src="@/assets/img/picture1.png"
+              alt="image slot"
             />
-          </div>
-          <div class="carousel-item">
+          </template>
+        </b-carousel-slide>
+
+        <!-- Slides with img slot -->
+        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+        <b-carousel-slide>
+          <template #img>
             <img
-              class="d-block w-100"
-              src="@/assets/img/picture3.png"
-              alt="Third slide"
+              class="d-block img-fluid w-100"
+              width="1024"
+              height="480"
+              src="@/assets/img/picture1.png"
+              alt="image slot"
             />
-          </div>
-        </div>
-        <a
-          class="carousel-control-prev"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="sr-only">Previous</span>
-        </a>
-        <a
-          class="carousel-control-next"
-          href="#carouselExampleIndicators"
-          role="button"
-          data-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="sr-only">Next</span>
-        </a>
-      </div>
+          </template>
+        </b-carousel-slide>
+
+        <!-- Slides with img slot -->
+        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
+        <b-carousel-slide>
+          <template #img>
+            <img
+              class="d-block img-fluid w-100"
+              width="1024"
+              height="480"
+              src="@/assets/img/picture1.png"
+              alt="image slot"
+            />
+          </template>
+        </b-carousel-slide>
+      </b-carousel>
     </div>
     <div class="col-md-6">
       <h4 class="informasiproduk">Nama Produk</h4>
@@ -77,10 +90,7 @@
 export default {
   name: "CCarousel",
   data() {
-    return {
-      slide: 0,
-      sliding: null,
-    };
+    return {};
   },
   methods: {},
 };
