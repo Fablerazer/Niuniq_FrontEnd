@@ -19,7 +19,7 @@
         <b-carousel-slide>
           <template #img>
             <img
-              class="d-block img-fluid w-100"
+              class="w-100"
               width="1024"
               height="480"
               src="@/assets/img/picture1.png"
@@ -29,46 +29,56 @@
         </b-carousel-slide>
 
         <!-- Slides with img slot -->
-        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
         <b-carousel-slide>
           <template #img>
             <img
-              class="d-block img-fluid w-100"
+              class="w-100"
               width="1024"
               height="480"
-              src="@/assets/img/picture1.png"
+              src="@/assets/img/produk-2.png"
               alt="image slot"
             />
           </template>
         </b-carousel-slide>
 
         <!-- Slides with img slot -->
-        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
         <b-carousel-slide>
           <template #img>
             <img
-              class="d-block img-fluid w-100"
+              class="w-100"
               width="1024"
               height="480"
-              src="@/assets/img/picture1.png"
+              src="@/assets/img/produk-3.png"
               alt="image slot"
             />
           </template>
         </b-carousel-slide>
 
         <!-- Slides with img slot -->
-        <!-- Note the classes .d-block and .img-fluid to prevent browser default image alignment -->
         <b-carousel-slide>
           <template #img>
             <img
-              class="d-block img-fluid w-100"
+              class="w-100"
               width="1024"
               height="480"
-              src="@/assets/img/picture1.png"
+              src="@/assets/img/produk-1.png"
               alt="image slot"
             />
           </template>
         </b-carousel-slide>
+
+        <!-- Template -->
+        <!-- <b-carousel-slide>
+          <template #img>
+            <img
+              class="h-100 w-100"
+              width="1024"
+              height="480"
+              src="@/assets/img/produk-1.png"
+              alt="image slot"
+            />
+          </template>
+        </b-carousel-slide> -->
       </b-carousel>
     </div>
     <div class="col-md-6">
