@@ -3,8 +3,8 @@
 }
 
 section.bgtentang {
-  padding-top: 10rem;
-  padding-bottom: 10rem;
+  padding-top: 15%;
+  padding-bottom: 15%;
   text-align: center;
   background-image: url("@/assets/img/tentang-bg.png");
   background-repeat: no-repeat;
@@ -24,8 +24,8 @@ section.bginputtoko {
 }
 
 section.bglognreg {
-  padding-top: 7rem;
-  padding-bottom: 3rem;
+  padding-top: 70%;
+  padding-bottom: 30%;
   text-align: center;
   background-image: url("@/assets/img/lognreg-bg.png");
   background-repeat: no-repeat;
@@ -143,6 +143,7 @@ section.lognreg {
   flex-direction: column;
   justify-content: flex-end;
   align-items: flex-start;
+  
 
   width: 100%;
   height: 100%;

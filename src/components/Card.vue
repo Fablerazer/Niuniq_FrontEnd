@@ -44,7 +44,16 @@
         class="card"
         style="border-radius: 20px; width: 32rem; height: 18rem"
       >
-        <div class="card-body" style="text-align: start">
+        <div
+          class="card-body"
+          style="
+            text-align: start;
+            margin-top: 20px;
+            margin-left: 20px;
+            margin-right: 20px;
+            margin-bottom: 20px;
+          "
+        >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
           <h5 class="card-title mt-3">Bahan Baku Produk</h5>
           <div class="row">
