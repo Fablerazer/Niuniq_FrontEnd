@@ -1,4 +1,5 @@
 <template>
+<!-- test -->
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
       <a class="navbar-brand" href="/registerview"
