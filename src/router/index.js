@@ -12,7 +12,7 @@ import TentangViewPenjual from "../views/TentangViewPenjual.vue";
 import PengaturanView from "../views/PengaturanView.vue";
 import ShopInfo from "../views/ShopInfoView.vue";
 import Dashboard from "../views/DashboardView.vue";
-import ProductList from "../views/ProductListView.vue";
+// import ProductList from "../views/ProductListView.vue";
 
 Vue.use(VueRouter);
 
@@ -82,11 +82,11 @@ const routes = [
     name: "Dashboard",
     component: Dashboard,
   },
-  {
-    path: "/product-list",
-    name: "ProductList",
-    component: ProductList,
-  },
+  // {
+  //   path: "/product-list",
+  //   name: "ProductList",
+  //   component: ProductList,
+  // },
 ];
 
 const router = new VueRouter({
