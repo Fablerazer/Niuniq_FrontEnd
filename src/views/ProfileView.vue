@@ -1,9 +1,9 @@
 <template>
-<div>
-    <NavBar />
-    <div class="flex-row">
-        <SideBar />
-    </div>
+    <div>
+        <NavBar />
+        <div class="flex-row">
+            <SideBar />
+        </div>
     </div>
 </template>
 
