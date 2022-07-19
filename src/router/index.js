@@ -12,7 +12,8 @@ import TentangViewPenjual from "../views/TentangViewPenjual.vue";
 import PengaturanView from "../views/PengaturanView.vue";
 import ShopInfo from "../views/ShopInfoView.vue";
 import Dashboard from "../views/DashboardView.vue";
-import ProductList from "../views/ProductListView.vue";
+import ProfileView from "../views/ProfileView.vue";
+// import ProductList from "../views/ProductListView.vue";
 
 Vue.use(VueRouter);
 
@@ -73,6 +74,11 @@ const routes = [
     component: HomeView,
   },
   {
+    path: "/profileview",
+    name: "ProfileView",
+    component: ProfileView,
+  },
+  {
     path: "/shop-info",
     name: "ShopInfo",
     component: ShopInfo,
@@ -82,11 +88,12 @@ const routes = [
     name: "Dashboard",
     component: Dashboard,
   },
-   {
-     path: "/product-list",
-     name: "ProductList",
-     component: ProductList,
-   },
+  //  {
+  //    path: "/product-list",
+  //    name: "ProductList",
+  //    component: ProductList,
+  //  },
+
 ];
 
 const router = new VueRouter({
