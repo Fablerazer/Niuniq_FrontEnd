@@ -14,8 +14,8 @@
 
 <script>
 import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
-import CNotifSuccess from "@/components/NotifSuccess.vue";
-import CNotifFail from "@/components/NotifFail.vue";
+import CNotifSuccess from "@/components/penjual/NotifSuccess.vue";
+import CNotifFail from "@/components/penjual/NotifFail.vue";
 
 export default {
   name: "NotificationView",

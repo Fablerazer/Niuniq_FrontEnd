@@ -11,7 +11,7 @@
 
 <script>
 import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
-import CPengaturan from "@/components/Pengaturan.vue";
+import CPengaturan from "@/components/penjual/Pengaturan.vue";
 
 export default {
   name: "PengaturanView",

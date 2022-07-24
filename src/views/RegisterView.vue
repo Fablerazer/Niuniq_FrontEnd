@@ -13,7 +13,7 @@
 
 <script>
 import CWelcomeimg from "@/components/Welcomeimg.vue";
-import CRegister from "@/components/Register.vue";
+import CRegister from "@/components/penjual/Register.vue";
 
 export default {
   name: "RegisterView",

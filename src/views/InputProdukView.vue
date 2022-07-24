@@ -13,8 +13,8 @@
 
 <script>
 import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
-import CInputInfoDetail from "@/components/InputInfoDetail.vue";
-import CInputDokProduk from "@/components/InputDokProduk.vue";
+import CInputInfoDetail from "@/components/penjual/InputInfoDetail.vue";
+import CInputDokProduk from "@/components/penjual/InputDokProduk.vue";
 import SideBarInputProduk from "@/components/bar/SideBarInputProduk.vue";
 
 export default {

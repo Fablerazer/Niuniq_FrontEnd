@@ -13,7 +13,7 @@
 
 <script>
 import CWelcomeimg from "@/components/Welcomeimg.vue";
-import CLogin from "@/components/Login.vue";
+import CLogin from "@/components/penjual/Login.vue";
 
 export default {
   name: "LoginView",

@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import CInputToko from "@/components/InputToko.vue";
+import CInputToko from "@/components/penjual/InputToko.vue";
 import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 
 export default {
