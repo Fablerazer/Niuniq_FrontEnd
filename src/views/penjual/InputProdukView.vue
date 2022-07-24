@@ -3,7 +3,7 @@
     <CNavbarPenjual />
     <div class="flex-row" style="background-color: #f9f9f9">
       <SideBarInputProduk />
-      <div class="container">
+      <div class="container" style="padding-left: 180px;">
         <CInputInfoDetail />
         <CInputDokProduk />
       </div>

@@ -46,7 +46,7 @@
               ><b-icon-gear-fill /> Pengaturan</b-dropdown-item
             >
             <hr />
-            <b-dropdown-item href="#"
+            <b-dropdown-item href="/loginview"
               ><b-icon-box-arrow-right /> Keluar</b-dropdown-item
             >
           </b-dropdown>

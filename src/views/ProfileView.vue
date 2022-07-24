@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavBarProfile />
+        <NavbarPenjual />
         <div class="flex-row">
             <SideBar />
         </div>
@@ -8,13 +8,13 @@
 </template>
 
 <script>
-import NavBarProfile from "@/components/bar/NavBarProfile.vue";
+import NavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 import SideBar from "@/components/bar/SideBar.vue";
 
 export default {
     name: "ProfileView",
     components: {
-        NavBarProfile,
+        NavbarPenjual,
         SideBar,
     },
 };

@@ -10,12 +10,14 @@
       >
       <hr />
       <div class="btn-add-product-wrapper">
-        <button
-          type="button"
-          class="btn-add-product btn btn-success text-white fw-bold"
-        >
-          Tambah Produk
-        </button>
+        <a href="/inputprodukview">
+          <button
+            type="button"
+            class="btn-add-product btn btn-success text-white fw-bold"
+          >
+            Tambah Produk
+          </button>
+        </a>
       </div>
       <div class="tab-data">
         <input id="tab1" type="radio" name="tabs" checked />
@@ -69,6 +71,7 @@
                     </button>
                   </div>
                   <div class="btn-action-wrapper">
+                    <a href="/inputprodukview">
                     <button
                       type="button"
                       class="btn-action btn btn-outline-success"
@@ -79,6 +82,7 @@
                         class="d-inline-block align-text-top"
                       />
                     </button>
+                    </a>
                   </div>
                   <div class="btn-action-wrapper">
                     <button
@@ -93,6 +97,7 @@
                     </button>
                   </div>
                   <div class="btn-action-wrapper">
+                    <a href="/detailview">
                     <button
                       type="button"
                       class="btn-action btn btn-outline-success"
@@ -103,6 +108,7 @@
                         class="d-inline-block align-text-top"
                       />
                     </button>
+                    </a>
                   </div>
                 </td>
               </tr>

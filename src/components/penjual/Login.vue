@@ -37,11 +37,11 @@
         </div>
       </form>
       <div>
-        <a href="/">
+        <a href="/profileview">
           <button type="submit" class="btn btn-info">Masuk</button>
         </a>
         <hr />
-        <a href="/">
+        <a href="/profileview">
           <button type="button" class="btn btn-outline-info">
             Log in with google
           </button>

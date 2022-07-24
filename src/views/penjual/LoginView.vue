@@ -12,7 +12,7 @@
 </template>
 
 <script>
-import CWelcomeimg from "@/components/Welcomeimg.vue";
+import CWelcomeimg from "@/components/penjual/Welcomeimg.vue";
 import CLogin from "@/components/penjual/Login.vue";
 
 export default {

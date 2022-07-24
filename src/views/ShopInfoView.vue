@@ -18,6 +18,7 @@
         />
         <span class="fs-1 fw-bold">Roemah Bamboe</span>
       </div>
+      <a href="/inputtokoview">
       <button class="border-0 bg-white">
         <img
           src="@/assets/img/ic-edit.svg"
@@ -25,6 +26,7 @@
           class="d-inline-block align-text-top"
         />
       </button>
+      </a>
     </div>
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Alamat Toko</span>

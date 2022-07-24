@@ -144,7 +144,7 @@
             />
           </div>
         </div>
-        <a href="/notificationview">
+        <a href="/profileview">
           <button
             type="button"
             class="btn btn-success btn-lg btn-block mt-4 mb-2"
