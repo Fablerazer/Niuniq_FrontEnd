@@ -1,19 +1,19 @@
 import Vue from "vue";
 import VueRouter from "vue-router";
-import DetailView from "../views/DetailView.vue";
-import TentangView from "../views/TentangView.vue";
-import HomeView from "../views/HomeView.vue";
-import RegisterView from "../views/RegisterView.vue";
-import LoginView from "../views/LoginView.vue";
-import NotificationView from "../views/NotificationView.vue";
-import InputProdukView from "../views/InputProdukView.vue";
-import InputTokoView from "../views/InputTokoView.vue";
-import TentangViewPenjual from "../views/TentangViewPenjual.vue";
-import PengaturanView from "../views/PengaturanView.vue";
-import ShopInfo from "../views/ShopInfoView.vue";
-import Dashboard from "../views/DashboardView.vue";
-import ProfileView from "../views/ProfileView.vue";
-import ProductList from "../views/ProductListView.vue";
+import DetailView from "../views/pembeli/DetailView.vue";
+import TentangView from "../views/pembeli/TentangView.vue";
+import HomeView from "../views/pembeli/HomeView.vue";
+import RegisterView from "../views/penjual/RegisterView.vue";
+import LoginView from "../views/penjual/LoginView.vue";
+import NotificationView from "../views/penjual/NotificationView.vue";
+import InputProdukView from "../views/penjual/InputProdukView.vue";
+import InputTokoView from "../views/penjual/InputTokoView.vue";
+import TentangViewPenjual from "../views/penjual/TentangViewPenjual.vue";
+import PengaturanView from "../views/penjual/PengaturanView.vue";
+import ShopInfo from "../views/penjual/homepenjual/ShopInfoView.vue";
+import Dashboard from "../views/penjual/homepenjual/DashboardView.vue";
+import ProfileView from "../views/penjual/homepenjual/ProfileView.vue";
+import ProductList from "../views/penjual/homepenjual/ProductListView.vue";
 
 Vue.use(VueRouter);
 

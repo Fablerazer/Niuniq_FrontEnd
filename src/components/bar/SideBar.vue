@@ -45,9 +45,9 @@
 
 <script>
 import BtnSideBar from "@/components/button/BtnSideBar.vue";
-import Dashboard from "@/views/DashboardView.vue";
-import ProductList from "@/views/ProductListView.vue";
-import ShopInfo from "@/views/ShopInfoView.vue";
+import Dashboard from "@/views/penjual/homepenjual/DashboardView.vue";
+import ProductList from "@/views/penjual/homepenjual/ProductListView.vue";
+import ShopInfo from "@/views/penjual/homepenjual/ShopInfoView.vue";
 
 export default {
   name: "SideBar",
