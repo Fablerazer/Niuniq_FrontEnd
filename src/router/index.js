@@ -10,10 +10,10 @@ import InputProdukView from "../views/penjual/InputProdukView.vue";
 import InputTokoView from "../views/penjual/InputTokoView.vue";
 import TentangViewPenjual from "../views/penjual/TentangViewPenjual.vue";
 import PengaturanView from "../views/penjual/PengaturanView.vue";
-import ShopInfo from "../views/penjual/homepenjual/ShopInfoView.vue";
-import Dashboard from "../views/penjual/homepenjual/DashboardView.vue";
-import ProfileView from "../views/penjual/homepenjual/ProfileView.vue";
-import ProductList from "../views/penjual/homepenjual/ProductListView.vue";
+import ShopInfo from "../views/ShopInfoView.vue";
+import Dashboard from "../views/DashboardView.vue";
+import ProfileView from "../views/ProfileView.vue";
+import ProductList from "../views/ProductListView.vue";
 
 Vue.use(VueRouter);
 
