@@ -11,7 +11,7 @@
 
 <script>
 import CInputToko from "@/components/InputToko.vue";
-import CNavbarPenjual from "@/components/NavbarPenjual.vue";
+import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 
 export default {
   name: "InputTokoView",

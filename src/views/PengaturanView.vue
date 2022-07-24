@@ -10,7 +10,7 @@
 </template>
 
 <script>
-import CNavbarPenjual from "@/components/NavbarPenjual.vue";
+import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 import CPengaturan from "@/components/Pengaturan.vue";
 
 export default {

@@ -39,7 +39,7 @@
             <template #button-content>
               <b-icon-person-circle style="color: #4e944f" />
             </template>
-            <b-dropdown-item href="#"
+            <b-dropdown-item href="/profileview"
               ><b-icon-person-fill /> Profil Saya</b-dropdown-item
             >
             <b-dropdown-item href="/pengaturanview"

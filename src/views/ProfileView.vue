@@ -1,6 +1,6 @@
 <template>
     <div>
-        <NavBar />
+        <NavBarProfile />
         <div class="flex-row">
             <SideBar />
         </div>
@@ -8,24 +8,24 @@
 </template>
 
 <script>
-import NavBar from "@/components/bar/NavBar.vue";
+import NavBarProfile from "@/components/bar/NavBarProfile.vue";
 import SideBar from "@/components/bar/SideBar.vue";
 
 export default {
     name: "ProfileView",
     components: {
-        NavBar,
+        NavBarProfile,
         SideBar,
     },
 };
 </script>
 
-<style>
+<style scope>
 #app {
     font-family: Inter, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
-    text-align: center;
+    /* text-align: center; */
     color: #2c3e50;
 }
 

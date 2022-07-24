@@ -10,7 +10,7 @@
 
 <script>
 // @ is an alias to /src
-import CNavbar from "@/components/Navbar.vue";
+import CNavbar from "@/components/bar/Navbar.vue";
 import Qrcodeid from "@/components/Qrcodeid.vue";
 import CStorepreview from "@/components/StorePreview.vue";
 

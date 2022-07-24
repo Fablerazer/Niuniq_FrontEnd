@@ -12,7 +12,7 @@
 
 <script>
 // @ is an alias to /src
-import CNavbar from "@/components/Navbar.vue";
+import CNavbar from "@/components/bar/Navbar.vue";
 import CInfoproduksi from "@/components/InfoProduksi.vue";
 import CCarousel from "@/components/Carousel.vue";
 import CCard from "@/components/Card.vue";

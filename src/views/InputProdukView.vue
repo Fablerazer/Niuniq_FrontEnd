@@ -1,7 +1,8 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div style="background-color: #f9f9f9">
+    <div class="flex-row" style="background-color: #f9f9f9">
+      <SideBarInputProduk />
       <div class="container">
         <CInputInfoDetail />
         <CInputDokProduk />
@@ -11,9 +12,10 @@
 </template>
 
 <script>
-import CNavbarPenjual from "@/components/NavbarPenjual.vue";
+import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 import CInputInfoDetail from "@/components/InputInfoDetail.vue";
 import CInputDokProduk from "@/components/InputDokProduk.vue";
+import SideBarInputProduk from "@/components/bar/SideBarInputProduk.vue";
 
 export default {
   name: "InputProdukView",
@@ -21,6 +23,7 @@ export default {
     CNavbarPenjual,
     CInputInfoDetail,
     CInputDokProduk,
+    SideBarInputProduk
   },
 };
 </script>

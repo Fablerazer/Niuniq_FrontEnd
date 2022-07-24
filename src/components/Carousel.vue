@@ -7,6 +7,8 @@
         :interval="4000"
         controls
         indicators
+        label-next=""
+        label-prev=""
         background="#ababab"
         img-width="608"
         img-height="525"

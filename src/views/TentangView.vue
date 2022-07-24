@@ -7,7 +7,7 @@
 
 <script>
 // @ is an alias to /src
-import CNavbar from "@/components/Navbar.vue";
+import CNavbar from "@/components/bar/Navbar.vue";
 import CAboutpage from "@/components/Tentang.vue";
 
 export default {
