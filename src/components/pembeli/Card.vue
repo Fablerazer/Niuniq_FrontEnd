@@ -26,14 +26,12 @@
         >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
           <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
+          <!-- <p v-for="product in products" :key="product._id">
+              {{ product.name }}
+            </p> -->
           <ul>
-            <li>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua.
-            </li>
-            <li>
-              Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+            <li v-for="product in products" :key="product._id">
+              {{ product.description }}
             </li>
           </ul>
         </div>
@@ -81,8 +79,48 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CCard",
+  // props: ['product'],
+  data() {
+    return {
+      products: [],
+    };
+  },
+  created() {
+    this.getProducts();
+  },
+  methods: {
+    getProducts() {
+      var config = {
+        method: "get",
+        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        headers: {
+          Cookie: `token=${localStorage.getItem("token")}`,
+        },
+      };
+      axios(config)
+        .then((response) => {
+          this.products = response.data.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
+  // methods: {
+  //   setProducts(data) {
+  //     this.products = data;
+  //   },
+  // },
+  // mounted() {
+  //   axios
+  //     .get("https://niuniq.herokuapp.com/api/web/niuniq/products")
+  //     .then((response) => this.setProducts(response.data))
+  //     .catch((error) => console.log(error));
+  // },
 };
 </script>
 
