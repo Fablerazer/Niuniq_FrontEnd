@@ -24,7 +24,8 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/detailview",
+    path: "/detailview/:id",
+    // path: "/detailview",
     name: "DetailView",
     component: DetailView,
   },

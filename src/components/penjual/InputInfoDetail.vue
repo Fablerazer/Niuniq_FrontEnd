@@ -1,5 +1,4 @@
 <template>
-<!-- test -->
   <div>
     <div class="card" style="width: 100%; height: 75%">
       <div class="card-body">

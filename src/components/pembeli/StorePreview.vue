@@ -16,9 +16,20 @@
           Bamboe
         </p>
       </div>
+      <!-- https://stackoverflow.com/questions/66891174/passing-props-through-a-router-link -->
+      <!-- <router-link
+  class="..."
+  :to="{
+     path: '/post/edit',
+     params: post, // <-- changed 'props' to 'params'
+     query: { post: post.id },
+   }"
+   >Edit
+</router-link> -->
       <div class="row mt-4">
         <div class="col-md-4">
           <a href="/detailview">
+            <!-- <a href="/detailview/5123412514"> -->
             <img src="@/assets/img/produk-1.png" class="rounded img-fluid" />
           </a>
         </div>

@@ -88,27 +88,53 @@
       </b-carousel>
     </div>
     <div class="col-md-6" style="align-self: center">
-      <h4 class="informasiproduk">Nama Produk</h4>
+      <h4
+        class="informasiproduk"
+        v-for="product in products"
+        :key="product._id"
+      >
+        {{ product.name }}
+      </h4>
       <hr />
       <h5 class="informasiproduk">Deskripsi Produk</h5>
-      <p class="informasiproduk">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-        veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-        commodo consequat. quis nostrud exercitation ullamco laboris nisi ut
-        aliquip ex ea commodo consequat.
+      <p class="informasiproduk" v-for="product in products" :key="product._id">
+        {{ product.description }}
       </p>
     </div>
   </div>
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CCarousel",
   data() {
-    return {};
+    return {
+      products: [],
+    };
   },
-  methods: {},
+  created() {
+    this.getProducts();
+  },
+  methods: {
+    getProducts() {
+      var config = {
+        method: "get",
+        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        headers: {
+          Cookie: `token=${localStorage.getItem("token")}`,
+        },
+      };
+      axios(config)
+        .then((response) => {
+          this.products = response.data.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>
 
