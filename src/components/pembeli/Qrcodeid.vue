@@ -35,7 +35,7 @@
                   <div class="col-md-9">
                     <div class="form-group">
                       <input
-                        type="email"
+                        type="text"
                         class="form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
@@ -47,11 +47,11 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <router-link
+                    <!-- <router-link
                       :to="{ path: 'detailview', params: { id: _id }}"
-                      >Cari</router-link>
-                    <!-- class="btn btn-info" to="'/detailview/'+product._id" -->
-                    <!-- <button v-on:click="getProducts()" type="submit" class="btn btn-info">Cari</button> -->
+                      >Cari</router-link> -->
+                    <router-link class="btn btn-info" :to="'/detailview/'+this.search">Cari</router-link>
+                    <!-- <button v-on:click="searchProducts()" type="submit" class="btn btn-info">Cari</button> -->
                   </div>
                 </div>
               </div>
@@ -246,26 +246,30 @@ export default {
       slide: 0,
       sliding: null,
       products: [],
-      search: "",
+      search: '',
     };
   },
   created() {
     this.getProducts();
   },
   methods: {
-    // searchProducts() {
-    //   axios
-    //     .get(
-    //       "https://niuniq.herokuapp.com/api/web/niuniq/products?q=" +
-    //         this.search
-    //     )
-    //     .then((response) => this.products(response.data.data))
-    //     .catch((error) => console.log(error));
-    // },
+  //  searchProducts() {
+  //     let result = axios.get(
+  //         'https://niuniq.herokuapp.com/api/web/niuniq/search?product='+this.search
+  //       )
+
+  //       if(result.status==200 && result.data.length>0)
+  //       {
+  //         // localStorage.setItem("user-info",JSON.stringify(result.data[0]))
+  //         // this.$router.push({path:'/detailview', query: {id: search}})
+  //         this.$router.push({name:'DetailView'})
+  //       }
+  //       console.warn(result)
+  //   },
     getProducts() {
       var config = {
         method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products?q="+this.search,
+        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
         // this.$route.params.id
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
