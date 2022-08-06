@@ -25,7 +25,16 @@
      query: { post: post.id },
    }"
    >Edit
-</router-link> -->
+</router-link>
+or -->
+<!-- <router-link
+  class="..."
+  :to="{
+     name: 'DetailView',
+     params: { id: post.id }
+   }"
+   >Edit
+</router-link> --> 
       <div class="row mt-4">
         <div class="col-md-4">
           <a href="/detailview">

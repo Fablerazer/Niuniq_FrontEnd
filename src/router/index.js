@@ -24,10 +24,11 @@ const routes = [
     component: HomeView,
   },
   {
-    path: "/detailview/:id",
+    path: '/detailview/:id',
     // path: "/detailview",
     name: "DetailView",
     component: DetailView,
+    // props: true
   },
   {
     path: "/pengaturanview",
