@@ -2,7 +2,7 @@
   <div class="container-fluid mt-4" style="padding-left: 0; padding-right: 0">
     <div class="card">
       <div class="card-body">
-        <h5 class="informasiproduk">Informasi Produksi {{ $route.params.id}}</h5>
+        <h5 class="informasiproduk">Informasi Produksi {{$route.params.id}}</h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk
           membuktikan bahwa produk tersebut asli.

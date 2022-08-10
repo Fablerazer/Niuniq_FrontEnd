@@ -25,9 +25,10 @@
           "
         >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
-          <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
+          <h5 class="card-title mt-3">Cara Menyimpan Produk {{$route.params.id}}</h5>
           <ul>
-            <li v-for="product in products" :key="product._id">
+            <li>
+            <!-- <li v-for="product in products" :key="product._id"> -->
               {{ product.productStorage }}
             </li>
           </ul>
@@ -54,7 +55,8 @@
           <div class="row">
             <div class="col-md-6">
               <ul>
-                <li v-for="product in products" :key="product._id">
+                <!-- <li v-for="product in products" :key="product._id"> -->
+                <li>
                   {{ product.rawMaterials }}
                 </li>
               </ul>
@@ -75,37 +77,39 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "CCard",
-  data() {
-    return {
-      products: [],
-    };
-  },
-  created() {
-    this.getProducts();
-  },
-  methods: {
-    getProducts() {
-      var config = {
-        method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products/",
-        // url: "https://niuniq.herokuapp.com/api/web/niuniq/products/" + this.$route.params.id,
-        headers: {
-          Cookie: `token=${localStorage.getItem("token")}`,
-        },
-      };
-      axios(config)
-        .then((response) => {
-          this.products = response.data.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  },
+  props: ["product"],
+  // data() {
+  //   return {
+  //     products: [],
+  //     props: ["product"],
+  //   };
+  // },
+  // created() {
+  //   this.getProducts();
+  // },
+  // methods: {
+  //   getProducts() {
+  //     var config = {
+  //       method: "get",
+  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/products/",
+  //       // url: "https://niuniq.herokuapp.com/api/web/niuniq/products/" + this.$route.params.id,
+  //       headers: {
+  //         Cookie: `token=${localStorage.getItem("token")}`,
+  //       },
+  //     };
+  //     axios(config)
+  //       .then((response) => {
+  //         this.products = response.data.data;
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   },
+  // },
 };
 </script>
 

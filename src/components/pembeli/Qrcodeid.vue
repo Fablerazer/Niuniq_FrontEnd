@@ -42,16 +42,16 @@
                         placeholder="Masukkan ID produk"
                         v-model="search"
                       />
-                        <!-- @keyup="searchProducts"
-                        v-model="search" -->
                     </div>
                   </div>
                   <div class="col-md-3">
                     <!-- <router-link
-                      :to="{ path: 'detailview', params: { id: _id }}"
+                      :to="{ path: 'detailview', params: { id: product_id }}"
                       >Cari</router-link> -->
-                    <router-link class="btn btn-info" :to="'/detailview/'+this.search">Cari</router-link>
+                    <router-link :to="'/detailview/'+this.search">
+                      <button type="submit" class="btn btn-info">Cari</button>
                     <!-- <button v-on:click="searchProducts()" type="submit" class="btn btn-info">Cari</button> -->
+                    </router-link>
                   </div>
                 </div>
               </div>

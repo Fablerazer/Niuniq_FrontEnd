@@ -88,16 +88,18 @@
       </b-carousel>
     </div>
     <div class="col-md-6" style="align-self: center">
-      <h4
+      <!-- <h4
         class="informasiproduk"
         v-for="product in products"
         :key="product._id"
-      >
+      > -->
+      <h4>
         {{ product.name }}
       </h4>
       <hr />
-      <h5 class="informasiproduk">Deskripsi Produk</h5>
-      <p class="informasiproduk" v-for="product in products" :key="product._id">
+      <h5 class="informasiproduk">Deskripsi Produk {{ $route.params.id }}</h5>
+      <!-- <p class="informasiproduk" v-for="product in products" :key="product._id"> -->
+      <p>
         {{ product.description }}
       </p>
     </div>
@@ -105,36 +107,37 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "CCarousel",
-  data() {
-    return {
-      products: [],
-    };
-  },
-  created() {
-    this.getProducts();
-  },
-  methods: {
-    getProducts() {
-      var config = {
-        method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
-        headers: {
-          Cookie: `token=${localStorage.getItem("token")}`,
-        },
-      };
-      axios(config)
-        .then((response) => {
-          this.products = response.data.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  },
+  props: ["product"],
+  // data() {
+  //   return {
+  //     products: [],
+  //   };
+  // },
+  // created() {
+  //   this.getProducts();
+  // },
+  // methods: {
+  //   getProducts() {
+  //     var config = {
+  //       method: "get",
+  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+  //       headers: {
+  //         Cookie: `token=${localStorage.getItem("token")}`,
+  //       },
+  //     };
+  //     axios(config)
+  //       .then((response) => {
+  //         this.products = response.data.data;
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   },
+  // },
 };
 </script>
 

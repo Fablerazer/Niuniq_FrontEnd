@@ -35,31 +35,47 @@ or -->
    }"
    >Edit
 </router-link> --> 
-      <div class="row mt-4">
-        <div class="col-md-4">
-          <a href="/detailview">
-            <!-- <a href="/detailview/5123412514"> -->
-            <img src="@/assets/img/produk-1.png" class="rounded img-fluid" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="/detailview">
-            <img src="@/assets/img/produk-2.png" class="rounded img-fluid" />
-          </a>
-        </div>
-        <div class="col-md-4">
-          <a href="/detailview">
-            <img src="@/assets/img/produk-3.png" class="rounded img-fluid" />
-          </a>
-        </div>
-      </div>
+      <CStorepreviewimage />
     </div>
   </b-card>
 </template>
 
 <script>
+import CStorepreviewimage from "@/components/pembeli/repeatedcomponent/StorePreviewImage.vue";
+// import axios from "axios";
+
 export default {
   name: "CStorepreview",
+  props: ["product"],
+  components: {
+    CStorepreviewimage,
+  },
+  // data() {
+  //   return {
+  //     products: [],
+  //   };
+  // },
+  // created() {
+  //   this.getProducts();
+  // },
+  // methods: {
+  //   getProducts() {
+  //     var config = {
+  //       method: "get",
+  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+  //       headers: {
+  //         Cookie: `token=${localStorage.getItem("token")}`,
+  //       },
+  //     };
+  //     axios(config)
+  //       .then((response) => {
+  //         this.products = response.data.data;
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   },
+  // },
 };
 </script>
 

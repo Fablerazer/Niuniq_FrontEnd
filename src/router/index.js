@@ -28,7 +28,7 @@ const routes = [
     // path: "/detailview",
     name: "DetailView",
     component: DetailView,
-    // props: true
+    props: true
   },
   {
     path: "/pengaturanview",
@@ -74,6 +74,7 @@ const routes = [
     path: "/homeview",
     name: "HomeView",
     component: HomeView,
+    props: true
   },
   {
     path: "/profileview",
