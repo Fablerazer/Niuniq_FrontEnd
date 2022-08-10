@@ -1,5 +1,4 @@
 <template>
-<!-- test -->
   <b-card>
     <div class="row mt-4 px-3">
       <div class="col" style="padding-left: 0">
@@ -16,25 +15,6 @@
           Bamboe
         </p>
       </div>
-      <!-- https://stackoverflow.com/questions/66891174/passing-props-through-a-router-link -->
-      <!-- <router-link
-  class="..."
-  :to="{
-     path: '/post/edit',
-     params: post, // <-- changed 'props' to 'params'
-     query: { post: post.id },
-   }"
-   >Edit
-</router-link>
-or -->
-<!-- <router-link
-  class="..."
-  :to="{
-     name: 'DetailView',
-     params: { id: post.id }
-   }"
-   >Edit
-</router-link> --> 
       <CStorepreviewimage />
     </div>
   </b-card>
@@ -42,7 +22,6 @@ or -->
 
 <script>
 import CStorepreviewimage from "@/components/pembeli/repeatedcomponent/StorePreviewImage.vue";
-// import axios from "axios";
 
 export default {
   name: "CStorepreview",
@@ -50,32 +29,6 @@ export default {
   components: {
     CStorepreviewimage,
   },
-  // data() {
-  //   return {
-  //     products: [],
-  //   };
-  // },
-  // created() {
-  //   this.getProducts();
-  // },
-  // methods: {
-  //   getProducts() {
-  //     var config = {
-  //       method: "get",
-  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
-  //       headers: {
-  //         Cookie: `token=${localStorage.getItem("token")}`,
-  //       },
-  //     };
-  //     axios(config)
-  //       .then((response) => {
-  //         this.products = response.data.data;
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   },
-  // },
 };
 </script>
 

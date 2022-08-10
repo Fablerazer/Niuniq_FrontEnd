@@ -8,7 +8,7 @@
       <div class="embed-responsive embed-responsive-21by9 mb-20">
         <iframe
           class="embed-responsive-item"
-          src="https://www.youtube.com/embed/zpOULjyy-n8?rel=0"
+          :src="product.video"
           allowfullscreen
         ></iframe>
       </div>
@@ -19,6 +19,7 @@
 <script>
 export default {
   name: "CVideo",
+  props: ["product"],
 };
 </script>
 
