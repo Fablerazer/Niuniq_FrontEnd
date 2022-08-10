@@ -3,10 +3,10 @@
     <CNavbar />
     <div class="container">
       <CInfoproduksi />
-      <div v-for="product in products" :key="product._id">
-        <CCarousel :product="product" />
-        <CCard :product="product" />
-        <CVideo :product="product" />
+      <div>
+        <CCarousel :product="products" />
+        <CCard :product="products" />
+        <CVideo :product="products" />
       </div>
     </div>
   </div>
@@ -46,7 +46,8 @@ export default {
   },
   mounted() {
     axios
-      .get("https://niuniq.herokuapp.com/api/web/niuniq/products")
+      .get("https://niuniq.herokuapp.com/api/web/niuniq/search?product="+this.$route.params.id)
+      // .get("https://niuniq.herokuapp.com/api/web/niuniq/products/62f32e4628f0e9439c3adb31")
       .then((response) => this.setProducts(response.data.data))
       .catch((error) => console.log(error));
   },

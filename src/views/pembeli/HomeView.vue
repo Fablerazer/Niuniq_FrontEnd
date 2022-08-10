@@ -2,8 +2,8 @@
   <div>
     <CNavbar />
     <Qrcodeid />
-    <div v-for="product in products" :key="product._id" class="container">
-      <CStorepreview :product="product"/>
+    <div class="container">
+      <CStorepreview :product="products"/>
     </div>
   </div>
 </template>
@@ -39,10 +39,5 @@ export default {
       .then((response) => this.setProducts(response.data.data))
       .catch((error) => console.log(error));
   },
-  // computed: {
-  //  filteredItems: function () {
-  //    return this.items.slice(0, 10)
-  //    }
-  // }
 };
 </script>
