@@ -17,6 +17,7 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
+              value="ini nanti di benerin iqbal"
             />
           </div>
         </div>
@@ -38,10 +39,10 @@
               <div class="input-group mb-2">
                 <b-form-textarea
                   id="textarea"
-                  v-model="text"
                   placeholder="Masukkan nama produk"
                   rows="3"
                   max-rows="6"
+                  :value="product.name"
                 ></b-form-textarea>
               </div>
             </div>
@@ -52,10 +53,10 @@
               <div class="input-group mb-2">
                 <b-form-textarea
                   id="textarea"
-                  v-model="text"
                   placeholder="Masukkan deskripsi produk"
                   rows="3"
                   max-rows="6"
+                  :value="product.description"
                 ></b-form-textarea>
               </div>
             </div>
@@ -68,10 +69,10 @@
               <div class="input-group mb-2">
                 <b-form-textarea
                   id="textarea"
-                  v-model="text"
                   placeholder="Masukkan bahan baku produk"
                   rows="3"
                   max-rows="6"
+                  :value="product.rawMaterials"
                 ></b-form-textarea>
               </div>
             </div>
@@ -82,10 +83,10 @@
               <div class="input-group mb-2">
                 <b-form-textarea
                   id="textarea"
-                  v-model="text"
                   placeholder="Masukkan cara penyimpanan produk"
                   rows="3"
                   max-rows="6"
+                  :value="product.productStorage"
                 ></b-form-textarea>
               </div>
             </div>
@@ -99,6 +100,7 @@
 <script>
 export default {
   name: "CInputInfoDetail",
+  props: ["product"],
 };
 </script>
 

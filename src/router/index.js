@@ -46,9 +46,10 @@ const routes = [
     component: TentangViewPenjual,
   },
   {
-    path: "/inputprodukview",
+    path: "/inputprodukview/:id",
     name: "InputProdukView",
     component: InputProdukView,
+    props: true
   },
   {
     path: "/inputtokoview",

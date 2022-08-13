@@ -41,10 +41,10 @@
           <div class="input-group mb-2">
             <b-form-textarea
               id="textarea"
-              v-model="text"
               placeholder="Masukkan link video produk"
               rows="3"
               max-rows="6"
+              :value="product.video"
             ></b-form-textarea>
           </div>
         </div>
@@ -68,6 +68,7 @@ import VueUploadMultipleImage from "vue-upload-multiple-image";
 
 export default {
   name: "CInputDokProduk",
+  props: ["product"],
   components: {
     VueUploadMultipleImage,
   },

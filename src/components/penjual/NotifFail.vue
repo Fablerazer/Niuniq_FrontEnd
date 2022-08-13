@@ -3,7 +3,7 @@
     <div class="card-body">
       <div class="row">
         <div class="col-md-6">
-          <h2>Nama Produk</h2>
+          <h2>{{ product.name }}</h2>
         </div>
         <div class="col-mr-6">
           <button
@@ -25,12 +25,9 @@
           />
         </div>
         <div class="col">
-          <h5>Deskripsi produk</h5>
+          <h5>Deskripsi produk {{ product._id }}</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex
+            {{ product.description }}
           </p>
         </div>
       </div>
@@ -49,7 +46,7 @@
           sudah diberikan
         </p>
       </div>
-      <a href="/inputprodukview">
+      <a :href="'/inputprodukview/'+ product.productId" >
       <button
         type="button"
         class="btn btn-success btn-lg btn-block"
@@ -65,6 +62,7 @@
 <script>
 export default {
   name: "CNotifFail",
+  props: ["product"],
 };
 </script>
 

@@ -33,9 +33,12 @@
           <tbody>
             <tr
               style="background: white"
+            >
+            <!-- <tr
+              style="background: white"
               v-for="store in stores"
               :key="store._id"
-            >
+            > -->
               <td>
                 <img
                   class="img-table mr-2"
@@ -53,36 +56,41 @@
 </template>
 
 <script>
-import axios from "axios";
 
 export default {
   name: "CInfoproduksi",
-  data() {
-    return {
-      stores: [],
-    };
-  },
-  created() {
-    this.getStores();
-  },
-  methods: {
-    getStores() {
-      var config = {
-        method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/stores",
-        headers: {
-          Cookie: `token=${localStorage.getItem("token")}`,
-        },
-      };
-      axios(config)
-        .then((response) => {
-          this.stores = response.data.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  },
+  props: ["store"],
+  mounted(){
+            console.log(this.store);
+
+  }
+
+  // data() {
+  //   return {
+  //     stores: [],
+  //   };
+  // },
+  // created() {
+  //   this.getStores();
+  // },
+  // methods: {
+  //   getStores() {
+  //     var config = {
+  //       method: "get",
+  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/stores",
+  //       headers: {
+  //         Cookie: `token=${localStorage.getItem("token")}`,
+  //       },
+  //     };
+  //     axios(config)
+  //       .then((response) => {
+  //         this.stores = response.data.data;
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   },
+  // },
 };
 </script>
 

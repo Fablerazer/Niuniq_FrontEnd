@@ -16,7 +16,7 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan tahun produksi"
+              placeholder=""
               readonly
             />
           </div>
@@ -29,7 +29,8 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan tahun produksi"
+              placeholder=""
+              :value="user.noTelepon"
             />
           </div>
         </div>
@@ -59,7 +60,7 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan tahun produksi"
+              placeholder=""
             />
           </div>
         </div>
@@ -71,7 +72,7 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan tahun produksi"
+              placeholder=""
             />
             <div class="input-group-append">
               <button
@@ -92,7 +93,7 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan tahun produksi"
+              placeholder=""
             />
             <div class="input-group-append">
               <button
@@ -120,7 +121,7 @@
 <script>
 export default {
   name: "CPengaturan",
-
+  props: ["user"],
   data() {
     return {
       inputType: "password",

@@ -3,7 +3,7 @@
     <div class="card-body">
       <div class="row">
         <div class="col-md-6">
-          <h2>Nama Produk</h2>
+          <h2>{{ product.name }}</h2>
         </div>
         <div class="col-mr-6">
           <button
@@ -25,12 +25,9 @@
           />
         </div>
         <div class="col">
-          <h5>Deskripsi produk</h5>
+          <h5>Deskripsi produk {{ product.productId }}</h5>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-            aliquip ex
+            {{ product.description }}
           </p>
         </div>
       </div>
@@ -39,21 +36,12 @@
         <b-button
           id="show-btn"
           variant="link"
+          :href="product.qrCode"
+          target="_blank"
           style="color: #28a745"
           @click="$bvModal.show('bv-modal-example')"
           >Silahkan download hasil QRCode</b-button
         >
-        <b-modal id="bv-modal-example" hide-footer>
-          <div class="d-block text-center mt-2 mb-4">
-            <img
-              src="@/assets/img/popup-save.png"
-              alt="foto-produk"
-            />
-            <h6></h6>
-            <br />
-            <h4>QRCode berhasil di download</h4>
-          </div>
-        </b-modal>
       </div>
     </div>
   </div>
@@ -62,6 +50,10 @@
 <script>
 export default {
   name: "CNotifSuccess",
+  props: ["product"],
+  mounted (){
+    console.log(this.product);
+  }
 };
 </script>
 
