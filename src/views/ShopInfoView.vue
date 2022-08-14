@@ -35,7 +35,7 @@
     </div>
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Tahun Tercipta</span>
-      <span class="d-flex">{{ store.yearProduction }}</span>
+      <span class="d-flex">{{ store.yearEstabilished }}</span>
     </div>
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Link Shoope</span>
@@ -44,6 +44,10 @@
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Link Tokopedia</span>
       <span class="d-flex">{{ store.linkTokopedia }}</span>
+    </div>
+    <div class="mb-3">
+      <span class="text-success fw-bold d-flex">Link Tokopedia</span>
+      <span class="d-flex">{{ store.linkBlibli }}</span>
     </div>
   </div>
 </template>
