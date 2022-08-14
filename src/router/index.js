@@ -63,9 +63,10 @@ const routes = [
     component: LoginView,
   },
   {
-    path: "/notificationview",
+    path: "/notificationview/:id",
     name: "NotificationView",
     component: NotificationView,
+    props: true,
   },
   {
     path: "/registerview",

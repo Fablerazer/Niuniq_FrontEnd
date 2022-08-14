@@ -2,7 +2,7 @@
   <div>
     <CNavbar />
     <div class="container">
-      <CInfoproduksi :store="stores"/>
+      <CInfoproduksi :store="stores" :product="products"/>
       <div>
         <CCarousel :product="products" />
         <CCard :product="products" />
@@ -49,10 +49,10 @@ export default {
       .then((response) => {
         this.setProducts(response.data.data);
         console.log(response.data.data);
+        this.setStores(response.data.data.store);
         // axios
         // .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+response.data.data.store)
         // .then((response) => {
-        this.setStores(response.data.data.store);
       })
       .catch((error) => console.log(error));
     

@@ -8,10 +8,10 @@
         <div class="col-mr-6">
           <button
             type="button"
-            class="btn btn-success"
+            class="btn btn-warning"
             style="border-radius: 100px"
           >
-            Verifikasi produk berhasil
+            Menunggu verifikasi produk
           </button>
         </div>
       </div>
@@ -32,30 +32,14 @@
         </div>
       </div>
       <hr />
-      <div>
-        <b-button
-          id="show-btn"
-          variant="link"
-          :href="path + '/documents/images/QRcodes/' + product.qrCode"
-          target="_blank"
-          style="color: #28a745"
-          @click="$bvModal.show('bv-modal-example')"
-          >Silahkan download hasil QRCode</b-button
-        >
-      </div>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  name: "CNotifSuccess",
+  name: "CNotifWaiting",
   props: ["product"],
-  data() {
-  return {
-      path: 'https://niuniq.herokuapp.com',
-    };
-  },
   mounted (){
     console.log(this.product);
   }
