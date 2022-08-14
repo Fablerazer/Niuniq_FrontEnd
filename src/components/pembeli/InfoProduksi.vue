@@ -2,18 +2,29 @@
   <div class="container-fluid mt-4" style="padding-left: 0; padding-right: 0">
     <div class="card">
       <div class="card-body">
-        <h5 class="informasiproduk">Informasi Produksi {{$route.params.id}}</h5>
+        <h5 class="informasiproduk">
+          Informasi Produksi {{ $route.params.id }}
+        </h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk
           membuktikan bahwa produk tersebut asli.
         </p>
         <div class="mb-3">
-          <button type="button" class="btn btn-info btn-sm">
-            Kunjungi Shopee
-          </button>
-          <button type="button" class="btn btn-info ml-3 btn-sm">
-            Kunjungi Tokopedia
-          </button>
+          <a :href="path + store.linkShopee" target="_blank">
+            <button type="button" class="btn btn-info btn-sm">
+              Kunjungi Shopee
+            </button>
+          </a>
+          <a :href="path + store.linkTokopedia" target="_blank">
+            <button type="button" class="btn btn-info ml-3 btn-sm">
+              Kunjungi Tokopedia
+            </button>
+          </a>
+          <a :href="path + store.linkBlibli" target="_blank">
+            <button type="button" class="btn btn-info ml-3 btn-sm">
+              Kunjungi Blibli
+            </button>
+          </a>
         </div>
         <div class="mb-4">
           <img
@@ -31,9 +42,7 @@
             </tr>
           </thead>
           <tbody>
-            <tr
-              style="background: white"
-            >
+            <tr style="background: white">
               <td>
                 <img
                   class="img-table mr-2"
@@ -51,15 +60,17 @@
 </template>
 
 <script>
-
 export default {
   name: "CInfoproduksi",
-  // props: ["store"],
-    props: ["store","product"],
-  mounted(){
-            console.log(this.store);
-
-  }
+  props: ["store", "product"],
+    data() {
+  return {
+      path: '',
+    };
+  },
+  mounted() {
+    console.log(this.store);
+  },
 };
 </script>
 
