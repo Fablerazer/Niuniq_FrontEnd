@@ -53,55 +53,9 @@
 </template>
 
 <script>
-// import axios from "axios";
 
 export default {
   name: "ShopInfoView",
   props: ["store"],
-  // data() {
-  //   return {
-  //     stores: {},
-  //   };
-  // },
-  // methods: {
-  //   setStores(data) {
-  //     this.stores = data;
-  //   },
-  // },
-  // mounted() {
-  //   axios
-  //     .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+this.$route.params.id)
-  //     .then((response) => {
-  //       this.setStores(response.data.data);
-  //       console.log(response.data.data);
-  //     })
-  //     .catch((error) => console.log(error));
-  // },
-  // data() {
-  //   return {
-  //     stores: [],
-  //   };
-  // },
-  // created() {
-  //   this.getStores();
-  // },
-  // methods: {
-  //   getStores() {
-  //     var config = {
-  //       method: "get",
-  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/stores/"+this.$route.params.id,
-  //       headers: {
-  //         Cookie: `token=${localStorage.getItem("token")}`,
-  //       },
-  //     };
-  //     axios(config)
-  //       .then((response) => {
-  //         this.stores = response.data.data;
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   },
-  // },
 };
 </script>

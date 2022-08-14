@@ -75,12 +75,9 @@
       </b-carousel>
     </div>
     <div class="col-md-6" style="align-self: center">
-      <!-- <h4
-        class="informasiproduk"
-        v-for="product in products"
-        :key="product._id"
-      > -->
-      <h4>
+      <h4
+      class="informasiproduk"
+      >
         {{ product.name }}
       </h4>
       <hr />

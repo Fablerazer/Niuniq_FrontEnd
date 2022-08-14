@@ -13,7 +13,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import CNavbar from "@/components/bar/Navbar.vue";
 import CInfoproduksi from "@/components/pembeli/InfoProduksi.vue";
 import CCarousel from "@/components/pembeli/Carousel.vue";
@@ -58,26 +57,5 @@ export default {
       .catch((error) => console.log(error));
     
   },
-  // created() {
-  //   this.getProducts();
-  // },
-  // methods: {
-  //   getProducts() {
-  //     var config = {
-  //       method: "get",
-  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
-  //       headers: {
-  //         Cookie: `token=${localStorage.getItem("token")}`,
-  //       },
-  //     };
-  //     axios(config)
-  //       .then((response) => {
-  //         this.products = response.data.data;
-  //       })
-  //       .catch((error) => {
-  //         console.log(error);
-  //       });
-  //   },
-  // },
 };
 </script>
