@@ -10,7 +10,7 @@
     <hr />
     <img src="@/assets/img/shop-info.png" class="card-img-bottom mt-3 mb-3" />
     <div class="d-flex w-100 mb-3 align-items-center justify-content-between">
-      <div class="d-flex align-items-center" v-for="store in stores" :key="store._id">
+      <div class="d-flex align-items-center">
         <img
           src="@/assets/img/dummy-logo.svg"
           alt=""
@@ -28,20 +28,20 @@
       </button>
       </a>
     </div>
-    <div class="mb-3" v-for="store in stores" :key="store._id">
+    <div class="mb-3">
       <span class="text-success fw-bold d-flex">Alamat Toko</span>
       <span class="d-flex">{{ store.address }}</span>
 
     </div>
-    <div class="mb-3" v-for="store in stores" :key="store._id">
+    <div class="mb-3">
       <span class="text-success fw-bold d-flex">Tahun Tercipta</span>
       <span class="d-flex">{{ store.yearProduction }}</span>
     </div>
-    <div class="mb-3" v-for="store in stores" :key="store._id">
+    <div class="mb-3">
       <span class="text-success fw-bold d-flex">Link Shoope</span>
       <span class="d-flex">{{ store.linkShopee }}</span>
     </div>
-    <div class="mb-3" v-for="store in stores" :key="store._id">
+    <div class="mb-3">
       <span class="text-success fw-bold d-flex">Link Tokopedia</span>
       <span class="d-flex">{{ store.linkTokopedia }}</span>
     </div>
@@ -49,35 +49,55 @@
 </template>
 
 <script>
-import axios from "axios";
+// import axios from "axios";
 
 export default {
   name: "ShopInfoView",
-  data() {
-    return {
-      stores: [],
-    };
-  },
-  created() {
-    this.getStores();
-  },
-  methods: {
-    getStores() {
-      var config = {
-        method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/stores",
-        headers: {
-          Cookie: `token=${localStorage.getItem("token")}`,
-        },
-      };
-      axios(config)
-        .then((response) => {
-          this.stores = response.data.data;
-        })
-        .catch((error) => {
-          console.log(error);
-        });
-    },
-  },
+  props: ["store"],
+  // data() {
+  //   return {
+  //     stores: {},
+  //   };
+  // },
+  // methods: {
+  //   setStores(data) {
+  //     this.stores = data;
+  //   },
+  // },
+  // mounted() {
+  //   axios
+  //     .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+this.$route.params.id)
+  //     .then((response) => {
+  //       this.setStores(response.data.data);
+  //       console.log(response.data.data);
+  //     })
+  //     .catch((error) => console.log(error));
+  // },
+  // data() {
+  //   return {
+  //     stores: [],
+  //   };
+  // },
+  // created() {
+  //   this.getStores();
+  // },
+  // methods: {
+  //   getStores() {
+  //     var config = {
+  //       method: "get",
+  //       url: "https://niuniq.herokuapp.com/api/web/niuniq/stores/"+this.$route.params.id,
+  //       headers: {
+  //         Cookie: `token=${localStorage.getItem("token")}`,
+  //       },
+  //     };
+  //     axios(config)
+  //       .then((response) => {
+  //         this.stores = response.data.data;
+  //       })
+  //       .catch((error) => {
+  //         console.log(error);
+  //       });
+  //   },
+  // },
 };
 </script>

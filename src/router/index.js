@@ -31,9 +31,10 @@ const routes = [
     props: true
   },
   {
-    path: "/pengaturanview",
+    path: "/pengaturanview/:id",
     name: "PengaturanView",
     component: PengaturanView,
+    props: true
   },
   {
     path: "/tentangview",
@@ -78,12 +79,13 @@ const routes = [
     props: true
   },
   {
-    path: "/profileview",
+    path: "/profileview/:id",
     name: "ProfileView",
     component: ProfileView,
+    props: true
   },
   {
-    path: "/shop-info",
+    path: "/shop-info/:id",
     name: "ShopInfo",
     component: ShopInfo,
   },

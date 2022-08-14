@@ -35,7 +35,7 @@
         style="width: 85%; margin-left: 15% !important"
       >
         <!-- <router-view /> -->
-        <shop-info class="mb-4" />
+        <shop-info class="mb-4" :store="stores"/>
         <dashboard class="mb-4" />
         <product-list />
       </div>
@@ -48,6 +48,7 @@ import BtnSideBar from "@/components/button/BtnSideBar.vue";
 import Dashboard from "@/views/DashboardView.vue";
 import ProductList from "@/views/ProductListView.vue";
 import ShopInfo from "@/views/ShopInfoView.vue";
+import axios from "axios";
 
 export default {
   name: "SideBar",
@@ -61,7 +62,22 @@ export default {
     return {
       menus: ["Informasi Toko", "Dashboard", "Daftar Produk"],
       route: ["shop-info", "dashboard", "product-list"],
+      stores: {},
     };
+  },
+  methods: {
+    setStores(data) {
+      this.stores = data;
+    },
+  },
+  mounted() {
+    axios
+      .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+this.$route.params.id)
+      .then((response) => {
+        this.setStores(response.data.data);
+        console.log(response.data.data);
+      })
+      .catch((error) => console.log(error));
   },
 };
 </script>

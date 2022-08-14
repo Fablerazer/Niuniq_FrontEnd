@@ -18,6 +18,7 @@
               aria-describedby="teleponHelp"
               placeholder=""
               readonly
+              :value="user.email"
             />
           </div>
         </div>
@@ -60,7 +61,7 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder=""
+              value="you've been bamboozled"
             />
           </div>
         </div>
@@ -72,7 +73,6 @@
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder=""
             />
             <div class="input-group-append">
               <button
