@@ -10,7 +10,7 @@
       >
       <hr />
       <div class="btn-add-product-wrapper">
-        <a href="/inputprodukview">
+        <a :href="'/inputprodukview/' + this.$route.params.id">
           <button
             type="button"
             class="btn-add-product btn btn-success text-white fw-bold"
@@ -59,29 +59,39 @@
                 </td>
                 <td class="d-flex">
                   <div class="btn-action-wrapper">
-                    <button
-                      type="button"
-                      class="btn-action-main btn btn-success"
+                    <a
+                      :href="
+                        path + '/documents/images/QRcodes/' + product.qrCode
+                      "
+                      target="_blank"
                     >
-                      <img
-                        src="@/assets/img/ic-file-download.svg"
-                        alt=""
-                        class="d-inline-block align-text-top"
-                      />
-                    </button>
+                      <button
+                        type="button"
+                        class="btn-action-main btn btn-success"
+                      >
+                        <img
+                          src="@/assets/img/ic-file-download.svg"
+                          alt=""
+                          class="d-inline-block align-text-top"
+                        />
+                      </button>
+                    </a>
                   </div>
                   <div class="btn-action-wrapper">
-                    <a href="/inputprodukview">
-                    <button
-                      type="button"
-                      class="btn-action btn btn-outline-success"
+                    <a
+                      :href="'/inputprodukview/' + product.productId"
+                      target="_blank"
                     >
-                      <img
-                        src="@/assets/img/ic-edit-green.svg"
-                        alt=""
-                        class="d-inline-block align-text-top"
-                      />
-                    </button>
+                      <button
+                        type="button"
+                        class="btn-action btn btn-outline-success"
+                      >
+                        <img
+                          src="@/assets/img/ic-edit-green.svg"
+                          alt=""
+                          class="d-inline-block align-text-top"
+                        />
+                      </button>
                     </a>
                   </div>
                   <div class="btn-action-wrapper">
@@ -97,17 +107,20 @@
                     </button>
                   </div>
                   <div class="btn-action-wrapper">
-                    <a href="/detailview">
-                    <button
-                      type="button"
-                      class="btn-action btn btn-outline-success"
+                    <a
+                      :href="'/detailview/' + product.productId"
+                      target="_blank"
                     >
-                      <img
-                        src="@/assets/img/ic-eye-green.svg"
-                        alt=""
-                        class="d-inline-block align-text-top"
-                      />
-                    </button>
+                      <button
+                        type="button"
+                        class="btn-action btn btn-outline-success"
+                      >
+                        <img
+                          src="@/assets/img/ic-eye-green.svg"
+                          alt=""
+                          class="d-inline-block align-text-top"
+                        />
+                      </button>
                     </a>
                   </div>
                 </td>
@@ -473,6 +486,7 @@ export default {
     return {
       productList: [],
       data: {},
+      path: "https://niuniq.herokuapp.com",
     };
   },
   created() {

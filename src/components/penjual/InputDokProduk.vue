@@ -44,6 +44,7 @@
               rows="3"
               max-rows="6"
               :value="product.video"
+              v-model="simpan.video"
             ></b-form-textarea>
           </div>
         </div>
@@ -55,6 +56,7 @@
         type="button"
         class="btn btn-success btn-lg btn-block"
         style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+        @click="simpan"
       >
         Simpan
       </button>
@@ -63,6 +65,7 @@
 </template>
 
 <script>
+import axios from 'axios';
 import VueUploadMultipleImage from "vue-upload-multiple-image";
 
 export default {
@@ -72,6 +75,15 @@ export default {
     VueUploadMultipleImage,
   },
   methods: {
+    simpan() {
+      this.simpan.products = this.product;
+      axios
+      .post("https://niuniq.herokuapp.com/api/web/niuniq/stores/" +this.$route.params.id + "/products", this.simpan)
+      .then(() => {
+        console.log("Berhasil");
+      })
+      .catch((err) => console.log(err))
+    },
     uploadImageSuccess(formData, index, fileList) {
       console.log("upload success data ", formData, index, fileList);
     },
