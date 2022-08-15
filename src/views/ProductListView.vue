@@ -94,10 +94,12 @@
                       </button>
                     </a>
                   </div>
+                  <!-- Delete Button -->
                   <div class="btn-action-wrapper">
                     <button
                       type="button"
                       class="btn-action btn btn-outline-success"
+                      @click="deleteProduct"
                     >
                       <img
                         src="@/assets/img/ic-delete-green.svg"
@@ -494,6 +496,19 @@ export default {
     this.getData();
   },
   methods: {
+    deleteProduct() {
+      axios
+        .delete(
+          "https://niuniq.herokuapp.com/api/web/niuniq/product/" +
+            this.$route.params.id
+        )
+        .then((response) => {
+          console.log(response);
+        })
+        .catch((error) => {
+          console.error("There was an error!", error);
+        });
+    },
     getProducts() {
       var config = {
         method: "get",
