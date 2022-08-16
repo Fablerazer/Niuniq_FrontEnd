@@ -4,7 +4,7 @@
       <h3 class="lognreg">Masuk</h3>
     </div>
     <div>
-      <form>
+      <form @submit.prevent="handleSubmit">
         <div class="form-group">
           <label for="exampleInputEmail1">Email</label>
           <div class="input-group mb-2">
@@ -17,6 +17,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Masukkan email anda"
+              v-model="email"
             />
           </div>
         </div>
@@ -31,6 +32,7 @@
               class="form-control"
               id="exampleInputPassword1"
               placeholder="Masukkan kata sandi anda"
+              v-model="password"
             />
           </div>
           <a href="#" class="card-link">Lupa kata sandi?</a>
@@ -38,7 +40,9 @@
       </form>
       <div>
         <a href="/profileview">
-          <button type="submit" class="btn btn-info">Masuk</button>
+          <button v-on:click="login" type="submit" class="btn btn-info">
+            Masuk
+          </button>
         </a>
         <hr />
         <a href="/profileview">
@@ -56,8 +60,33 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CLogin",
+  data() {
+    return {
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    async handleSubmit() {
+      await axios.post("https://niuniq.herokuapp.com/api/web/niuniq/auth/login", {
+        email: this.email,
+        password: this.password,
+      });
+
+      console.log(response);
+      localStorage.setItem("token", response.data.token);
+    },
+    // login(){
+    //   let result = axios.get(
+
+    //   )
+    //   console.warn()
+    // }
+  },
 };
 </script>
 

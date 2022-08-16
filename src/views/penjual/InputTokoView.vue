@@ -19,6 +19,13 @@ export default {
     CInputToko,
     CNavbarPenjual,
   },
+  mounted(){
+    let user = localStorage.getItem('user-info');
+    if(!user)
+    {
+      this.$router.push({name:'RegisterView'})
+    }
+  }
 };
 </script>
 

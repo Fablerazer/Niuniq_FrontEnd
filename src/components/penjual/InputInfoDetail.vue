@@ -161,6 +161,7 @@
           style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
           @click="createProduct"
         >
+        <!-- v:on:click="createProduct" -->
           Simpan
         </button>
       <!-- </a> -->

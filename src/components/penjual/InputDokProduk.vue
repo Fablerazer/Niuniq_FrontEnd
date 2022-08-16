@@ -1,4 +1,4 @@
-<template>
+<!-- <template>
   <div>
     <br />
     <div class="card" style="width: 100%; height: 75%">
@@ -107,4 +107,4 @@ export default {
 };
 </script>
 
-<style></style>
+<style></style> -->

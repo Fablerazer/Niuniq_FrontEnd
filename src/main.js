@@ -3,6 +3,7 @@ import App from "./App.vue";
 import router from "./router";
 import { BootstrapVue, BootstrapVueIcons } from "bootstrap-vue";
 import vueScrollto from 'vue-scrollto';
+import './axios';
 // import axios from "axios";
 
 import "bootstrap/dist/css/bootstrap.css";

@@ -20,6 +20,7 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan no telepon anda"
+              v-model="noTelepon"
             />
           </div>
         </div>
@@ -35,6 +36,7 @@
               id="exampleInputEmail1"
               aria-describedby="emailHelp"
               placeholder="Masukkan email anda"
+              v-model="email"
             />
           </div>
         </div>
@@ -49,14 +51,17 @@
               class="form-control"
               id="exampleInputPassword1"
               placeholder="Masukkan kata sandi anda"
+              v-model="password"
             />
           </div>
         </div>
       </form>
       <div>
-        <a href="/inputtokoview">
-          <button type="submit" class="btn btn-info">Daftar</button>
-        </a>
+        <!-- <a href="/inputtokoview"> -->
+        <button type="submit" class="btn btn-info" v-on:click="register">
+          Daftar
+        </button>
+        <!-- </a> -->
         <hr />
         <a href="/">
           <button type="button" class="btn btn-outline-info">
@@ -73,8 +78,45 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CRegister",
+  data() {
+    return {
+      noTelepon: "",
+      email: "",
+      password: "",
+    };
+  },
+  methods: {
+    async register() {
+      let result = await axios.post(
+        "https://niuniq.herokuapp.com/api/web/niuniq/auth/register",
+        {
+          email: this.email,
+          password: this.password,
+          noTelepon: this.noTelepon,
+        }
+      );
+
+      console.warn(result);
+      // if(result.status==201)
+      if (result.status == 200) {
+        alert("register done");
+        // tanya ini JSON, 201 && 200 differenciation, yang keluar malah token
+        // https://www.youtube.com/watch?v=l-9S3GtVxr8&list=PL8p2I9GklV44Dq6kuEXSvT-EeBH1TDElH&index=48&ab_channel=CodeStepByStep
+        localStorage.setItem("user-info", JSON.stringify(result.data));
+        this.$router.push({ name: "InputTokoView" });
+      }
+    },
+  },
+  mounted() {
+    let user = localStorage.getItem("user-info");
+    if (user) {
+      this.$router.push({ name: "InputTokoView" });
+    }
+  },
 };
 </script>
 
