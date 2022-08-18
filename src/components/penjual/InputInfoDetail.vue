@@ -17,7 +17,8 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
-              v-model="yearProduction"
+              :value="product.yearProduction"
+              @input="yearProduction = $event.target.value"
             />
             <!-- v-model="product.yearProduction" -->
           </div>
@@ -44,8 +45,9 @@
                   rows="3"
                   max-rows="6"
                   :value="product.name"
-                  v-model="name"
+                  @input="name = $event.target.value"
                 ></b-form-textarea>
+                <!-- :value="product.name" @input="name = $event.target.value" -->
                 <!-- v-model="product.name" -->
               </div>
             </div>
@@ -60,7 +62,7 @@
                   rows="3"
                   max-rows="6"
                   :value="product.description"
-                  v-model="description"
+                  @input="description = $event.target.value"
                 ></b-form-textarea>
               </div>
             </div>
@@ -77,7 +79,7 @@
                   rows="3"
                   max-rows="6"
                   :value="product.rawMaterials"
-                  v-model="rawMaterials"
+                  @input="rawMaterials = $event.target.value"
                 ></b-form-textarea>
               </div>
             </div>
@@ -92,7 +94,7 @@
                   rows="3"
                   max-rows="6"
                   :value="product.productStorage"
-                  v-model="productStorage"
+                  @input="productStorage = $event.target.value"
                 ></b-form-textarea>
               </div>
             </div>
@@ -147,7 +149,7 @@
                   rows="3"
                   max-rows="6"
                   :value="product.video"
-                  v-model="video"
+                  @input="video = $event.target.value"
                 ></b-form-textarea>
               </div>
             </div>
@@ -158,7 +160,7 @@
           type="button"
           class="btn btn-success btn-lg btn-block"
           style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
-          @click="createProduct"
+          @click="onSubmit"
         >
           Simpan
         </button>
@@ -173,7 +175,7 @@ import axios from "axios";
 
 export default {
   name: "CInputInfoDetail",
-  props: ["product"],
+  props: ["product", "isEdit"],
   data() {
     return {
       selectedFiles: undefined,
@@ -201,8 +203,7 @@ export default {
       }
     },
 
-    createProduct() {
-      console.log(this.selectedFiles);
+    onSubmit() {
       let formData = new FormData();
       for (var i = 0; i < this.selectedFiles.length; i++) {
         let file = this.selectedFiles[i];
@@ -215,23 +216,42 @@ export default {
       formData.append("description", this.description);
       formData.append("name", this.name);
       formData.append("yearProduction", this.yearProduction);
-
-      axios
-        .post(
-          "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
-            this.$route.params.id +
-            "/products",
-          formData,
-          {
-            headers: {
-              "Content-Type": "multipart/form-data",
-            },
-          }
-        )
-        .then((response) => console.log(response))
-        .catch((error) => {
-          console.error("There was an error!", error);
-        });
+      if (this.isEdit) {
+        console.log("this is edit");
+        axios
+          .put(
+            "https://niuniq.herokuapp.com/api/web/niuniq/products/" +
+              this.product._id,
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          )
+          .then((response) => console.log(response))
+          .catch((error) => {
+            console.error("There was an error!", error);
+          });
+      } else {
+        console.log(this.selectedFiles);
+        axios
+          .post(
+            "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
+              this.$route.params.id +
+              "/products",
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          )
+          .then((response) => console.log(response))
+          .catch((error) => {
+            console.error("There was an error!", error);
+          });
+      }
     },
     // simpan() {
     //   this.simpan.products = this.product;
@@ -244,6 +264,7 @@ export default {
     // },
   },
   mounted() {
+    // this.name=this.product.name
   },
 };
 </script>

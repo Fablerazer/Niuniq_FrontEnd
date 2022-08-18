@@ -4,7 +4,7 @@
     <div class="flex-row" style="background-color: #f9f9f9">
       <SideBarInputProduk />
       <div class="container" style="padding-left: 180px;">
-        <CInputInfoDetail :product="products"/>
+        <CInputInfoDetail :product="products" :isEdit="isEdit"/>
         <!-- <CInputDokProduk :product="products"/> -->
       </div>
     </div>
@@ -29,11 +29,15 @@ export default {
   data() {
     return {
       products: [],
+      isEdit: false,
     };
   },
   methods: {
     setProducts(data) {
       this.products = data;
+    },
+    setIsEdit(data) {
+      this.isEdit = data;
     },
   },
   mounted() {
@@ -41,6 +45,7 @@ export default {
       .get("https://niuniq.herokuapp.com/api/web/niuniq/search?product="+this.$route.params.id)
       .then((response) => {
         this.setProducts(response.data.data);
+        this.setIsEdit(response.data.success);
         console.log(response.data.data);
       })
       .catch((error) => console.log(error));
