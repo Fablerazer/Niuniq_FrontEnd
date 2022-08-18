@@ -113,29 +113,6 @@
           <hr />
           <h5 class="informasiproduk">Foto Produk</h5>
           <div>
-            <!-- <vue-upload-multiple-image
-              @upload-success="uploadImageSuccess"
-              @before-remove="beforeRemove"
-              @mark-is-primary="markIsPrimary"
-              @limit-exceeded="limitExceeded"
-              @edit-image="editImage"
-              :data-images="images"
-              idUpload="myIdUpload"
-              idEdit="myIdEdit"
-              maxImage="5"
-              editUpload="myIdEdit"
-              primaryText="Default"
-              browseText="Browse picture(s)"
-              markIsPrimaryText="Set image as default"
-              dragText="Drag multiple pictures"
-              dropText="Drop your file here"
-              popupText="This image will be displayed as default"
-              multiple="true"
-              showEdit="true"
-              showDelete="true"
-              showAdd="true"
-              v-model="images"
-            ></vue-upload-multiple-image> -->
             <div v-if="progressInfos">
               <div
                 class="mb-2"
@@ -159,32 +136,6 @@
               <label class="btn btn-default">
                 <input type="file" multiple @change="selectFile" />
               </label>
-              <button
-                class="btn btn-success"
-                :disabled="!selectedFiles"
-                @click="uploadFiles"
-              >
-                Upload
-              </button>
-              <div v-if="message" class="alert alert-light" role="alert">
-                <ul>
-                  <li v-for="(ms, i) in message.split('\n')" :key="i">
-                    {{ ms }}
-                  </li>
-                </ul>
-              </div>
-              <div class="card">
-                <div class="card-header">List of Files</div>
-                <ul class="list-group list-group-flush">
-                  <li
-                    class="list-group-item"
-                    v-for="(file, index) in fileInfos"
-                    :key="index"
-                  >
-                    <a :href="file.url">{{ file.name }}</a>
-                  </li>
-                </ul>
-              </div>
             </div>
             <hr />
             <h5 class="informasiproduk">Video Produk</h5>
@@ -203,14 +154,12 @@
           </div>
         </div>
         <br />
-        <!-- <a href="/notificationview"> -->
         <button
           type="button"
           class="btn btn-success btn-lg btn-block"
           style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
           @click="createProduct"
         >
-          <!-- v:on:click="createProduct" -->
           Simpan
         </button>
         <!-- </a> -->
@@ -220,7 +169,6 @@
 </template>
 
 <script>
-// import UploadService from "@/services/UploadFilesService";
 import axios from "axios";
 
 export default {
@@ -232,8 +180,6 @@ export default {
       progressInfos: [],
       message: "",
       fileInfos: [],
-
-      // contoh
       video: "",
       productStorage: "",
       rawMaterials: "",
@@ -241,7 +187,6 @@ export default {
       name: "",
       images: [],
       yearProduction: "",
-      // formData: new FormData(),
     };
   },
   methods: {
@@ -258,14 +203,9 @@ export default {
 
     createProduct() {
       console.log(this.selectedFiles);
-      // let image = JSON.stringify(Object.fromEntries(this.images));
       let formData = new FormData();
-      // console.log(image);
       for (var i = 0; i < this.selectedFiles.length; i++) {
         let file = this.selectedFiles[i];
-        // var blob = new Blob([JSON.stringify(file, null, 2)], {
-        //   type: "application/json;charset=utf-8",
-        // }).slice(2, -1);
         console.log(typeof file);
         formData.append("images", file);
       }
@@ -302,36 +242,8 @@ export default {
     //   })
     //   .catch((err) => console.log(err))
     // },
-    // uploadImageSuccess(formData, index, fileList) {
-    //   // this.images.push(formData);
-    //   // this.images = fileList;
-    //   this.formData = formData;
-    //   console.log("upload success data ", formData, index, fileList);
-    // },
-    // beforeRemove(index, removeCallBack) {
-    //   console.log("index", index);
-    //   var r = confirm("Do you really want to remove the image?");
-    //   if (r == true) {
-    //     removeCallBack();
-    //   }
-    // },
-    // editImage(formData, index, fileList) {
-    //   console.log("edit data", formData, index, fileList);
-    // },
-    // markIsPrimary(index, fileList) {
-    //   console.log("markIsPrimary data", index, fileList);
-    // },
-    // limitExceeded(amount) {
-    //   console.log("limitExceeded data", amount);
-    // },
   },
-  // mounted() {
-  //   this.images = [],
-  // },
   mounted() {
-    // UploadService.getFiles().then((response) => {
-    //   this.fileInfos = response.data;
-    // });
   },
 };
 </script>
