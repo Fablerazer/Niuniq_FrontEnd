@@ -37,13 +37,14 @@
           </div>
           <a href="#" class="card-link">Lupa kata sandi?</a>
         </div>
+        <!-- <a href="/profileview"> -->
+        <button class="btn btn-info">Masuk</button>
+        <!-- <button v-on:click="login" type="submit" class="btn btn-info">
+          Masuk
+        </button> -->
+        <!-- </a> -->
       </form>
       <div>
-        <a href="/profileview">
-          <button v-on:click="login" type="submit" class="btn btn-info">
-            Masuk
-          </button>
-        </a>
         <hr />
         <a href="/profileview">
           <button type="button" class="btn btn-outline-info">
@@ -72,13 +73,16 @@ export default {
   },
   methods: {
     async handleSubmit() {
-      await axios.post("https://niuniq.herokuapp.com/api/web/niuniq/auth/login", {
-        email: this.email,
-        password: this.password,
-      });
+      const response = await axios.post(
+        "https://niuniq.herokuapp.com/api/web/niuniq/auth/login",
+        {
+          email: this.email,
+          password: this.password,
+        }
+      );
 
       console.log(response);
-      localStorage.setItem("token", response.data.token);
+      // localStorage.setItem("token", response.data.token);
     },
     // login(){
     //   let result = axios.get(

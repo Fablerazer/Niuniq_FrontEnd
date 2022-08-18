@@ -58,6 +58,7 @@
                   <Status :verification-status="product.isVerification" />
                 </td>
                 <td class="d-flex">
+                  <!-- Download Button -->
                   <div class="btn-action-wrapper">
                     <a
                       :href="
@@ -77,6 +78,7 @@
                       </button>
                     </a>
                   </div>
+                  <!-- Edit Button -->
                   <div class="btn-action-wrapper">
                     <a
                       :href="'/inputprodukview/' + product.productId"
@@ -99,7 +101,7 @@
                     <button
                       type="button"
                       class="btn-action btn btn-outline-success"
-                      @click="deleteProduct"
+                      @click="deleteProduct(product._id)"
                     >
                       <img
                         src="@/assets/img/ic-delete-green.svg"
@@ -108,6 +110,7 @@
                       />
                     </button>
                   </div>
+                  <!-- View Button -->
                   <div class="btn-action-wrapper">
                     <a
                       :href="'/detailview/' + product.productId"
@@ -496,14 +499,15 @@ export default {
     this.getData();
   },
   methods: {
-    deleteProduct() {
+    deleteProduct(id) {
       axios
         .delete(
-          "https://niuniq.herokuapp.com/api/web/niuniq/product/" +
-            this.$route.params.id
+          "https://niuniq.herokuapp.com/api/web/niuniq/products/" +
+            id
         )
         .then((response) => {
           console.log(response);
+          
         })
         .catch((error) => {
           console.error("There was an error!", error);
