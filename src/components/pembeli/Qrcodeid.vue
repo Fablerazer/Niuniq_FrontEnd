@@ -65,6 +65,39 @@
             alt="image slot"
           />
         </template>
+        <div class="container" style="width: 80%; height: 70vh">
+          <div style="align-self: center">
+            <h1 style="text-align: center">
+              Lihat detail produk dengan memasukkan ID QRCode
+            </h1>
+            <p style="text-align: center">
+              Masukan ID QRCode untuk mendapatkan detail produk
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Masukkan ID produk"
+                        v-model="search"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <router-link :to="'/detailview/'+this.search">
+                      <button type="submit" class="btn btn-info">Cari</button>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
@@ -76,6 +109,39 @@
             alt="image slot"
           />
         </template>
+        <div class="container" style="width: 80%; height: 70vh">
+          <div style="align-self: center">
+            <h1 style="text-align: center">
+              Lihat detail produk dengan memasukkan ID QRCode
+            </h1>
+            <p style="text-align: center">
+              Masukan ID QRCode untuk mendapatkan detail produk
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Masukkan ID produk"
+                        v-model="search"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <router-link :to="'/detailview/'+this.search">
+                      <button type="submit" class="btn btn-info">Cari</button>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
@@ -87,6 +153,39 @@
             alt="image slot"
           />
         </template>
+        <div class="container" style="width: 80%; height: 70vh">
+          <div style="align-self: center">
+            <h1 style="text-align: center">
+              Lihat detail produk dengan memasukkan ID QRCode
+            </h1>
+            <p style="text-align: center">
+              Masukan ID QRCode untuk mendapatkan detail produk
+            </p>
+            <div class="card">
+              <div class="card-body">
+                <div class="row">
+                  <div class="col-md-9">
+                    <div class="form-group">
+                      <input
+                        type="text"
+                        class="form-control"
+                        id="exampleInputEmail1"
+                        aria-describedby="emailHelp"
+                        placeholder="Masukkan ID produk"
+                        v-model="search"
+                      />
+                    </div>
+                  </div>
+                  <div class="col-md-3">
+                    <router-link :to="'/detailview/'+this.search">
+                      <button type="submit" class="btn btn-info">Cari</button>
+                    </router-link>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </b-carousel-slide>
     </b-carousel>
   </div>
