@@ -17,10 +17,12 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan tahun produksi"
-              :value="product.yearProduction"
-              @input="yearProduction = $event.target.value"
+              v-model="yearProduction"
             />
+                          <!-- :value="product.yearProduction.toString()" -->
+              <!-- :value="product.yearProduction" -->
             <!-- v-model="product.yearProduction" -->
+            <!-- @input="yearProduction = $event.target.value" -->
           </div>
         </div>
       </div>
@@ -45,10 +47,11 @@
                   rows="3"
                   max-rows="6"
                   :value="product.name"
-                  @input="name = $event.target.value"
+                  v-model="name"
                 ></b-form-textarea>
                 <!-- :value="product.name" @input="name = $event.target.value" -->
                 <!-- v-model="product.name" -->
+                <!-- @input="name = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -62,8 +65,9 @@
                   rows="3"
                   max-rows="6"
                   :value="product.description"
-                  @input="description = $event.target.value"
+                  v-model="description"
                 ></b-form-textarea>
+                <!-- @input="description = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -79,8 +83,9 @@
                   rows="3"
                   max-rows="6"
                   :value="product.rawMaterials"
-                  @input="rawMaterials = $event.target.value"
+                  v-model="rawMaterials"
                 ></b-form-textarea>
+                  <!-- @input="rawMaterials = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -94,8 +99,9 @@
                   rows="3"
                   max-rows="6"
                   :value="product.productStorage"
-                  @input="productStorage = $event.target.value"
+                  v-model="productStorage"
                 ></b-form-textarea>
+                  <!-- @input="productStorage = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -149,8 +155,9 @@
                   rows="3"
                   max-rows="6"
                   :value="product.video"
-                  @input="video = $event.target.value"
+                  v-model="video"
                 ></b-form-textarea>
+                  <!-- @input="video = $event.target.value" -->
               </div>
             </div>
           </div>

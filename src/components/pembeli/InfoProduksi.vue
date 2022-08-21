@@ -65,7 +65,7 @@ export default {
   props: ["store", "product"],
     data() {
   return {
-      path: '',
+      path: 'https://',
     };
   },
   mounted() {
