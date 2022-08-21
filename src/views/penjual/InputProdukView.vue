@@ -5,7 +5,6 @@
       <SideBarInputProduk />
       <div class="container" style="padding-left: 180px;">
         <CInputInfoDetail :product="products" :isEdit="isEdit"/>
-        <!-- <CInputDokProduk :product="products"/> -->
       </div>
     </div>
   </div>
@@ -14,7 +13,6 @@
 <script>
 import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 import CInputInfoDetail from "@/components/penjual/InputInfoDetail.vue";
-// import CInputDokProduk from "@/components/penjual/InputDokProduk.vue";
 import SideBarInputProduk from "@/components/bar/SideBarInputProduk.vue";
 import axios from "axios";
 
@@ -23,7 +21,6 @@ export default {
   components: {
     CNavbarPenjual,
     CInputInfoDetail,
-    // CInputDokProduk,
     SideBarInputProduk
   },
   data() {

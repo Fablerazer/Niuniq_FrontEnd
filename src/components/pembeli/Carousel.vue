@@ -25,7 +25,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              src="@/assets/img/picture1.png"
+              :src=" path + '/documents/images/products/' + product.photos[0]"
               alt="image slot"
             />
           </template>
@@ -39,7 +39,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              src="@/assets/img/produk-2.png"
+              :src=" path + '/documents/images/products/' + product.photos[1]"
               alt="image slot"
             />
           </template>
@@ -53,7 +53,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              src="@/assets/img/produk-3.png"
+              :src=" path + '/documents/images/products/' + product.photos[2]"
               alt="image slot"
             />
           </template>
@@ -67,7 +67,21 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              src="@/assets/img/produk-1.png"
+              :src=" path + '/documents/images/products/' + product.photos[3]"
+              alt="image slot"
+            />
+          </template>
+        </b-carousel-slide>
+
+        <!-- Slides with img slot -->
+        <b-carousel-slide style="border-radius: 9px">
+          <template #img>
+            <img
+              class="w-100"
+              width="608"
+              height="525"
+              style="border-radius: 9px"
+              :src=" path + '/documents/images/products/' + product.photos[4]"
               alt="image slot"
             />
           </template>
@@ -94,6 +108,11 @@
 export default {
   name: "CCarousel",
   props: ["product"],
+  data() {
+  return {
+      path: 'https://niuniq.herokuapp.com',
+    };
+  },
 };
 </script>
 

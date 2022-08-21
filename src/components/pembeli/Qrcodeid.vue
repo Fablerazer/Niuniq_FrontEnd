@@ -108,19 +108,6 @@ export default {
     this.getProducts();
   },
   methods: {
-  //  searchProducts() {
-  //     let result = axios.get(
-  //         'https://niuniq.herokuapp.com/api/web/niuniq/search?product='+this.search
-  //       )
-
-  //       if(result.status==200 && result.data.length>0)
-  //       {
-  //         // localStorage.setItem("user-info",JSON.stringify(result.data[0]))
-  //         // this.$router.push({path:'/detailview', query: {id: search}})
-  //         this.$router.push({name:'DetailView'})
-  //       }
-  //       console.warn(result)
-  //   },
     getProducts() {
       var config = {
         method: "get",

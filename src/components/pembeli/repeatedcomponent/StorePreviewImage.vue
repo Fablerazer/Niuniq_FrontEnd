@@ -2,9 +2,7 @@
   <div class="row mt-4">
         <div v-for="product in filteredProducts" :key="product._id" class="col-md-4">
           <router-link :to="{ name:'DetailView', params: { id: product.productId }}">
-            <!-- <h3>{{ product.photos[0] }}</h3> -->
             <img :src=" path + '/documents/images/products/' + product.photos[0]" class="rounded img-fluid" :alt="'picture'" />
-            <!-- <img :src="product.photos[0]" class="rounded img-fluid" :alt="'picture'" /> -->
           </router-link>
         </div>
       </div>
