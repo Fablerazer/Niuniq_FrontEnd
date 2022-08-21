@@ -38,10 +38,10 @@
             <template #button-content>
               <b-icon-person-circle style="color: #4e944f" />
             </template>
-            <b-dropdown-item href="/profileview"
+            <b-dropdown-item :href="'/profileview/'+ this.$route.params.id"
               ><b-icon-person-fill /> Profil Saya</b-dropdown-item
             >
-            <b-dropdown-item href="/pengaturanview"
+            <b-dropdown-item :href="'/pengaturanview/'+ this.$route.params.id"
               ><b-icon-gear-fill /> Pengaturan</b-dropdown-item
             >
             <hr />
