@@ -22,7 +22,7 @@
           >
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" to="/notificationview"
+          <router-link class="nav-link" :to="'/notificationview/'+ this.$route.params.id" 
             ><b-icon-bell
           /></router-link>
         </li>
