@@ -46,9 +46,9 @@
                   placeholder="Masukkan nama produk"
                   rows="3"
                   max-rows="6"
-                  :value="product.name"
                   v-model="name"
                 ></b-form-textarea>
+                                  <!-- :value="product.name" -->
                 <!-- :value="product.name" @input="name = $event.target.value" -->
                 <!-- v-model="product.name" -->
                 <!-- @input="name = $event.target.value" -->
@@ -64,9 +64,9 @@
                   placeholder="Masukkan deskripsi produk"
                   rows="3"
                   max-rows="6"
-                  :value="product.description"
                   v-model="description"
                 ></b-form-textarea>
+                  <!-- :value="product.description" -->
                 <!-- @input="description = $event.target.value" -->
               </div>
             </div>
@@ -82,9 +82,9 @@
                   placeholder="Masukkan bahan baku produk"
                   rows="3"
                   max-rows="6"
-                  :value="product.rawMaterials"
                   v-model="rawMaterials"
                 ></b-form-textarea>
+                  <!-- :value="product.rawMaterials" -->
                   <!-- @input="rawMaterials = $event.target.value" -->
               </div>
             </div>
@@ -98,9 +98,9 @@
                   placeholder="Masukkan cara penyimpanan produk"
                   rows="3"
                   max-rows="6"
-                  :value="product.productStorage"
                   v-model="productStorage"
                 ></b-form-textarea>
+                                  <!-- :value="product.productStorage" -->
                   <!-- @input="productStorage = $event.target.value" -->
               </div>
             </div>
@@ -154,9 +154,9 @@
                   placeholder="Masukkan link video produk"
                   rows="3"
                   max-rows="6"
-                  :value="product.video"
                   v-model="video"
                 ></b-form-textarea>
+                <!-- :value="product.video" -->
                   <!-- @input="video = $event.target.value" -->
               </div>
             </div>
@@ -189,13 +189,13 @@ export default {
       progressInfos: [],
       message: "",
       fileInfos: [],
-      video: "",
-      productStorage: "",
-      rawMaterials: "",
-      description: "",
-      name: "",
+      video: this.product?.video || "",
+      productStorage: this.product?.productStorage || "",
+      rawMaterials: this.product?.rawMaterials || "",
+      description: this.product?.description || "",
+      name: this.product?.name || "",
       images: [],
-      yearProduction: "",
+      yearProduction: this.product?.yearProduction || "",
     };
   },
   methods: {

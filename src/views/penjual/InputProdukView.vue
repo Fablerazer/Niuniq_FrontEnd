@@ -3,7 +3,7 @@
     <CNavbarPenjual />
     <div class="flex-row" style="background-color: #f9f9f9">
       <SideBarInputProduk />
-      <div class="container" style="padding-left: 180px;">
+      <div v-if="products || !isEdit"  class="container" style="padding-left: 180px;">
         <CInputInfoDetail :product="products" :isEdit="isEdit"/>
       </div>
     </div>
@@ -25,12 +25,13 @@ export default {
   },
   data() {
     return {
-      products: [],
-      isEdit: false,
+      products: null,
+      isEdit: true,
     };
   },
   methods: {
     setProducts(data) {
+      console.log(data);
       this.products = data;
     },
     setIsEdit(data) {
@@ -45,7 +46,10 @@ export default {
         this.setIsEdit(response.data.success);
         console.log(response.data.data);
       })
-      .catch((error) => console.log(error));
+      .catch((error) => {
+        console.log(error)
+        this.setIsEdit(false);
+      });
     
   },
 };
