@@ -25,7 +25,6 @@ const routes = [
   },
   {
     path: '/detailview/:id',
-    // path: "/detailview",
     name: "DetailView",
     component: DetailView,
     props: true

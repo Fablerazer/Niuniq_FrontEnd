@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col">
           <img
-            src="@/assets/img/produk-1.png"
+            :src=" path + '/documents/images/products/' + product.photos[0]"
             alt="foto-produk"
             class="img-thumbnail"
           />
@@ -40,6 +40,11 @@
 export default {
   name: "CNotifWaiting",
   props: ["product"],
+  data() {
+  return {
+      path: 'https://niuniq.herokuapp.com',
+    };
+  },
   mounted (){
     console.log(this.product);
   }
