@@ -32,6 +32,7 @@
           <label class="tab4" for="tab4">Selesai</label>
         </div>
 
+        <!-- Sort Semua -->
         <section id="content1">
           <table class="table table-bordered text-start">
             <thead>
@@ -59,6 +60,7 @@
                 </td>
                 <td class="d-flex">
                   <!-- Download Button -->
+                  <div v-if="product.isVerification == 1" :key="product._id">
                   <div class="btn-action-wrapper">
                     <a
                       :href="
@@ -77,6 +79,22 @@
                         />
                       </button>
                     </a>
+                  </div>
+                  </div>
+                  <div v-else>
+                  <div class="btn-action-wrapper">
+                      <button
+                        type="button"
+                        class="btn-action-main btn btn-secondary"
+                        disabled
+                      >
+                        <img
+                          src="@/assets/img/ic-file-download.svg"
+                          alt=""
+                          class="d-inline-block align-text-top"
+                        />
+                      </button>
+                  </div>
                   </div>
                   <!-- Edit Button -->
                   <div class="btn-action-wrapper">
@@ -134,6 +152,7 @@
           </table>
         </section>
 
+        <!-- Sort Menunggu -->
         <section id="content2">
           <table class="table table-bordered text-start">
             <thead>
@@ -152,7 +171,7 @@
               <template v-for="(product, index) in productList">
                 <tr
                   class="align-middle"
-                  v-if="product.isVerification == null"
+                  v-if="product.isVerification == 2"
                   :key="product._id"
                 >
                   <td scope="row">{{ index + 1 }}.</td>
@@ -219,6 +238,7 @@
           </table>
         </section>
 
+        <!-- Sort Gagal -->
         <section id="content3">
           <table class="table table-bordered text-start">
             <thead>
@@ -306,6 +326,7 @@
           </table>
         </section>
 
+        <!-- Sort Selesai -->
         <section id="content4">
           <table class="table table-bordered text-start">
             <thead>
@@ -324,7 +345,7 @@
               <template v-for="(product, index) in productList">
                 <tr
                   class="align-middle"
-                  v-if="product.isVerification"
+                  v-if="product.isVerification == 1"
                   :key="product._id"
                 >
                   <td scope="row">{{ index + 1 }}.</td>

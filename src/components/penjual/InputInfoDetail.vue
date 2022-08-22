@@ -108,25 +108,6 @@
           <h5 class="informasiproduk">Foto Produk</h5>
           <div>
             <div v-if="progressInfos">
-              <div
-                class="mb-2"
-                v-for="(progressInfo, index) in progressInfos"
-                :key="index"
-              >
-                <span>{{ progressInfo.fileName }}</span>
-                <div class="progress">
-                  <div
-                    class="progress-bar progress-bar-info"
-                    role="progressbar"
-                    :aria-valuenow="progressInfo.percentage"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                    :style="{ width: progressInfo.percentage + '%' }"
-                  >
-                    {{ progressInfo.percentage }}%
-                  </div>
-                </div>
-              </div>
               <label class="btn btn-default">
                 <input type="file" multiple @change="selectFile" />
               </label>
