@@ -63,6 +63,12 @@ header.masthead {
   color: #4e944f;
 }
 
+.btn-outline-secondary {
+  border-color: grey;
+  color: grey;
+  border: 2px solid grey;
+}
+
 .btn-outline-info:hover {
   background-color: #4e944f;
   color: #f9f9f9;

@@ -61,28 +61,28 @@
                 <td class="d-flex">
                   <!-- Download Button -->
                   <div v-if="product.isVerification == 1" :key="product._id">
-                  <div class="btn-action-wrapper">
-                    <a
-                      :href="
-                        path + '/documents/images/QRcodes/' + product.qrCode
-                      "
-                      target="_blank"
-                    >
-                      <button
-                        type="button"
-                        class="btn-action-main btn btn-success"
+                    <div class="btn-action-wrapper">
+                      <a
+                        :href="
+                          path + '/documents/images/QRcodes/' + product.qrCode
+                        "
+                        target="_blank"
                       >
-                        <img
-                          src="@/assets/img/ic-file-download.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
-                    </a>
-                  </div>
+                        <button
+                          type="button"
+                          class="btn-action-main btn btn-success"
+                        >
+                          <img
+                            src="@/assets/img/ic-file-download.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </a>
+                    </div>
                   </div>
                   <div v-else>
-                  <div class="btn-action-wrapper">
+                    <div class="btn-action-wrapper">
                       <button
                         type="button"
                         class="btn-action-main btn btn-secondary"
@@ -94,31 +94,53 @@
                           class="d-inline-block align-text-top"
                         />
                       </button>
-                  </div>
+                    </div>
                   </div>
                   <!-- Edit Button -->
-                  <div class="btn-action-wrapper">
-                    <a
-                      :href="'/inputprodukview/' + product.productId"
-                      target="_blank"
-                    >
+                  <div
+                    v-if="
+                      product.isVerification == 1 && product.isVerification == 0
+                    "
+                    :key="product._id"
+                  >
+                    <div class="btn-action-wrapper">
+                      <a
+                        :href="'/inputprodukview/' + product.productId"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn-action btn btn-outline-success"
+                        >
+                          <img
+                            src="@/assets/img/ic-edit-green.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </a>
+                    </div>
+                  </div>
+                  <div v-else>
+                    <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action btn btn-outline-secondary"
+                        disabled
                       >
                         <img
-                          src="@/assets/img/ic-edit-green.svg"
+                          src="@/assets/img/ic-edit-grey.svg"
                           alt=""
                           class="d-inline-block align-text-top"
                         />
                       </button>
-                    </a>
+                    </div>
                   </div>
                   <!-- Delete Button -->
                   <div class="btn-action-wrapper">
                     <button
                       type="button"
-                      class="btn-action btn btn-outline-success"
+                      class="btn-action-permanent btn btn-outline-success"
                       @click="deleteProduct(product._id)"
                     >
                       <img
@@ -136,7 +158,7 @@
                     >
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-eye-green.svg"
@@ -207,7 +229,7 @@
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-delete-green.svg"
@@ -219,7 +241,7 @@
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-eye-green.svg"
@@ -295,7 +317,7 @@
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-delete-green.svg"
@@ -307,7 +329,7 @@
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-eye-green.svg"
@@ -381,7 +403,7 @@
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-delete-green.svg"
@@ -393,7 +415,7 @@
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
-                        class="btn-action btn btn-outline-success"
+                        class="btn-action-permanent btn btn-outline-success"
                       >
                         <img
                           src="@/assets/img/ic-eye-green.svg"
@@ -522,14 +544,10 @@ export default {
   methods: {
     deleteProduct(id) {
       axios
-        .delete(
-          "https://niuniq.herokuapp.com/api/web/niuniq/products/" +
-            id
-        )
+        .delete("https://niuniq.herokuapp.com/api/web/niuniq/products/" + id)
         .then((response) => {
           console.log(response);
           this.$router.go();
-          
         })
         .catch((error) => {
           console.error("There was an error!", error);
@@ -673,6 +691,15 @@ input:checked + label {
 }
 
 .btn-action {
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent;
+}
+
+.btn-action-permanent {
   width: 3rem;
   height: 3rem;
   display: flex;
