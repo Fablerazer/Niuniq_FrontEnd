@@ -19,10 +19,6 @@
               placeholder="Masukkan tahun produksi"
               v-model="yearProduction"
             />
-                          <!-- :value="product.yearProduction.toString()" -->
-              <!-- :value="product.yearProduction" -->
-            <!-- v-model="product.yearProduction" -->
-            <!-- @input="yearProduction = $event.target.value" -->
           </div>
         </div>
       </div>
@@ -48,10 +44,6 @@
                   max-rows="6"
                   v-model="name"
                 ></b-form-textarea>
-                                  <!-- :value="product.name" -->
-                <!-- :value="product.name" @input="name = $event.target.value" -->
-                <!-- v-model="product.name" -->
-                <!-- @input="name = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -66,8 +58,6 @@
                   max-rows="6"
                   v-model="description"
                 ></b-form-textarea>
-                  <!-- :value="product.description" -->
-                <!-- @input="description = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -84,8 +74,6 @@
                   max-rows="6"
                   v-model="rawMaterials"
                 ></b-form-textarea>
-                  <!-- :value="product.rawMaterials" -->
-                  <!-- @input="rawMaterials = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -100,8 +88,6 @@
                   max-rows="6"
                   v-model="productStorage"
                 ></b-form-textarea>
-                                  <!-- :value="product.productStorage" -->
-                  <!-- @input="productStorage = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -156,8 +142,6 @@
                   max-rows="6"
                   v-model="video"
                 ></b-form-textarea>
-                <!-- :value="product.video" -->
-                  <!-- @input="video = $event.target.value" -->
               </div>
             </div>
           </div>
@@ -260,18 +244,6 @@ export default {
           });
       }
     },
-    // simpan() {
-    //   this.simpan.products = this.product;
-    //   axios
-    //   .post("https://niuniq.herokuapp.com/api/web/niuniq/stores/" +this.$route.params.id + "/products", this.simpan)
-    //   .then(() => {
-    //     console.log("Berhasil");
-    //   })
-    //   .catch((err) => console.log(err))
-    // },
-  },
-  mounted() {
-    // this.name=this.product.name
   },
 };
 </script>

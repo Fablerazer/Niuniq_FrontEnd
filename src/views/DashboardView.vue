@@ -31,7 +31,7 @@
             <img src="@/assets/img/icon-verification.svg" class="me-2" />
             <div class="row fw-bold d-flex">
               <span class="fs-4 text-left d-flex">{{
-                this.productList.filter((x) => x.isVerification == null).length
+                this.productList.filter((x) => x.isVerification == 2).length
               }}</span>
               <span class="text-left d-flex" style="font-size: 14px"
                 >Menunggu Verifikasi</span
@@ -46,9 +46,7 @@
             <img src="@/assets/img/icon-verification-failed.svg" class="me-2" />
             <div class="row fw-bold d-flex">
               <span class="fs-4 text-left d-flex">{{
-                this.productList.filter(
-                  (x) => !x.isVerification && x.isVerification !== null
-                ).length
+                this.productList.filter((x) => x.isVerification == 0).length
               }}</span>
               <span class="text-left d-flex" style="font-size: 14px"
                 >Gagal Verifikasi</span
@@ -66,7 +64,7 @@
             />
             <div class="row fw-bold d-flex">
               <span class="fs-4 text-left d-flex">{{
-                this.productList.filter((x) => x.isVerification).length
+                this.productList.filter((x) => x.isVerification == 1).length
               }}</span>
               <span class="text-left d-flex" style="font-size: 14px"
                 >Berhasil Verifikasi</span
