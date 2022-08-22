@@ -99,7 +99,7 @@
                   <!-- Edit Button -->
                   <div
                     v-if="
-                      product.isVerification == 1 && product.isVerification == 0
+                      product.isVerification == 1 || product.isVerification == 0
                     "
                     :key="product._id"
                   >
@@ -110,7 +110,7 @@
                       >
                         <button
                           type="button"
-                          class="btn-action btn btn-outline-success"
+                          class="btn-action-permanent btn btn-outline-success"
                         >
                           <img
                             src="@/assets/img/ic-edit-green.svg"
