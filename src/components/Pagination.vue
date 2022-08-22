@@ -7,10 +7,10 @@
         id="show-btn"
         variant="link"
         style="color: #28a745"
-        @click="$bvModal.show('bv-modal-example')"
+        @click="$bvModal.show('bv-modal-download')"
         >Silahkan download hasil QRCode</b-button
       >
-      <b-modal id="bv-modal-example" hide-footer>
+      <b-modal id="bv-modal-download" hide-footer>
         <div class="d-block text-center mt-2 mb-4">
           <img src="@/assets/img/popup-save.png" alt="foto-produk" />
           <h6></h6>
@@ -23,13 +23,13 @@
     <!-- Kata sandi baru -->
     <div>
       <b-button
-        id="show-btn"
+        id="show-btn1"
         variant="link"
         style="color: #28a745"
-        @click="$bvModal.show('bv-modal-example')"
+        @click="$bvModal.show('bv-modal-katasandi')"
         >Kata sandi baru</b-button
       >
-      <b-modal id="bv-modal-example" hide-footer>
+      <b-modal id="bv-modal-katasandi" hide-footer>
         <div class="d-block text-center mt-2 mb-4">
           <img src="@/assets/img/popup-save.png" alt="foto-produk" />
           <h6></h6>
@@ -42,13 +42,13 @@
     <!-- Data dihapus -->
     <div>
       <b-button
-        id="show-btn"
+        id="show-btn2"
         variant="link"
         style="color: #28a745"
-        @click="$bvModal.show('bv-modal-example')"
+        @click="$bvModal.show('bv-modal-dihapus')"
         >Data dihapus</b-button
       >
-      <b-modal id="bv-modal-example" hide-footer>
+      <b-modal id="bv-modal-dihapus" hide-footer>
         <div class="d-block text-center mt-2 mb-4">
           <img src="@/assets/img/popup-save.png" alt="foto-produk" />
           <h6></h6>
@@ -61,14 +61,14 @@
     <!-- Confirm dihapus -->
     <div>
       <b-button
-        id="show-btn"
+        id="show-btn3"
         variant="link"
         style="color: #28a745"
-        @click="$bvModal.show('bv-modal-example')"
+        @click="$bvModal.show('bv-modal-confirm')"
         >Confirm dihapus</b-button
       >
       Return value: {{ String(boxTwo) }}
-      <b-modal id="bv-modal-example" hide-footer>
+      <b-modal id="bv-modal-confirm" hide-footer>
         <div class="d-block text-center mt-2 mb-4">
           <img src="@/assets/img/popup-delete.png" alt="foto-produk" />
           <h6></h6>
@@ -84,14 +84,15 @@
       </b-modal>
     </div>
 
-    <!-- Confirming modal -->
-    <div>
+    <!-- Confirming modal (Deleted soon) -->
+    <!-- <div>
       <div class="mb-1">
+        <img src="@/assets/img/popup-delete.png" alt="foto-produk" />
         <b-button @click="showMsgBoxTwo">msgBoxConfirm with options</b-button>
         Return value: {{ String(boxTwo) }}
       </div>
-    </div>
-  </div>
+    </div> -->
+  </div> 
 </template>
 
 <script>

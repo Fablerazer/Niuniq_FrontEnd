@@ -71,6 +71,7 @@
                         <button
                           type="button"
                           class="btn-action-main btn btn-success"
+                          @click="$bvModal.show('bv-modal-download')"
                         >
                           <img
                             src="@/assets/img/ic-file-download.svg"
@@ -78,6 +79,17 @@
                             class="d-inline-block align-text-top"
                           />
                         </button>
+                        <b-modal id="bv-modal-download" centered hide-footer>
+                          <div class="d-block text-center mt-2 mb-4">
+                            <img
+                              src="@/assets/img/popup-save.png"
+                              alt="foto-produk"
+                            />
+                            <h6></h6>
+                            <br />
+                            <h4>QRCode berhasil di download!</h4>
+                          </div>
+                        </b-modal>
                       </a>
                     </div>
                   </div>
@@ -141,7 +153,10 @@
                     <button
                       type="button"
                       class="btn-action-permanent btn btn-outline-success"
-                      @click="deleteProduct(product._id)"
+                      @click="
+                        deleteProduct(product._id),
+                          $bvModal.show('bv-modal-dihapus')
+                      "
                     >
                       <img
                         src="@/assets/img/ic-delete-green.svg"
@@ -149,6 +164,17 @@
                         class="d-inline-block align-text-top"
                       />
                     </button>
+                    <b-modal id="bv-modal-dihapus" centered hide-footer>
+                      <div class="d-block text-center mt-2 mb-4">
+                        <img
+                          src="@/assets/img/popup-save.png"
+                          alt="foto-produk"
+                        />
+                        <h6></h6>
+                        <br />
+                        <h4>Data produk berhasil dihapus!</h4>
+                      </div>
+                    </b-modal>
                   </div>
                   <!-- View Button -->
                   <div class="btn-action-wrapper">

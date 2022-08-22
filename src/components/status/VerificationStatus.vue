@@ -3,7 +3,6 @@
         :class="verificationStatus == 2 ? 'bg-warning' : (verificationStatus == 1 ? 'bg-success' : 'bg-danger')">
         {{ verificationStatus == 2 ? "Menunggu" : (verificationStatus == 1 ? "Berhasil" : "Gagal")}}
     </div>
-    <!-- null = success -->
 </template>
 
 <script>
