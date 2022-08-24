@@ -41,7 +41,7 @@ const routes = [
     component: TentangView,
   },
   {
-    path: "/tentangviewpenjual",
+    path: "/tentangviewpenjual/:id",
     name: "TentangViewPenjual",
     component: TentangViewPenjual,
   },

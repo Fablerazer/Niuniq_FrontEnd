@@ -17,7 +17,7 @@
       </button>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <router-link class="nav-link" to="/tentangviewpenjual"
+          <router-link class="nav-link" :to="'/tentangviewpenjual/'+ this.$route.params.id"
             >Tentang</router-link
           >
         </li>
