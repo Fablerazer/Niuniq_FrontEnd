@@ -83,9 +83,9 @@ export default {
 
       console.log(response);
       if (response.status == 200) {
-        alert("login success");
-        // localStorage.setItem("token", response.data.token);
+        // alert("login success");
         localStorage.setItem("user-info", JSON.stringify(response.data));
+        localStorage.setItem("token", response.data.token);
         this.$router.push({ name: "ProfileView" });
       }
     },
