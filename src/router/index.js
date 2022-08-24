@@ -52,7 +52,7 @@ const routes = [
     props: true
   },
   {
-    path: "/inputtokoview",
+    path: "/inputtokoview/:id",
     name: "InputTokoView",
     component: InputTokoView,
   },

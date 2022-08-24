@@ -86,7 +86,8 @@ export default {
         // alert("login success");
         localStorage.setItem("user-info", JSON.stringify(response.data));
         localStorage.setItem("token", response.data.token);
-        this.$router.push({ name: "ProfileView" });
+        // localStorage.setItem("token", response.data.token);
+        this.$router.push({ name: "ProfileView", path: "profileview/" +response.data.store });
       }
     },
   },

@@ -12,9 +12,9 @@
             </label>
           </div>
           <div class="col-md-6">
-            <label for="exampleInputTelepon1">Foto Toko<br /></label>
+            <label for="exampleInputTelepon1">Foto Toko*<br /></label>
             <label class="btn btn-default">
-              <input type="file" multiple @change="selectFile" />
+              <input type="file" multiple @change="selectFile2" />
             </label>
           </div>
         </div>
@@ -30,6 +30,7 @@
                   id="exampleInputTelepon1"
                   aria-describedby="teleponHelp"
                   placeholder="Masukkan nama toko"
+                  v-model="name"
                 />
               </div>
             </div>
@@ -44,6 +45,7 @@
                   id="exampleInputTelepon1"
                   aria-describedby="teleponHelp"
                   placeholder="Masukkan tahun toko berdiri"
+                  v-model="yearEstabilished"
                 />
               </div>
             </div>
@@ -62,6 +64,7 @@
                   id="exampleInputTelepon1"
                   aria-describedby="teleponHelp"
                   placeholder="Masukkan nama kota/kabupaten"
+                  v-model="regency"
                 />
               </div>
             </div>
@@ -76,9 +79,23 @@
                   id="exampleInputTelepon1"
                   aria-describedby="teleponHelp"
                   placeholder="Masukkan nama provinsi"
+                  v-model="province"
                 />
               </div>
             </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputTelepon1">Address</label>
+          <div class="input-group mb-2">
+            <input
+              type="telepon"
+              class="form-control"
+              id="exampleInputTelepon1"
+              aria-describedby="teleponHelp"
+              placeholder="Masukkan alamat"
+              v-model="address"
+            />
           </div>
         </div>
         <hr />
@@ -91,6 +108,7 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan link Blibli"
+              v-model="linkBlibli"
             />
           </div>
         </div>
@@ -103,6 +121,7 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan link Shopee"
+              v-model="linkShopee"
             />
           </div>
         </div>
@@ -115,22 +134,20 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder="Masukkan link Tokopedia"
+              v-model="linkTokopedia"
             />
           </div>
         </div>
-        <a href="/profileview">
-          <button
-            type="button"
-            class="btn btn-success btn-lg btn-block mt-4 mb-2"
-            style="
-              background-color: #4e944f;
-              border-radius: 8px;
-              font-size: 16px;
-            "
-          >
-            Simpan
-          </button>
-        </a>
+        <!-- <a href="/profileview"> -->
+        <button
+          type="button"
+          class="btn btn-success btn-lg btn-block mt-4 mb-2"
+          style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+          @click="onSubmit"
+        >
+          Simpan
+        </button>
+        <!-- </a> -->
       </div>
     </div>
     <br />
@@ -138,32 +155,101 @@
 </template>
 
 <script>
+import axios from "axios";
 // import VueUploadMultipleImage from "vue-upload-multiple-image";
 
 export default {
   name: "CInputToko",
-  // components: {
-  //   VueUploadMultipleImage,
-  // },
+  props: ["store", "isEdit", "userId"],
+  data() {
+    return {
+      selectedFiles: undefined,
+      progressInfos: [],
+      message: "",
+      fileInfos: [],
+      linkTokopedia: this.store?.linkTokopedia || "",
+      linkShopee: this.store?.linkShopee || "",
+      linkBlibli: this.store?.linkBlibli || "",
+      address: this.store?.address || "",
+      regency: this.store?.regency || "",
+      province: this.store?.province || "",
+      name: this.store?.name || "",
+      logo: [],
+      photo: [],
+      yearEstabilished: this.store?.yearEstabilished || "",
+    };
+  },
+  async created() {
+    // 'user' ini harus dicek sesuai sama punya kita
+    const response = await axios.get(
+      "https://niuniq.herokuapp.com/api/web/niuniq/auth/me"
+    );
+
+    console.log(response);
+  },
   methods: {
-    uploadImageSuccess(formData, index, fileList) {
-      console.log("upload success data ", formData, index, fileList);
+    selectFile() {
+      this.progressInfos = [];
+      this.logo = event.target.files;
     },
-    beforeRemove(index, removeCallBack) {
-      console.log("index", index);
-      var r = confirm("Do you really want to remove the image?");
-      if (r == true) {
-        removeCallBack();
+
+    selectFile2() {
+      this.progressInfos = [];
+      this.photo = event.target.files;
+    },
+
+    uploadFiles() {
+      for (let i = 0; i < this.selectedFiles.length; i++) {
+        console.log(this.selectedFiles[i]);
       }
     },
-    editImage(formData, index, fileList) {
-      console.log("edit data", formData, index, fileList);
-    },
-    markIsPrimary(index, fileList) {
-      console.log("markIsPrimary data", index, fileList);
-    },
-    limitExceeded(amount) {
-      console.log("limitExceeded data", amount);
+
+    onSubmit() {
+      let formData = new FormData();
+      formData.append("logo", this.logo[0]);
+      formData.append("photo", this.photo[0]);
+      formData.append("linkTokopedia", this.linkTokopedia);
+      formData.append("linkShopee", this.linkShopee);
+      formData.append("linkBlibli", this.linkBlibli);
+      formData.append("address", this.address);
+      formData.append("regency", this.regency);
+      formData.append("province", this.province);
+      formData.append("name", this.name);
+      formData.append("yearEstabilished", this.yearEstabilished);
+      if (this.isEdit) {
+        console.log("this is edit");
+        axios
+          .put(
+            "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
+              this.store._id,
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          )
+          .then((response) => console.log(response))
+          .catch((error) => {
+            console.error("There was an error!", error);
+          });
+      } else {
+        console.log(this.selectedFiles);
+        axios
+          .post(
+            "https://niuniq.herokuapp.com/api/web/niuniq/stores",
+            formData,
+            {
+              headers: {
+                "Content-Type": "multipart/form-data",
+              },
+            }
+          )
+          .then((response) => console.log(response))
+          .catch((error) => {
+            console.error("There was an error!", error);
+          });
+      }
     },
   },
 };
