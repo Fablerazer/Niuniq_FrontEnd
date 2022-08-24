@@ -17,7 +17,7 @@ export default {
   components: {
     CNavbarPenjual,
     CAboutpage,
-    CPagination
+    CPagination,
   },
 };
 </script>

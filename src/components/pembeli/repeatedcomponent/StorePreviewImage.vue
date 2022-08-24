@@ -1,11 +1,21 @@
 <template>
   <div class="row mt-4">
-        <div v-for="product in filteredProducts" :key="product._id" class="col-md-4">
-          <router-link :to="{ name:'DetailView', params: { id: product.productId }}">
-            <img :src=" path + '/documents/images/products/' + product.photos[0]" class="rounded img-fluid" :alt="'picture'" />
-          </router-link>
-        </div>
-      </div>
+    <div
+      v-for="product in filteredProducts"
+      :key="product._id"
+      class="col-md-4"
+    >
+      <router-link
+        :to="{ name: 'DetailView', params: { id: product.productId } }"
+      >
+        <img
+          :src="path + '/documents/images/products/' + product.photos[0]"
+          class="rounded img-fluid"
+          :alt="'picture'"
+        />
+      </router-link>
+    </div>
+  </div>
 </template>
 
 <script>
@@ -14,9 +24,9 @@ import axios from "axios";
 export default {
   name: "CStorepreviewimage",
   data() {
-  return {
+    return {
       products: [],
-      path: 'https://niuniq.herokuapp.com',
+      path: "https://niuniq.herokuapp.com",
     };
   },
   created() {
@@ -43,12 +53,10 @@ export default {
   },
   computed: {
     filteredProducts: function () {
-      return this.products.slice(0, 3)
-    }
-  }
-}
+      return this.products.slice(0, 3);
+    },
+  },
+};
 </script>
 
-<style>
-
-</style>
+<style></style>

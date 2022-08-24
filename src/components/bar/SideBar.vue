@@ -35,7 +35,7 @@
         style="width: 85%; margin-left: 15% !important"
       >
         <!-- <router-view /> -->
-        <shop-info class="mb-4" :store="stores"/>
+        <shop-info class="mb-4" :store="stores" />
         <dashboard class="mb-4" />
         <product-list />
       </div>
@@ -65,11 +65,13 @@ export default {
       stores: {},
     };
   },
-  async created(){
+  async created() {
     // 'user' ini harus dicek sesuai sama punya kita
-    const response = await axios.get('https://niuniq.herokuapp.com/api/web/niuniq/auth/me');
+    const response = await axios.get(
+      "https://niuniq.herokuapp.com/api/web/niuniq/auth/me"
+    );
 
-    console.log(response)
+    console.log(response);
   },
   methods: {
     setStores(data) {
@@ -78,7 +80,10 @@ export default {
   },
   mounted() {
     axios
-      .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+this.$route.params.id)
+      .get(
+        "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
+          this.$route.params.id
+      )
       .then((response) => {
         this.setStores(response.data.data);
         console.log(response.data.data);

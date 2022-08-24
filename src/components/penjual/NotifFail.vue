@@ -19,7 +19,7 @@
       <div class="row">
         <div class="col">
           <img
-            :src=" path + '/documents/images/products/' + product.photos[0]"
+            :src="path + '/documents/images/products/' + product.photos[0]"
             alt="foto-produk"
             class="img-thumbnail"
           />
@@ -46,14 +46,14 @@
           sudah diberikan
         </p>
       </div>
-      <a :href="'/inputprodukview/'+ product.productId" >
-      <button
-        type="button"
-        class="btn btn-success btn-lg btn-block"
-        style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
-      >
-        Mengisi kembali informasi produk
-      </button>
+      <a :href="'/inputprodukview/' + product.productId">
+        <button
+          type="button"
+          class="btn btn-success btn-lg btn-block"
+          style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+        >
+          Mengisi kembali informasi produk
+        </button>
       </a>
     </div>
   </div>
@@ -64,8 +64,8 @@ export default {
   name: "CNotifFail",
   props: ["product"],
   data() {
-  return {
-      path: 'https://niuniq.herokuapp.com',
+    return {
+      path: "https://niuniq.herokuapp.com",
     };
   },
 };

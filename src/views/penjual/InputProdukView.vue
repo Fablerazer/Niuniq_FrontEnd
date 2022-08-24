@@ -3,8 +3,12 @@
     <CNavbarPenjual />
     <div class="flex-row" style="background-color: #f9f9f9">
       <SideBarInputProduk />
-      <div v-if="products || !isEdit"  class="container" style="padding-left: 180px;">
-        <CInputInfoDetail :product="products" :isEdit="isEdit"/>
+      <div
+        v-if="products || !isEdit"
+        class="container"
+        style="padding-left: 180px"
+      >
+        <CInputInfoDetail :product="products" :isEdit="isEdit" />
       </div>
     </div>
   </div>
@@ -21,7 +25,7 @@ export default {
   components: {
     CNavbarPenjual,
     CInputInfoDetail,
-    SideBarInputProduk
+    SideBarInputProduk,
   },
   data() {
     return {
@@ -40,17 +44,19 @@ export default {
   },
   mounted() {
     axios
-      .get("https://niuniq.herokuapp.com/api/web/niuniq/search?product="+this.$route.params.id)
+      .get(
+        "https://niuniq.herokuapp.com/api/web/niuniq/search?product=" +
+          this.$route.params.id
+      )
       .then((response) => {
         this.setProducts(response.data.data);
         this.setIsEdit(response.data.success);
         console.log(response.data.data);
       })
       .catch((error) => {
-        console.log(error)
+        console.log(error);
         this.setIsEdit(false);
       });
-    
   },
 };
 </script>

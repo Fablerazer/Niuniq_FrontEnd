@@ -75,7 +75,6 @@
 </template>
 
 <script>
-
 export default {
   name: "CCard",
   props: ["product"],

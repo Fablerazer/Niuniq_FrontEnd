@@ -92,7 +92,7 @@
         Return value: {{ String(boxTwo) }}
       </div>
     </div> -->
-  </div> 
+  </div>
 </template>
 
 <script>

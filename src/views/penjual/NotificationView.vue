@@ -58,7 +58,11 @@ export default {
   },
   mounted() {
     axios
-      .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/" +this.$route.params.id +"/products")
+      .get(
+        "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
+          this.$route.params.id +
+          "/products"
+      )
       .then((response) => {
         this.setProducts(response.data.data);
         console.log(response.data.data);

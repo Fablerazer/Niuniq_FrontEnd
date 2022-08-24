@@ -16,22 +16,21 @@
           alt=""
           class="d-inline-block align-text-top w-25 me-3"
         />
-        <span class="fs-1 fw-bold">{{ store.name }}</span> 
+        <span class="fs-1 fw-bold">{{ store.name }}</span>
       </div>
       <a href="/inputtokoview">
-      <button class="border-0 bg-white">
-        <img
-          src="@/assets/img/ic-edit.svg"
-          alt=""
-          class="d-inline-block align-text-top"
-        />
-      </button>
+        <button class="border-0 bg-white">
+          <img
+            src="@/assets/img/ic-edit.svg"
+            alt=""
+            class="d-inline-block align-text-top"
+          />
+        </button>
       </a>
     </div>
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Alamat Toko</span>
       <span class="d-flex">{{ store.address }}</span>
-
     </div>
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Tahun Tercipta</span>
@@ -53,7 +52,6 @@
 </template>
 
 <script>
-
 export default {
   name: "ShopInfoView",
   props: ["store"],

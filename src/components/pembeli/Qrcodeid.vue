@@ -45,7 +45,7 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <router-link :to="'/detailview/'+this.search">
+                    <router-link :to="'/detailview/' + this.search">
                       <button type="submit" class="btn btn-info">Cari</button>
                     </router-link>
                   </div>
@@ -89,7 +89,7 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <router-link :to="'/detailview/'+this.search">
+                    <router-link :to="'/detailview/' + this.search">
                       <button type="submit" class="btn btn-info">Cari</button>
                     </router-link>
                   </div>
@@ -133,7 +133,7 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <router-link :to="'/detailview/'+this.search">
+                    <router-link :to="'/detailview/' + this.search">
                       <button type="submit" class="btn btn-info">Cari</button>
                     </router-link>
                   </div>
@@ -177,7 +177,7 @@
                     </div>
                   </div>
                   <div class="col-md-3">
-                    <router-link :to="'/detailview/'+this.search">
+                    <router-link :to="'/detailview/' + this.search">
                       <button type="submit" class="btn btn-info">Cari</button>
                     </router-link>
                   </div>
@@ -200,7 +200,7 @@ export default {
       slide: 0,
       sliding: null,
       products: [],
-      search: '',
+      search: "",
     };
   },
   created() {

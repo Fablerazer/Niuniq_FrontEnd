@@ -3,7 +3,7 @@
     <CNavbarPenjual />
     <div style="background-color: #f9f9f9">
       <div class="container">
-        <CPengaturan :user="users"/>
+        <CPengaturan :user="users" />
       </div>
     </div>
   </div>
@@ -32,7 +32,10 @@ export default {
   },
   mounted() {
     axios
-      .get("https://niuniq.herokuapp.com/api/web/niuniq/users/"+this.$route.params.id)
+      .get(
+        "https://niuniq.herokuapp.com/api/web/niuniq/users/" +
+          this.$route.params.id
+      )
       .then((response) => {
         this.setUsers(response.data.data);
         console.log(response.data.data);

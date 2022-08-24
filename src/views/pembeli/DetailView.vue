@@ -2,7 +2,7 @@
   <div>
     <CNavbar />
     <div class="container">
-      <CInfoproduksi :store="stores" :product="products"/>
+      <CInfoproduksi :store="stores" :product="products" />
       <div>
         <CCarousel :product="products" />
         <CCard :product="products" />
@@ -45,7 +45,10 @@ export default {
   },
   mounted() {
     axios
-      .get("https://niuniq.herokuapp.com/api/web/niuniq/search?product="+this.$route.params.id)
+      .get(
+        "https://niuniq.herokuapp.com/api/web/niuniq/search?product=" +
+          this.$route.params.id
+      )
       .then((response) => {
         this.setProducts(response.data.data);
         console.log(response.data.data);
@@ -55,7 +58,6 @@ export default {
         // .then((response) => {
       })
       .catch((error) => console.log(error));
-    
   },
 };
 </script>

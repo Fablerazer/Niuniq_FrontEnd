@@ -3,7 +3,7 @@
     <CNavbar />
     <Qrcodeid />
     <div class="container">
-      <CStorepreview :product="products"/>
+      <CStorepreview :product="products" />
     </div>
   </div>
 </template>

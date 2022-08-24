@@ -2,9 +2,7 @@
   <div class="container-fluid mt-4" style="padding-left: 0; padding-right: 0">
     <div class="card">
       <div class="card-body">
-        <h5 class="informasiproduk">
-          Informasi Produksi
-        </h5>
+        <h5 class="informasiproduk">Informasi Produksi</h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk
           membuktikan bahwa produk tersebut asli.
@@ -63,9 +61,9 @@
 export default {
   name: "CInfoproduksi",
   props: ["store", "product"],
-    data() {
-  return {
-      path: 'https://',
+  data() {
+    return {
+      path: "https://",
     };
   },
   mounted() {

@@ -17,12 +17,16 @@
       </button>
       <ul class="nav justify-content-end">
         <li class="nav-item">
-          <router-link class="nav-link" :to="'/tentangviewpenjual/'+ this.$route.params.id"
+          <router-link
+            class="nav-link"
+            :to="'/tentangviewpenjual/' + this.$route.params.id"
             >Tentang</router-link
           >
         </li>
         <li class="nav-item">
-          <router-link class="nav-link" :to="'/notificationview/'+ this.$route.params.id" 
+          <router-link
+            class="nav-link"
+            :to="'/notificationview/' + this.$route.params.id"
             ><b-icon-bell
           /></router-link>
         </li>
@@ -38,10 +42,10 @@
             <template #button-content>
               <b-icon-person-circle style="color: #4e944f" />
             </template>
-            <b-dropdown-item :href="'/profileview/'+ this.$route.params.id"
+            <b-dropdown-item :href="'/profileview/' + this.$route.params.id"
               ><b-icon-person-fill /> Profil Saya</b-dropdown-item
             >
-            <b-dropdown-item :href="'/pengaturanview/'+ this.$route.params.id"
+            <b-dropdown-item :href="'/pengaturanview/' + this.$route.params.id"
               ><b-icon-gear-fill /> Pengaturan</b-dropdown-item
             >
             <hr />

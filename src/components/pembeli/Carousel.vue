@@ -25,7 +25,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              :src=" path + '/documents/images/products/' + product.photos[0]"
+              :src="path + '/documents/images/products/' + product.photos[0]"
               alt="image slot"
             />
           </template>
@@ -39,7 +39,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              :src=" path + '/documents/images/products/' + product.photos[1]"
+              :src="path + '/documents/images/products/' + product.photos[1]"
               alt="image slot"
             />
           </template>
@@ -53,7 +53,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              :src=" path + '/documents/images/products/' + product.photos[2]"
+              :src="path + '/documents/images/products/' + product.photos[2]"
               alt="image slot"
             />
           </template>
@@ -67,7 +67,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              :src=" path + '/documents/images/products/' + product.photos[3]"
+              :src="path + '/documents/images/products/' + product.photos[3]"
               alt="image slot"
             />
           </template>
@@ -81,7 +81,7 @@
               width="608"
               height="525"
               style="border-radius: 9px"
-              :src=" path + '/documents/images/products/' + product.photos[4]"
+              :src="path + '/documents/images/products/' + product.photos[4]"
               alt="image slot"
             />
           </template>
@@ -89,9 +89,7 @@
       </b-carousel>
     </div>
     <div class="col-md-6" style="align-self: center">
-      <h4
-      class="informasiproduk"
-      >
+      <h4 class="informasiproduk">
         {{ product.name }}
       </h4>
       <hr />
@@ -104,13 +102,12 @@
 </template>
 
 <script>
-
 export default {
   name: "CCarousel",
   props: ["product"],
   data() {
-  return {
-      path: 'https://niuniq.herokuapp.com',
+    return {
+      path: "https://niuniq.herokuapp.com",
     };
   },
 };

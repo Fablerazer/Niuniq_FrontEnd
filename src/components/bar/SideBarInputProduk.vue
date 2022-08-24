@@ -35,7 +35,6 @@
         style="width: 85%; margin-left: 15% !important"
       >
         <!-- <router-view /> -->
-
       </div>
     </div>
   </div>
