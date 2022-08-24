@@ -7,57 +7,12 @@
         <div class="row">
           <div class="col-md-6">
             <label for="exampleInputTelepon1">Logo Toko<br /></label>
-            <!-- <vue-upload-multiple-image
-              @upload-success="uploadImageSuccess"
-              @before-remove="beforeRemove"
-              @mark-is-primary="markIsPrimary"
-              @limit-exceeded="limitExceeded"
-              @edit-image="editImage"
-              :data-images="images"
-              idUpload="myIdUpload"
-              idEdit="myIdEdit"
-              maxImage="5"
-              editUpload="myIdEdit"
-              primaryText="Default"
-              browseText="Browse picture(s)"
-              markIsPrimaryText="Set image as default"
-              dragText="Logo Toko"
-              dropText="Drop your file here"
-              popupText="This image will be displayed as default"
-              multiple="true"
-              showEdit="true"
-              showDelete="true"
-              showAdd="true"
-            ></vue-upload-multiple-image> -->
             <label class="btn btn-default">
               <input type="file" multiple @change="selectFile" />
             </label>
           </div>
           <div class="col-md-6">
             <label for="exampleInputTelepon1">Foto Toko<br /></label>
-            
-            <!-- <vue-upload-multiple-image
-              @upload-success="uploadImageSuccess"
-              @before-remove="beforeRemove"
-              @mark-is-primary="markIsPrimary"
-              @limit-exceeded="limitExceeded"
-              @edit-image="editImage"
-              :data-images="images"
-              idUpload="myIdUpload"
-              idEdit="myIdEdit"
-              maxImage="5"
-              editUpload="myIdEdit"
-              primaryText="Default"
-              browseText="Browse picture(s)"
-              markIsPrimaryText="Set image as default"
-              dragText="Upload Foto Toko"
-              dropText="Drop your file here"
-              popupText="This image will be displayed as default"
-              multiple="true"
-              showEdit="true"
-              showDelete="true"
-              showAdd="true"
-            ></vue-upload-multiple-image> -->
             <label class="btn btn-default">
               <input type="file" multiple @change="selectFile" />
             </label>
@@ -128,26 +83,38 @@
         </div>
         <hr />
         <div class="form-group">
-          <label for="exampleInputTelepon1">Link Toko (Tokopedia)</label>
+          <label for="exampleInputTelepon1">Link Blibli</label>
           <div class="input-group mb-2">
             <input
               type="telepon"
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan link toko"
+              placeholder="Masukkan link Blibli"
             />
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Link Toko (Shopee)</label>
+          <label for="exampleInputTelepon1">Link Shopee</label>
           <div class="input-group mb-2">
             <input
               type="telepon"
               class="form-control"
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
-              placeholder="Masukkan link toko"
+              placeholder="Masukkan link Shopee"
+            />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="exampleInputTelepon1">Link Tokopedia</label>
+          <div class="input-group mb-2">
+            <input
+              type="telepon"
+              class="form-control"
+              id="exampleInputTelepon1"
+              aria-describedby="teleponHelp"
+              placeholder="Masukkan link Tokopedia"
             />
           </div>
         </div>
