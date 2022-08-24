@@ -107,11 +107,9 @@
           <hr />
           <h5 class="informasiproduk">Foto Produk</h5>
           <div>
-            <div v-if="progressInfos">
-              <label class="btn btn-default">
-                <input type="file" multiple @change="selectFile" />
-              </label>
-            </div>
+            <label class="btn btn-default">
+              <input type="file" multiple @change="selectFile" />
+            </label>
             <hr />
             <h5 class="informasiproduk">Video Produk</h5>
             <div class="form-group">

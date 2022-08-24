@@ -103,7 +103,7 @@ export default {
       console.warn(result);
       // if(result.status==201)
       if (result.status == 200) {
-        alert("register done");
+        alert("register success");
         // tanya ini JSON, 201 && 200 differenciation, yang keluar malah token
         // https://www.youtube.com/watch?v=l-9S3GtVxr8&list=PL8p2I9GklV44Dq6kuEXSvT-EeBH1TDElH&index=48&ab_channel=CodeStepByStep
         localStorage.setItem("user-info", JSON.stringify(result.data));

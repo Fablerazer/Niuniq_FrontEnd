@@ -5,9 +5,9 @@
         <h3 class="lognreg">Informasi Toko</h3>
         <hr />
         <div class="row">
-          <div class="col-md-3">
-            <label for="exampleInputTelepon1">Logo Toko</label>
-            <vue-upload-multiple-image
+          <div class="col-md-6">
+            <label for="exampleInputTelepon1">Logo Toko<br /></label>
+            <!-- <vue-upload-multiple-image
               @upload-success="uploadImageSuccess"
               @before-remove="beforeRemove"
               @mark-is-primary="markIsPrimary"
@@ -28,11 +28,15 @@
               showEdit="true"
               showDelete="true"
               showAdd="true"
-            ></vue-upload-multiple-image>
+            ></vue-upload-multiple-image> -->
+            <label class="btn btn-default">
+              <input type="file" multiple @change="selectFile" />
+            </label>
           </div>
-          <div class="col-md-9">
-            <label for="exampleInputTelepon1">Foto Toko</label>
-            <vue-upload-multiple-image
+          <div class="col-md-6">
+            <label for="exampleInputTelepon1">Foto Toko<br /></label>
+            
+            <!-- <vue-upload-multiple-image
               @upload-success="uploadImageSuccess"
               @before-remove="beforeRemove"
               @mark-is-primary="markIsPrimary"
@@ -53,7 +57,10 @@
               showEdit="true"
               showDelete="true"
               showAdd="true"
-            ></vue-upload-multiple-image>
+            ></vue-upload-multiple-image> -->
+            <label class="btn btn-default">
+              <input type="file" multiple @change="selectFile" />
+            </label>
           </div>
         </div>
         <hr />
@@ -164,13 +171,13 @@
 </template>
 
 <script>
-import VueUploadMultipleImage from "vue-upload-multiple-image";
+// import VueUploadMultipleImage from "vue-upload-multiple-image";
 
 export default {
   name: "CInputToko",
-  components: {
-    VueUploadMultipleImage,
-  },
+  // components: {
+  //   VueUploadMultipleImage,
+  // },
   methods: {
     uploadImageSuccess(formData, index, fileList) {
       console.log("upload success data ", formData, index, fileList);

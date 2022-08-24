@@ -82,7 +82,12 @@ export default {
       );
 
       console.log(response);
-      // localStorage.setItem("token", response.data.token);
+      if (response.status == 200) {
+        alert("login success");
+        // localStorage.setItem("token", response.data.token);
+        localStorage.setItem("user-info", JSON.stringify(response.data));
+        this.$router.push({ name: "ProfileView" });
+      }
     },
     // login(){
     //   let result = axios.get(
