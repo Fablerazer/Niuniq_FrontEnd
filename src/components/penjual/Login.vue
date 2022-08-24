@@ -89,12 +89,12 @@ export default {
         this.$router.push({ name: "ProfileView" });
       }
     },
-    // login(){
-    //   let result = axios.get(
-
-    //   )
-    //   console.warn()
-    // }
+  },
+  mounted() {
+    let user = localStorage.getItem("user-info");
+    if (user) {
+      this.$router.push({ name: "ProfileView" });
+    }
   },
 };
 </script>
