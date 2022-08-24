@@ -49,8 +49,8 @@
               ><b-icon-gear-fill /> Pengaturan</b-dropdown-item
             >
             <hr />
-            <b-dropdown-item href="/loginview"
-              ><b-icon-box-arrow-right /> Keluar</b-dropdown-item
+            <b-dropdown-item v-on:click="logout" href="#"
+              ><b-icon-box-arrow-right/> Keluar</b-dropdown-item
             >
           </b-dropdown>
         </div>
@@ -62,6 +62,13 @@
 <script>
 export default {
   name: "CNavbarPenjual",
+  methods: {
+    logout() {
+      console.warn("logout")
+      localStorage.clear();
+      this.$router.push({ name: "LoginView" });
+    },
+  },
 };
 </script>
 
