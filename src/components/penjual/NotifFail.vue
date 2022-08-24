@@ -25,7 +25,7 @@
           />
         </div>
         <div class="col">
-          <h5>Deskripsi produk {{ product._id }}</h5>
+          <h5>Deskripsi produk</h5>
           <p>
             {{ product.description }}
           </p>
@@ -35,9 +35,7 @@
       <div>
         <h5 style="color: #dc3545">Alasan gagal verifikasi produk</h5>
         <p>
-          Alasan produk anda gagal dalam verifikasi produk karena ada beberapa
-          permasalahan, seperti: - Resolusi foto kurang jernih - Pencahayaan
-          video kurang terang
+          {{ product.verificationMessage }}
         </p>
       </div>
       <div>

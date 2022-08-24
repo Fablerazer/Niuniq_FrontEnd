@@ -25,7 +25,7 @@
           />
         </div>
         <div class="col">
-          <h5>Deskripsi produk {{ product.productId }}</h5>
+          <h5>Deskripsi produk</h5>
           <p>
             {{ product.description }}
           </p>
