@@ -25,7 +25,7 @@
           "
         >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
-          <h5 class="card-title mt-3">Cara Menyimpan Produk {{$route.params.id}}</h5>
+          <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
           <ul>
             <li>
               {{ product.productStorage }}

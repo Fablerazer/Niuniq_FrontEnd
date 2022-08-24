@@ -3,7 +3,7 @@
     <div class="card">
       <div class="card-body">
         <h5 class="informasiproduk">
-          Informasi Produksi {{ $route.params.id }}
+          Informasi Produksi
         </h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk

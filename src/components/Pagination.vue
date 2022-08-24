@@ -120,9 +120,6 @@ export default {
         .then((value) => {
           this.boxTwo = value;
         });
-      // .catch((err) => {
-      //   // An error occurred
-      // });
     },
   },
 };
