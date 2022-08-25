@@ -11,7 +11,7 @@
       <div class="col-md-11" style="align-self: center; padding-left: 0">
         <h4 class="card-title"><Strong>Produk Rumah Bamboe</Strong></h4>
         <p class="card-text">
-          Berikut merupakan beberapa produk terlaris yang dijual oleh Rumah
+          Berikut merupakan beberapa produk terbaru yang dijual oleh Rumah
           Bamboe
         </p>
       </div>

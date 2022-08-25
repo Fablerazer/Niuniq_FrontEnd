@@ -106,14 +106,14 @@ export default {
         localStorage.setItem("user-info", JSON.stringify(result.data));
         localStorage.setItem("token", result.data.token);
         localStorage.setItem("hasCreatedStore", result.data.data.hasCreatedStore);
-        this.$router.push({ name: "InputTokoView" });
+        this.$router.push({ path: "inputtokoview/create" });
       }
     },
   },
   mounted() {
     let user = localStorage.getItem("user-info");
     if (user) {
-      this.$router.push({ name: "InputTokoView" });
+      this.$router.push({ path: "inputtokoview/create" });
     }
   },
 };
