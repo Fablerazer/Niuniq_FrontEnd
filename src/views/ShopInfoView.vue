@@ -18,7 +18,7 @@
         />
         <span class="fs-1 fw-bold">{{ store.name }}</span>
       </div>
-      <a href="/inputtokoview">
+      <router-link :to="'/inputtokoview/'+ this.$route.params.id">
         <button class="border-0 bg-white">
           <img
             src="@/assets/img/ic-edit.svg"
@@ -26,7 +26,7 @@
             class="d-inline-block align-text-top"
           />
         </button>
-      </a>
+      </router-link>
     </div>
     <div class="mb-3">
       <span class="text-success fw-bold d-flex">Alamat Toko</span>

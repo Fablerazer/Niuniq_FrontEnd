@@ -83,7 +83,6 @@ export default {
 
       console.log(response);
       if (response.status == 200) {
-        // alert("login success");
         localStorage.setItem("user-info", JSON.stringify(response.data));
         localStorage.setItem("token", response.data.token);
         // localStorage.setItem("token", response.data.token);

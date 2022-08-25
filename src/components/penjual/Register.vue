@@ -104,6 +104,7 @@ export default {
       if (result.status == 200) {
         alert("register success");
         localStorage.setItem("user-info", JSON.stringify(result.data));
+        localStorage.setItem("token", result.data.token);
         this.$router.push({ name: "InputTokoView" });
       }
     },
