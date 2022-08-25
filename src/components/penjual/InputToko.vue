@@ -138,7 +138,6 @@
             />
           </div>
         </div>
-        <!-- <a href="/profileview"> -->
         <button
           type="button"
           class="btn btn-success btn-lg btn-block mt-4 mb-2"
@@ -147,7 +146,6 @@
         >
           Simpan
         </button>
-        <!-- </a> -->
       </div>
     </div>
     <br />
@@ -229,7 +227,14 @@ export default {
               },
             }
           )
-          .then((response) => console.log(response))
+          .then((response) => {
+            console.log(response);
+            if (response.status == 200) {
+              this.$router.push({
+                path: "profileview/" + this.$route.params.id,
+              });
+            }
+          })
           .catch((error) => {
             console.error("There was an error!", error);
           });
@@ -251,6 +256,12 @@ export default {
           });
       }
     },
+  },
+  mounted() {
+    let userStore = localStorage.getItem("hasCreatedStore");
+    if (userStore == false) {
+      this.$router.push({ name: "InputTokoView" });
+    }
   },
 };
 </script>

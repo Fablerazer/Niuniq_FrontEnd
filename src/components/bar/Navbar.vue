@@ -22,6 +22,9 @@
         <li class="nav-item">
           <router-link class="nav-link" to="/tentangview">Tentang</router-link>
         </li>
+        <li class="nav-item">
+          <router-link class="nav-link" to="/loginview">Login</router-link>
+        </li>
       </ul>
     </div>
   </nav>

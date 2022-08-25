@@ -85,15 +85,23 @@ export default {
       if (response.status == 200) {
         localStorage.setItem("user-info", JSON.stringify(response.data));
         localStorage.setItem("token", response.data.token);
-        // localStorage.setItem("token", response.data.token);
-        this.$router.push({ name: "ProfileView", path: "profileview/" +response.data.store });
+        localStorage.setItem(
+          "hasCreatedStore",
+          response.data.data.hasCreatedStore
+        );
+        this.$router.push({
+          path: "profileview/" + response.data.data.store._id,
+        });
       }
     },
   },
   mounted() {
     let user = localStorage.getItem("user-info");
     if (user) {
-      this.$router.push({ name: "ProfileView" });
+      this.$router.push({
+        name: "ProfileView"
+        // path: "profileview/" + this.$route.params.id,
+      });
     }
   },
 };

@@ -61,7 +61,12 @@ export default {
     if (!user) {
       this.$router.push({ name: "LoginView" });
     }
-    
+
+    let userStore = localStorage.getItem("hasCreatedStore");
+    if (userStore == false) {
+      this.$router.push({ name: "InputTokoView" });
+    }
+
     axios
       .get(
         "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +

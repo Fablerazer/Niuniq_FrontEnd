@@ -66,7 +66,6 @@ export default {
     };
   },
   async created() {
-    // 'user' ini harus dicek sesuai sama punya kita
     const response = await axios.get(
       "https://niuniq.herokuapp.com/api/web/niuniq/auth/me"
     );

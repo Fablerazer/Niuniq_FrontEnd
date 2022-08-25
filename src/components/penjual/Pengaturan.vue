@@ -31,7 +31,7 @@
               id="exampleInputTelepon1"
               aria-describedby="teleponHelp"
               placeholder=""
-              :value="user.noTelepon"
+              v-model="noTelepon"
             />
           </div>
         </div>
@@ -39,6 +39,7 @@
           type="button"
           class="btn btn-success btn-lg btn-block"
           style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+          @click="onSubmit"
         >
           Simpan
         </button>
@@ -119,6 +120,8 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CPengaturan",
   props: ["user"],
@@ -128,6 +131,7 @@ export default {
       inputTypeIcon: "password",
       ShowPassword: "Show Password",
       HidePassword: "Hide Password",
+      noTelepon: this.user?.noTelepon || "",
     };
   },
   methods: {
@@ -137,6 +141,31 @@ export default {
     ToggleButtonIcon() {
       this.inputTypeIcon =
         this.inputTypeIcon === "password" ? "text" : "password";
+    },
+    onSubmit() {
+      let formData = new FormData();
+      formData.append("noTelepon", this.noTelepon);
+      axios
+        .put(
+          "https://niuniq.herokuapp.com/api/web/niuniq/auth/updatedetails",
+          formData,
+          {
+            headers: {
+              "Content-Type": "multipart/form-data",
+            },
+          }
+        )
+        .then((response) => {
+          console.log(response);
+          if (response.status == 200) {
+            this.$router.push({
+              path: "profileview/" + this.$route.params.id,
+            });
+          }
+        })
+        .catch((error) => {
+          console.error("There was an error!", error);
+        });
     },
   },
 };

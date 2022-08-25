@@ -31,16 +31,18 @@ export default {
     },
   },
   mounted() {
-    let user = localStorage.getItem("user-info");
-    if (!user) {
+    let userInfo = localStorage.getItem("user-info");
+    if (!userInfo) {
       this.$router.push({ name: "LoginView" });
     }
-    
+
+    let userStore = localStorage.getItem("hasCreatedStore");
+    if (userStore == false) {
+      this.$router.push({ name: "InputTokoView" });
+    }
+
     axios
-      .get(
-        "https://niuniq.herokuapp.com/api/web/niuniq/users/" +
-          this.$route.params.id
-      )
+      .get("https://niuniq.herokuapp.com/api/web/niuniq/auth/me")
       .then((response) => {
         this.setUsers(response.data.data);
         console.log(response.data.data);

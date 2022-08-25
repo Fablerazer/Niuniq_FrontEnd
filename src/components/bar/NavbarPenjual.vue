@@ -1,9 +1,9 @@
 <template>
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <a class="navbar-brand" href="/registerview"
+      <router-link class="navbar-brand" to="/homeview"
         ><img class="img-table-1" src="@/assets/img/logo-niuniq.png"
-      /></a>
+      /></router-link>
       <button
         class="navbar-toggler"
         type="button"
