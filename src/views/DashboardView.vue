@@ -96,7 +96,11 @@ export default {
     getProducts() {
       var config = {
         method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        // jangan dihapus
+        // url: "https://niuniq.herokuapp.com/api/web/niuniq/products"
+        url: "https://niuniq.herokuapp.com/api/web/niuniq/stores/"+
+          this.$route.params.id +
+          "/products",
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },
@@ -115,7 +119,9 @@ export default {
     getData() {
       var config = {
         method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        url: "https://niuniq.herokuapp.com/api/web/niuniq/stores/"+
+          this.$route.params.id +
+          "/products",
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },
@@ -132,7 +138,9 @@ export default {
     getProductsByPage(page) {
       var config = {
         method: "get",
-        url: `https://niuniq.herokuapp.com/api/web/niuniq/products/?page=${page}`,
+        url: `https://niuniq.herokuapp.com/api/web/niuniq/stores/${this.route.params.id}/products/?page=${page}`,
+        // jangan dihapus
+        // url: `https://niuniq.herokuapp.com/api/web/niuniq/products/?page=${page}`,
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },

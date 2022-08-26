@@ -69,7 +69,7 @@ export default {
         if (sec.classList.contains(this.current)) {
           sec.classList.add("active");
           this.activeRoute = this.current;
-          console.log("fdsajfajdsh c", this.activeRoute);
+          console.log("testing c", this.activeRoute);
         }
       });
     },

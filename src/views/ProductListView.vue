@@ -71,7 +71,11 @@
                         <button
                           type="button"
                           class="btn-action-main btn btn-success"
-                          @click="$bvModal.show('bv-modal-download' + product.productId)"
+                          @click="
+                            $bvModal.show(
+                              'bv-modal-download' + product.productId
+                            )
+                          "
                         >
                           <img
                             src="@/assets/img/ic-file-download.svg"
@@ -79,7 +83,11 @@
                             class="d-inline-block align-text-top"
                           />
                         </button>
-                        <b-modal :id="'bv-modal-download' + product.productId" centered hide-footer>
+                        <b-modal
+                          :id="'bv-modal-download' + product.productId"
+                          centered
+                          hide-footer
+                        >
                           <div class="d-block text-center mt-2 mb-4">
                             <img
                               src="@/assets/img/popup-save.png"
@@ -164,7 +172,11 @@
                         class="d-inline-block align-text-top"
                       />
                     </button>
-                    <b-modal :id="'bv-modal-dihapus' + product.productId" centered hide-footer>
+                    <b-modal
+                      :id="'bv-modal-dihapus' + product.productId"
+                      centered
+                      hide-footer
+                    >
                       <div class="d-block text-center mt-2 mb-4">
                         <img
                           src="@/assets/img/popup-save.png"
@@ -568,9 +580,9 @@ export default {
     this.getData();
   },
   methods: {
-    deleteProduct(id) {
+    deleteProduct(_id) {
       axios
-        .delete("https://niuniq.herokuapp.com/api/web/niuniq/products/" + id)
+        .delete("https://niuniq.herokuapp.com/api/web/niuniq/products/" + _id)
         .then((response) => {
           console.log(response);
           this.$router.go();
@@ -582,7 +594,12 @@ export default {
     getProducts() {
       var config = {
         method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        // jangan dihapus
+        // url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        url:
+          "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
+          this.$route.params.id +
+          "/products",
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },
@@ -598,7 +615,12 @@ export default {
     getData() {
       var config = {
         method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        // jangan dihapus
+        // url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        url:
+          "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
+          this.$route.params.id +
+          "/products",
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },
@@ -616,6 +638,7 @@ export default {
       var config = {
         method: "get",
         url: `https://niuniq.herokuapp.com/api/web/niuniq/products/?page=${page}`,
+        // url: `https://niuniq.herokuapp.com/api/web/niuniq/stores/${this.route.params.id}/products/?page=${page}`,
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },
