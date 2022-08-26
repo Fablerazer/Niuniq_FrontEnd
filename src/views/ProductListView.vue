@@ -637,8 +637,8 @@ export default {
     getProductsByPage(page) {
       var config = {
         method: "get",
-        url: `https://niuniq.herokuapp.com/api/web/niuniq/products/?page=${page}`,
-        // url: `https://niuniq.herokuapp.com/api/web/niuniq/stores/${this.route.params.id}/products/?page=${page}`,
+        url: `https://niuniq.herokuapp.com/api/web/niuniq/stores/${this.$route.params.id}/products/?page=${page}`,
+        // url: `https://niuniq.herokuapp.com/api/web/niuniq/products/?page=${page}`,
         headers: {
           Cookie: `token=${localStorage.getItem("token")}`,
         },
