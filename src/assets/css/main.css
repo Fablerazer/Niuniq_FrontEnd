@@ -103,6 +103,12 @@ header.masthead {
   margin-bottom: 2rem;
 }
 
+.img-table-2 {
+  width: 43px;
+  height: 43px;
+  object-fit: cover;
+}
+
 .img-table-1 {
   width: 113px;
   height: 42px;

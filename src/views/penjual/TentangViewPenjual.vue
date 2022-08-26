@@ -7,7 +7,6 @@
 </template>
 
 <script>
-// @ is an alias to /src
 import CNavbarPenjual from "@/components/bar/NavbarPenjual.vue";
 import CAboutpage from "@/components/Tentang.vue";
 // import CPagination from "@/components/Pagination.vue";

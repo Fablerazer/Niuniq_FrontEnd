@@ -8,11 +8,11 @@
       >Informasi Toko</span
     >
     <hr />
-    <img src="@/assets/img/shop-info.png" class="card-img-bottom mt-3 mb-3" />
+    <img :src="path + '/documents/images/stores/' + store.photo" class="card-img-bottom mt-3 mb-3" />
     <div class="d-flex w-100 mb-3 align-items-center justify-content-between">
       <div class="d-flex align-items-center">
         <img
-          src="@/assets/img/dummy-logo.svg"
+          :src="path + '/documents/images/logos/' + store.logo"
           alt=""
           class="d-inline-block align-text-top w-25 me-3"
         />
@@ -55,5 +55,10 @@
 export default {
   name: "ShopInfoView",
   props: ["store"],
+  data() {
+    return {
+      path: "https://niuniq.herokuapp.com"
+    };
+  },
 };
 </script>

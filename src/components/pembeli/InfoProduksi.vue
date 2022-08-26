@@ -8,17 +8,17 @@
           membuktikan bahwa produk tersebut asli.
         </p>
         <div class="mb-3">
-          <a :href="path + store.linkShopee" target="_blank">
+          <a :href="paths + store.linkShopee" target="_blank">
             <button type="button" class="btn btn-info btn-sm">
               Kunjungi Shopee
             </button>
           </a>
-          <a :href="path + store.linkTokopedia" target="_blank">
+          <a :href="paths + store.linkTokopedia" target="_blank">
             <button type="button" class="btn btn-info ml-3 btn-sm">
               Kunjungi Tokopedia
             </button>
           </a>
-          <a :href="path + store.linkBlibli" target="_blank">
+          <a :href="paths + store.linkBlibli" target="_blank">
             <button type="button" class="btn btn-info ml-3 btn-sm">
               Kunjungi Blibli
             </button>
@@ -26,10 +26,11 @@
         </div>
         <div class="mb-4">
           <img
-            src="@/assets/img/infoproduk-pict.png"
+            :src="path + '/documents/images/stores/' + store.photo"
             class="img-detail"
             alt="Responsive image"
           />
+          <!-- :src="@/assets/img/infoproduk-pict.png" -->
         </div>
         <table class="table table-striped">
           <thead style="background: #edf4ed">
@@ -43,12 +44,13 @@
             <tr style="background: white">
               <td>
                 <img
-                  class="img-table mr-2"
-                  src="@/assets/img/logo-rmhbmb.png"
+                  class="img-table-2 mr-2"
+                  :src="path + '/documents/images/logos/' + store.logo"
                 />{{ store.name }}
+                <!-- src="@/assets/img/logo-rmhbmb.png" -->
               </td>
-              <td>{{ product.yearProduction }}</td>
-              <td>{{ store.address }}</td>
+              <td >{{ product.yearProduction }}</td>
+              <td >{{ store.address }}</td>
             </tr>
           </tbody>
         </table>
@@ -63,7 +65,8 @@ export default {
   props: ["store", "product"],
   data() {
     return {
-      path: "https://",
+      paths: "https://",
+      path: "https://niuniq.herokuapp.com"
     };
   },
   mounted() {

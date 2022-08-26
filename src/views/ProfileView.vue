@@ -27,6 +27,10 @@ export default {
     if (userStore == false) {
       this.$router.push({ name: "InputTokoView" });
     }
+
+    if (userStore.hasCreatedStore == false) {
+      this.$router.push({ name: "InputTokoView" });
+    }
   },
 };
 </script>
