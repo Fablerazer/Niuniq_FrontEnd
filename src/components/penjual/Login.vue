@@ -46,11 +46,6 @@
       </form>
       <div>
         <hr />
-        <a href="/profileview">
-          <button type="button" class="btn btn-outline-info">
-            Log in with google
-          </button>
-        </a>
         <p>
           Belum punya akun?
           <a href="/registerview" class="card-link">Daftar disini</a>

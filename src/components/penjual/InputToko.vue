@@ -100,39 +100,39 @@
         </div>
         <hr />
         <div class="form-group">
-          <label for="exampleInputTelepon1">Link Blibli</label>
+          <label for="exampleInputblibli">Link Blibli</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              type="blibli"
               class="form-control"
-              id="exampleInputTelepon1"
-              aria-describedby="teleponHelp"
+              id="exampleInputblibli"
+              aria-describedby="blibliHelp"
               placeholder="Masukkan link Blibli"
               v-model="linkBlibli"
             />
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Link Shopee</label>
+          <label for="exampleInputshopee">Link Shopee</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              type="shopee"
               class="form-control"
-              id="exampleInputTelepon1"
-              aria-describedby="teleponHelp"
+              id="exampleInputshopee"
+              aria-describedby="shopeeHelp"
               placeholder="Masukkan link Shopee"
               v-model="linkShopee"
             />
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Link Tokopedia</label>
+          <label for="exampleInputtokopedia">Link Tokopedia</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              type="tokopedia"
               class="form-control"
-              id="exampleInputTelepon1"
-              aria-describedby="teleponHelp"
+              id="exampleInputtokopedia"
+              aria-describedby="tokopediaHelp"
               placeholder="Masukkan link Tokopedia"
               v-model="linkTokopedia"
             />
@@ -227,7 +227,7 @@ export default {
           )
           .then((response) => {
             console.log(response);
-            if (response.status == 200) {
+            if (response.status == 200 || response.status == 201) {
               this.$router.push({
                 path: "profileview/" + this.$route.params.id,
               });
@@ -248,7 +248,14 @@ export default {
               },
             }
           )
-          .then((response) => console.log(response))
+          .then((response) => {
+            console.log(response);
+            if (response.status == 200 || response.status == 201) {
+              this.$router.push({
+                path: "profileview/" + this.$route.params.id,
+              });
+            }
+            })
           .catch((error) => {
             console.error("There was an error!", error);
           });

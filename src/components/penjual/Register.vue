@@ -63,11 +63,6 @@
         </button>
         <!-- </a> -->
         <hr />
-        <a href="/">
-          <button type="button" class="btn btn-outline-info">
-            Log in with google
-          </button>
-        </a>
         <p>
           Sudah punya akun?
           <a href="/loginview" class="card-link">Masuk disini</a>
@@ -101,12 +96,12 @@ export default {
       );
 
       console.warn(result);
-      if (result.status == 200) {
+      if (result.status == 200 || result.status == 201) {
         alert("register success");
         localStorage.setItem("user-info", JSON.stringify(result.data));
         localStorage.setItem("token", result.data.token);
         localStorage.setItem("hasCreatedStore", result.data.data.hasCreatedStore);
-        this.$router.push({ path: "inputtokoview/create" });
+        this.$router.push({ path: "inputtokoview/createStore" });
       }
     },
   },
