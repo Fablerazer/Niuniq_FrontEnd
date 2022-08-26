@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/homeview"
+      <router-link class="navbar-brand" :to="'/profileview/' + this.$route.params.id"
         ><img class="img-table-1" src="@/assets/img/logo-niuniq.png"
       /></router-link>
       <button

@@ -14,7 +14,7 @@
         <img
           :src="path + '/documents/images/logos/' + store.logo"
           alt=""
-          class="d-inline-block align-text-top w-25 me-3"
+          class="img-table-2 mr-2"
         />
         <span class="fs-1 fw-bold">{{ store.name }}</span>
       </div>

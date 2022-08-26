@@ -51,7 +51,7 @@ export default {
   data() {
     return {
       menus: ["Informasi Produksi", "Detail Produk", "Dokumentasi Produk"],
-      route: ["shop-info", "dashboard", "product-list"],
+      route: ["CInputInfoDetail", "CInputInfoDetail", "CInputInfoDetail"],
     };
   },
 };
