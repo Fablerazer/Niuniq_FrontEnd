@@ -71,7 +71,7 @@
                         <button
                           type="button"
                           class="btn-action-main btn btn-success"
-                          @click="$bvModal.show('bv-modal-download')"
+                          @click="$bvModal.show('bv-modal-download' + product.productId)"
                         >
                           <img
                             src="@/assets/img/ic-file-download.svg"
@@ -79,7 +79,7 @@
                             class="d-inline-block align-text-top"
                           />
                         </button>
-                        <b-modal id="bv-modal-download" centered hide-footer>
+                        <b-modal :id="'bv-modal-download' + product.productId" centered hide-footer>
                           <div class="d-block text-center mt-2 mb-4">
                             <img
                               src="@/assets/img/popup-save.png"
@@ -155,7 +155,7 @@
                       class="btn-action-permanent btn btn-outline-success"
                       @click="
                         deleteProduct(product._id),
-                          $bvModal.show('bv-modal-dihapus')
+                          $bvModal.show('bv-modal-dihapus' + product.productId)
                       "
                     >
                       <img
@@ -164,7 +164,7 @@
                         class="d-inline-block align-text-top"
                       />
                     </button>
-                    <b-modal id="bv-modal-dihapus" centered hide-footer>
+                    <b-modal :id="'bv-modal-dihapus' + product.productId" centered hide-footer>
                       <div class="d-block text-center mt-2 mb-4">
                         <img
                           src="@/assets/img/popup-save.png"

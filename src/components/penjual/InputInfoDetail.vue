@@ -216,7 +216,12 @@ export default {
               },
             }
           )
-          .then((response) => console.log(response))
+          .then((response) => {
+            console.log(response),
+              this.$router.push({
+                path: "profileview/" + this.$route.params.id,
+              });
+          })
           .catch((error) => {
             console.error("There was an error!", error);
           });
