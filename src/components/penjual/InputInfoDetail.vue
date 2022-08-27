@@ -219,7 +219,7 @@ export default {
           .then((response) => {
             console.log(response),
               this.$router.push({
-                path: "profileview/" + this.$route.params.id,
+                path: "/profileview/" + this.$route.params.id,
               });
           })
           .catch((error) => {

@@ -76,7 +76,7 @@ export default {
         }
       );
 
-      console.log(response);
+      // console.log(response.data.data.store[0]);
       if (response.status == 200) {
         localStorage.setItem("user-info", JSON.stringify(response.data));
         localStorage.setItem("token", response.data.token);
@@ -84,9 +84,15 @@ export default {
           "hasCreatedStore",
           response.data.data.hasCreatedStore
         );
+        if (response.data.data.store.length > 0){
         this.$router.push({
-          path: "profileview/" + response.data.data.store._id,
+          path: "/profileview/" + response.data.data.store[0]._id,
+        });}
+        else{
+          this.$router.push({
+          path: "/inputtokoview/createStore",
         });
+        }
       }
     },
   },

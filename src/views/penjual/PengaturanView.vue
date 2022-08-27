@@ -2,7 +2,7 @@
   <div>
     <CNavbarPenjual />
     <div style="background-color: #f9f9f9">
-      <div class="container">
+      <div v-if="user" class="container">
         <CPengaturan :user="user" />
       </div>
     </div>
@@ -22,7 +22,7 @@ export default {
   },
   data() {
     return {
-      user: [],
+      user: null,
     };
   },
   methods: {
@@ -37,7 +37,7 @@ export default {
     }
 
     let userStore = localStorage.getItem("hasCreatedStore");
-    if (userStore == false) {
+    if (userStore == "false") {
       this.$router.push({ name: "InputTokoView" });
     }
 

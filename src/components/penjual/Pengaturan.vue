@@ -159,7 +159,7 @@ export default {
           console.log(response);
           if (response.status == 200) {
             this.$router.push({
-              path: "profileview/" + this.$route.params.id,
+              path: "/profileview/" + this.$route.params.id,
             });
           }
         })

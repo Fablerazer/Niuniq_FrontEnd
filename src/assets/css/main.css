@@ -103,15 +103,21 @@ header.masthead {
   margin-bottom: 2rem;
 }
 
+.img-table-1 {
+  width: 113px;
+  height: 42px;
+  object-fit: cover;
+}
+
 .img-table-2 {
   width: 43px;
   height: 43px;
   object-fit: cover;
 }
 
-.img-table-1 {
-  width: 113px;
-  height: 42px;
+.img-table-3 {
+  width: 76px;
+  height: 76px;
   object-fit: cover;
 }
 

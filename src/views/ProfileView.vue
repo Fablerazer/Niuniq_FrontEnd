@@ -24,13 +24,10 @@ export default {
     }
 
     let userStore = localStorage.getItem("hasCreatedStore");
-    if (userStore == false) {
+    if (userStore == "false") {
       this.$router.push({ name: "InputTokoView" });
     }
 
-    if (userStore.hasCreatedStore == false) {
-      this.$router.push({ name: "InputTokoView" });
-    }
   },
 };
 </script>

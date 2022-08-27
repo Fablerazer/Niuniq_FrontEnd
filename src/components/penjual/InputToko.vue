@@ -229,7 +229,7 @@ export default {
             console.log(response);
             if (response.status == 200 || response.status == 201) {
               this.$router.push({
-                path: "profileview/" + this.$route.params.id,
+                path: "/profileview/" + this.$route.params.id,
               });
             }
           })
@@ -251,11 +251,19 @@ export default {
           .then((response) => {
             console.log(response);
             if (response.status == 200 || response.status == 201) {
+              localStorage.removeItem("hasCreatedStore");
+              localStorage.setItem(
+                "hasCreatedStore",
+                response.data.data.hasCreatedStore
+              );
               this.$router.push({
-                path: "profileview/" + this.$route.params.id,
+                path: "/profileview/" + this.$route.params.id,
               });
+              // this.$router.push({
+              //   path: "/profileview/" + response.data.data.store[0]._id,
+              // });
             }
-            })
+          })
           .catch((error) => {
             console.error("There was an error!", error);
           });
