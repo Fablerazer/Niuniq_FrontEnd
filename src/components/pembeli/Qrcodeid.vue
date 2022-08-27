@@ -46,7 +46,18 @@
                   </div>
                   <div class="col-md-3">
                     <router-link :to="'/detailview/' + this.search">
-                      <button type="submit" class="btn btn-info">Cari</button>
+                      <button
+                        type="submit"
+                        class="btn btn-info"
+                        style="
+                          padding: 12px 16px;
+                          gap: 10px;
+                          width: 100%;
+                          height: 100%;
+                        "
+                      >
+                        Cari
+                      </button>
                     </router-link>
                   </div>
                 </div>
@@ -165,13 +176,14 @@
               <div class="card-body">
                 <div class="row">
                   <div class="col-md-9">
-                    <div class="form-group">
+                    <div class="form-group" style="height: 100%">
                       <input
                         type="text"
                         class="form-control"
                         id="exampleInputEmail1"
                         aria-describedby="emailHelp"
                         placeholder="Masukkan ID produk"
+                        style="padding: 10px 10px; width: 100%; height: 100%"
                         v-model="search"
                       />
                     </div>
