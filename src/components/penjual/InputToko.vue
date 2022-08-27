@@ -237,7 +237,7 @@ export default {
             console.error("There was an error!", error);
           });
       } else {
-        console.log(this.selectedFiles);
+        console.log(localStorage.getItem("token"));
         axios
           .post(
             "https://niuniq.herokuapp.com/api/web/niuniq/stores",
@@ -245,6 +245,7 @@ export default {
             {
               headers: {
                 "Content-Type": "multipart/form-data",
+                "Authorization": "Bearer " + localStorage.getItem("token"),
               },
             }
           )
@@ -256,12 +257,12 @@ export default {
                 "hasCreatedStore",
                 response.data.data.hasCreatedStore
               );
-              this.$router.push({
-                path: "/profileview/" + this.$route.params.id,
-              });
               // this.$router.push({
-              //   path: "/profileview/" + response.data.data.store[0]._id,
+              //   path: "/profileview/" + this.$route.params.id,
               // });
+              this.$router.push({
+                path: "/profileview/" + response.data.data._id,
+              });
             }
           })
           .catch((error) => {
