@@ -8,24 +8,65 @@
       "
     >
       <div class="card-body">
-        <h5 class="informasiproduk">Informasi Produksi</h5>
+        <h5
+          class="informasiproduk"
+          style="
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+          "
+        >
+          Informasi Produksi
+        </h5>
         <p class="informasiproduk">
           Informasi produksi merupakan keterangan dari sebuah produk untuk
           membuktikan bahwa produk tersebut asli.
         </p>
         <div class="mb-3">
           <a :href="paths + store.linkShopee" target="_blank">
-            <button type="button" class="btn btn-info btn-sm">
+            <button
+              type="button"
+              class="btn btn-info btn-sm"
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+              "
+            >
               Kunjungi Shopee
             </button>
           </a>
           <a :href="paths + store.linkTokopedia" target="_blank">
-            <button type="button" class="btn btn-info ml-3 btn-sm">
+            <button
+              type="button"
+              class="btn btn-info ml-3 btn-sm"
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+              "
+            >
               Kunjungi Tokopedia
             </button>
           </a>
           <a :href="paths + store.linkBlibli" target="_blank">
-            <button type="button" class="btn btn-info ml-3 btn-sm">
+            <button
+              type="button"
+              class="btn btn-info ml-3 btn-sm"
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 24px;
+              "
+            >
               Kunjungi Blibli
             </button>
           </a>
@@ -35,6 +76,7 @@
             :src="path + '/documents/images/stores/' + store.photo"
             class="img-detail"
             alt="Responsive image"
+            style="border-radius: 8px"
           />
           <!-- :src="@/assets/img/infoproduk-pict.png" -->
         </div>

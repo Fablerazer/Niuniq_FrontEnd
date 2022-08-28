@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-4">
+  <div class="row mt-2">
     <div
       v-for="product in filteredProducts"
       :key="product._id"
@@ -10,8 +10,9 @@
       >
         <img
           :src="path + '/documents/images/products/' + product.photos[0]"
-          class="rounded img-fluid"
+          class="img-fluid"
           :alt="'picture'"
+          style="width: 100%; max-height: 418px; max-width: 418px; border-radius: 8px;"
         />
       </router-link>
     </div>

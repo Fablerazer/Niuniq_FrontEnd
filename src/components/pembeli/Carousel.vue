@@ -1,5 +1,5 @@
 <template>
-  <div class="row mt-4">
+  <div class="row" style="margin-top: 60px; margin-bottom: 80px">
     <div class="col-md-6">
       <b-carousel
         id="carousel-1"

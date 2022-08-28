@@ -2,7 +2,7 @@
   <div>
     <CNavbar />
     <Qrcodeid />
-    <div class="container">
+    <div class="container" style="width: 100%; max-width: 1080px">
       <CStorepreview :product="products" />
     </div>
   </div>
