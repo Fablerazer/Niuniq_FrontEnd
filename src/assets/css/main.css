@@ -24,8 +24,10 @@ section.bginputtoko {
 }
 
 section.bglognreg {
-  padding-top: 70%;
-  padding-bottom: 30%;
+  /* padding-top: 25%;
+  padding-bottom: 30%; */
+  padding-top: 10%;
+  padding-bottom: 20%;
   text-align: center;
   background-image: url("@/assets/img/lognreg-bg.png");
   background-repeat: no-repeat;

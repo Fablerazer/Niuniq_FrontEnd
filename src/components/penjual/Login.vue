@@ -1,11 +1,31 @@
 <template>
   <section class="lognreg">
     <div>
-      <h3 class="lognreg">Masuk</h3>
+      <h3
+        class="lognreg"
+        style="
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+        "
+      >
+        Masuk
+      </h3>
     </div>
     <div>
       <form @submit.prevent="handleSubmit">
-        <div class="form-group">
+        <div
+          class="form-group"
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            padding: 0px;
+            width: 436px;
+            margin-top: 14px;
+          "
+        >
           <label for="exampleInputEmail1">Email</label>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
@@ -21,8 +41,24 @@
             />
           </div>
         </div>
-        <div class="form-group">
-          <label for="exampleInputPassword1">Kata Sandi</label>
+        <div
+          class="form-group"
+          style="
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 0px;
+            gap: 2px;
+            width: 436px;
+            height: 90px;
+            flex: none;
+            order: 1;
+            flex-grow: 0;
+          "
+        >
+          <label for="exampleInputPassword1" style="margin-top: 14px"
+            >Kata Sandi</label
+          >
           <div class="input-group mb-2">
             <div class="input-group-prepend">
               <div class="input-group-text"><b-icon-lock /></div>
@@ -35,20 +71,53 @@
               v-model="password"
             />
           </div>
-          <a href="#" class="card-link">Lupa kata sandi?</a>
+          <a
+            href="#"
+            class="card-link"
+            style="
+              text-align: right;
+              align-items: flex-end;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 13px;
+              line-height: 24px;
+            "
+            >Lupa kata sandi?</a
+          >
         </div>
         <!-- <a href="/profileview"> -->
-        <button class="btn btn-info">Masuk</button>
+        <button
+          class="btn btn-info"
+          style="
+            margin-top: 24px;
+            padding: 12px;
+            width: 100%;
+            height: 100%;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 14px;
+            line-height: 24px;
+          "
+        >
+          Masuk
+        </button>
         <!-- <button v-on:click="login" type="submit" class="btn btn-info">
           Masuk
         </button> -->
         <!-- </a> -->
       </form>
       <div>
-        <hr />
-        <p>
+        <hr style="margin-top: 24px" />
+        <p style="margin-top: 20px; text-align: center">
           Belum punya akun?
-          <a href="/registerview" class="card-link">Daftar disini</a>
+          <a
+            href="/registerview"
+            class="card-link"
+            style="font-family: 'Inter'; font-style: normal; font-weight: 600"
+            >Daftar disini</a
+          >
         </p>
       </div>
     </div>

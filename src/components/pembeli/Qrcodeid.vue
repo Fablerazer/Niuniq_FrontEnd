@@ -21,50 +21,7 @@
             alt="image slot"
           />
         </template>
-        <div class="container" style="width: 80%; height: 70vh">
-          <div style="align-self: center">
-            <h1 style="text-align: center">
-              Lihat detail produk dengan memasukkan ID QRCode
-            </h1>
-            <p style="text-align: center">
-              Masukan ID QRCode untuk mendapatkan detail produk
-            </p>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Masukkan ID produk"
-                        v-model="search"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <router-link :to="'/detailview/' + this.search">
-                      <button
-                        type="submit"
-                        class="btn btn-info"
-                        style="
-                          padding: 12px 16px;
-                          gap: 10px;
-                          width: 100%;
-                          height: 100%;
-                        "
-                      >
-                        Cari
-                      </button>
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CQrcodecard />
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
@@ -76,39 +33,7 @@
             alt="image slot"
           />
         </template>
-        <div class="container" style="width: 80%; height: 70vh">
-          <div style="align-self: center">
-            <h1 style="text-align: center">
-              Lihat detail produk dengan memasukkan ID QRCode
-            </h1>
-            <p style="text-align: center">
-              Masukan ID QRCode untuk mendapatkan detail produk
-            </p>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Masukkan ID produk"
-                        v-model="search"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <router-link :to="'/detailview/' + this.search">
-                      <button type="submit" class="btn btn-info">Cari</button>
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CQrcodecard />
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
@@ -120,39 +45,7 @@
             alt="image slot"
           />
         </template>
-        <div class="container" style="width: 80%; height: 70vh">
-          <div style="align-self: center">
-            <h1 style="text-align: center">
-              Lihat detail produk dengan memasukkan ID QRCode
-            </h1>
-            <p style="text-align: center">
-              Masukan ID QRCode untuk mendapatkan detail produk
-            </p>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="form-group">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Masukkan ID produk"
-                        v-model="search"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <router-link :to="'/detailview/' + this.search">
-                      <button type="submit" class="btn btn-info">Cari</button>
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CQrcodecard />
       </b-carousel-slide>
       <b-carousel-slide>
         <template #img>
@@ -164,49 +57,21 @@
             alt="image slot"
           />
         </template>
-        <div class="container" style="width: 80%; height: 70vh">
-          <div style="align-self: center">
-            <h1 style="text-align: center">
-              Lihat detail produk dengan memasukkan ID QRCode
-            </h1>
-            <p style="text-align: center">
-              Masukan ID QRCode untuk mendapatkan detail produk
-            </p>
-            <div class="card">
-              <div class="card-body">
-                <div class="row">
-                  <div class="col-md-9">
-                    <div class="form-group" style="height: 100%">
-                      <input
-                        type="text"
-                        class="form-control"
-                        id="exampleInputEmail1"
-                        aria-describedby="emailHelp"
-                        placeholder="Masukkan ID produk"
-                        style="padding: 10px 10px; width: 100%; height: 100%"
-                        v-model="search"
-                      />
-                    </div>
-                  </div>
-                  <div class="col-md-3">
-                    <router-link :to="'/detailview/' + this.search">
-                      <button type="submit" class="btn btn-info">Cari</button>
-                    </router-link>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <CQrcodecard />
       </b-carousel-slide>
     </b-carousel>
   </div>
 </template>
 
 <script>
+import CQrcodecard from "@/components/pembeli/repeatedcomponent/Qrcodecard.vue";
+
 import axios from "axios";
 export default {
   name: "CQrcodeid",
+  components: {
+    CQrcodecard,
+  },
   data() {
     return {
       slide: 0,

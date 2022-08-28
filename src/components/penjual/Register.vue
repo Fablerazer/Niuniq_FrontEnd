@@ -1,13 +1,54 @@
 <template>
-  <section class="lognreg">
-    <div>
-      <h3 class="lognreg">Buat Akun</h3>
-      <h6 class="lognreg">
+  <section
+    class="lognreg"
+    style="
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-end;
+      align-items: flex-start;
+      width: 100%;
+      height: 100%;
+    "
+  >
+    <div
+      style="
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 0px;
+        width: 100%;
+        height: 100%;
+        flex: none;
+        order: 0;
+        align-self: stretch;
+        flex-grow: 0;
+      "
+    >
+      <h3
+        class="lognreg"
+        style="
+          font-family: Inter;
+          font-style: normal;
+          font-weight: 600;
+          font-size: 32px;
+        "
+      >
+        Buat Akun
+      </h3>
+      <h6
+        class="lognreg"
+        style="
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 12px;
+        "
+      >
         Lengkapi data-data dibawah ini untuk mendapatkan akun.
       </h6>
     </div>
     <div>
-      <form>
+      <form style="margin-top: 14px">
         <div class="form-group">
           <label for="exampleInputTelepon1">No. Telepon</label>
           <div class="input-group mb-2">
@@ -21,6 +62,20 @@
               aria-describedby="teleponHelp"
               placeholder="Masukkan no telepon anda"
               v-model="noTelepon"
+              style="
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                padding: 10px 0px 10px 8px;
+                gap: 8px;
+                width: 436px;
+                height: 40px;
+                background: #ffffff;
+                flex: none;
+                order: 1;
+                align-self: stretch;
+                flex-grow: 0;
+              "
             />
           </div>
         </div>
@@ -58,14 +113,33 @@
       </form>
       <div>
         <!-- <a href="/inputtokoview"> -->
-        <button type="submit" class="btn btn-info" v-on:click="register">
+        <button
+          type="submit"
+          class="btn btn-info"
+          style="
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 12px 16px;
+            gap: 10px;
+            width: 100%;
+            margin-top: 30px;
+          "
+          v-on:click="register"
+        >
           Daftar
         </button>
         <!-- </a> -->
-        <hr />
-        <p>
+        <hr style="margin-top: 24px" />
+        <p style="margin-top: 20px; text-align: center">
           Sudah punya akun?
-          <a href="/loginview" class="card-link">Masuk disini</a>
+          <a
+            href="/loginview"
+            class="card-link"
+            style="font-family: 'Inter'; font-style: normal; font-weight: 600"
+            >Masuk disini</a
+          >
         </p>
       </div>
     </div>
@@ -100,7 +174,10 @@ export default {
         alert("register success");
         localStorage.setItem("user-info", JSON.stringify(result.data));
         localStorage.setItem("token", result.data.token);
-        localStorage.setItem("hasCreatedStore", result.data.data.hasCreatedStore);
+        localStorage.setItem(
+          "hasCreatedStore",
+          result.data.data.hasCreatedStore
+        );
         this.$router.push({ path: "inputtokoview/createStore" });
       }
     },
