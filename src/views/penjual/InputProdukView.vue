@@ -6,7 +6,7 @@
       <div
         v-if="products || !isEdit"
         class="container"
-        style="padding-left: 180px"
+        style="padding-left: 180px; padding-top: 32px"
       >
         <CInputInfoDetail :product="products" :isEdit="isEdit" />
       </div>

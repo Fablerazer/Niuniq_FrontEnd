@@ -31,7 +31,7 @@
         </div>
       </div>
       <div
-        class="bg-light p-4 pe-5"
+        class="bg-light pe-5"
         style="width: 85%; margin-left: 15% !important"
       >
         <!-- <router-view /> -->

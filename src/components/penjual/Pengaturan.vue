@@ -1,15 +1,44 @@
 <template>
   <div>
-    <div class="card" style="width: 100%; height: 85%">
-      <div class="card-body">
+    <div
+      class="card"
+      style="
+        width: 100%;
+        height: 85%;
+        box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
+        border-radius: 8px;
+      "
+    >
+      <div class="card-body" style="padding: 32px">
         <div class="row">
           <div class="col-md-6">
-            <h2>Informasi Akun</h2>
+            <h2
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+              "
+            >
+              Informasi Akun
+            </h2>
           </div>
         </div>
-        <hr />
+        <hr style="margin-top: 0"/>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Email</label>
+          <label
+            for="exampleInputTelepon1"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 16px;
+              color: #777b80;
+            "
+            >Email</label
+          >
           <div class="input-group mb-2">
             <input
               type="telepon"
@@ -23,7 +52,18 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">No. Handphone</label>
+          <label
+            for="exampleInputTelepon1"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 16px;
+              color: #777b80;
+            "
+            >No. Handphone</label
+          >
           <div class="input-group mb-2">
             <input
               type="telepon"
@@ -38,7 +78,12 @@
         <button
           type="button"
           class="btn btn-success btn-lg btn-block"
-          style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+          style="
+            background-color: #4e944f;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 30px;
+          "
           @click="onSubmit"
         >
           Simpan
@@ -46,16 +91,45 @@
       </div>
     </div>
     <br />
-    <div class="card mt-3" style="width: 100%; height: 85%">
-      <div class="card-body">
+    <div
+      class="card mt-3"
+      style="
+        width: 100%;
+        height: 85%;
+        box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
+        border-radius: 8px;
+      "
+    >
+      <div class="card-body" style="padding: 32px">
         <div class="row">
           <div class="col-md-6">
-            <h2>Ubah kata sandi</h2>
+            <h2
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 24px;
+                line-height: 32px;
+              "
+            >
+              Ubah kata sandi
+            </h2>
           </div>
         </div>
-        <hr />
+        <hr style="margin-top: 0"/>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Kata sandi saat ini</label>
+          <label
+            for="exampleInputTelepon1"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 16px;
+              color: #777b80;
+            "
+            >Kata sandi saat ini</label
+          >
           <div class="input-group mb-2">
             <input
               :type="inputTypeIcon"
@@ -67,7 +141,18 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Kata sandi baru</label>
+          <label
+            for="exampleInputTelepon1"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 16px;
+              color: #777b80;
+            "
+            >Kata sandi baru</label
+          >
           <div class="input-group mb-2">
             <input
               :type="inputTypeIcon"
@@ -87,7 +172,18 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Konfirmasi kata sandi baru</label>
+          <label
+            for="exampleInputTelepon1"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 16px;
+              color: #777b80;
+            "
+            >Konfirmasi kata sandi baru</label
+          >
           <div class="input-group mb-2">
             <input
               :type="inputTypeIcon"
@@ -110,7 +206,12 @@
         <button
           type="button"
           class="btn btn-success btn-lg btn-block"
-          style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+          style="
+            background-color: #4e944f;
+            border-radius: 8px;
+            font-size: 16px;
+            margin-top: 30px;
+          "
         >
           Simpan
         </button>

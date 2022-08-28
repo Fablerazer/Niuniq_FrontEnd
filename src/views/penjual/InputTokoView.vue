@@ -2,8 +2,8 @@
   <div>
     <CNavbarPenjual />
     <section class="bginputtoko">
-      <div v-if="stores || !isEdit" class="container">
-        <CInputToko :store="stores" :isEdit="isEdit" :userId="userId"/>
+      <div v-if="stores || !isEdit" class="container" style="height: 1000px">
+        <CInputToko :store="stores" :isEdit="isEdit" :userId="userId" />
       </div>
     </section>
   </div>

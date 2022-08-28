@@ -24,6 +24,7 @@
             padding: 0px;
             width: 436px;
             margin-top: 14px;
+            margin-bottom: 0;
           "
         >
           <label for="exampleInputEmail1">Email</label>
@@ -48,7 +49,7 @@
             flex-direction: column;
             justify-content: center;
             padding: 0px;
-            gap: 2px;
+            gap: 0px;
             width: 436px;
             height: 90px;
             flex: none;
@@ -56,9 +57,7 @@
             flex-grow: 0;
           "
         >
-          <label for="exampleInputPassword1" style="margin-top: 14px"
-            >Kata Sandi</label
-          >
+          <label for="exampleInputPassword1">Kata Sandi</label>
           <div class="input-group mb-2">
             <div class="input-group-prepend">
               <div class="input-group-text"><b-icon-lock /></div>
@@ -71,7 +70,7 @@
               v-model="password"
             />
           </div>
-          <a
+          <!-- <a
             href="#"
             class="card-link"
             style="
@@ -84,13 +83,12 @@
               line-height: 24px;
             "
             >Lupa kata sandi?</a
-          >
+          > -->
         </div>
-        <!-- <a href="/profileview"> -->
         <button
           class="btn btn-info"
           style="
-            margin-top: 24px;
+            margin-top: 4px;
             padding: 12px;
             width: 100%;
             height: 100%;
@@ -103,10 +101,6 @@
         >
           Masuk
         </button>
-        <!-- <button v-on:click="login" type="submit" class="btn btn-info">
-          Masuk
-        </button> -->
-        <!-- </a> -->
       </form>
       <div>
         <hr style="margin-top: 24px" />

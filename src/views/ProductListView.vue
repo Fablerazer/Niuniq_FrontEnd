@@ -5,7 +5,15 @@
     style="border-radius: 8px"
   >
     <div class="position-relative">
-      <span class="text-success fw-bold d-flex align-items-center fs-2"
+      <span
+        class="text-success fw-bold d-flex align-items-center fs-2"
+        style="
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 600;
+          font-size: 24px;
+          line-height: 32px;
+        "
         >Daftar Produk</span
       >
       <hr />
@@ -14,6 +22,14 @@
           <button
             type="button"
             class="btn-add-product btn btn-success text-white fw-bold"
+            style="
+              padding: 12px 16px;
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 14px;
+              line-height: 24px;
+            "
           >
             Tambah Produk
           </button>

@@ -1,7 +1,14 @@
 <template>
   <div>
-    <div class="card" style="width: 100%">
-      <div class="card-body">
+    <div
+      class="card"
+      style="
+        width: 100%;
+        border-radius: 8px;
+        box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
+      "
+    >
+      <div class="card-body" style="padding: 32px">
         <h3 class="lognreg">Informasi Toko</h3>
         <hr />
         <div class="row">
@@ -21,7 +28,7 @@
         <hr />
         <div class="row">
           <div class="col-md-6">
-            <div class="form-group">
+            <div class="form-group" style="margin-top: 4px">
               <label for="exampleInputTelepon1">Nama Toko*</label>
               <div class="input-group mb-2">
                 <input
@@ -36,7 +43,7 @@
             </div>
           </div>
           <div class="col-md-6">
-            <div class="form-group">
+            <div class="form-group" style="margin-top: 4px">
               <label for="exampleInputTelepon1">Tahun Berdiri*</label>
               <div class="input-group mb-2">
                 <input
@@ -98,7 +105,7 @@
             />
           </div>
         </div>
-        <hr />
+        <hr style="margin: 24px 0 22px 0" />
         <div class="form-group">
           <label for="exampleInputblibli">Link Blibli</label>
           <div class="input-group mb-2">
@@ -140,8 +147,8 @@
         </div>
         <button
           type="button"
-          class="btn btn-success btn-lg btn-block mt-4 mb-2"
-          style="background-color: #4e944f; border-radius: 8px; font-size: 16px"
+          class="btn btn-success btn-lg btn-block mb-2"
+          style="background-color: #4e944f; border-radius: 8px; margin-top:32px;font-size: 16px"
           @click="onSubmit"
         >
           Simpan
@@ -245,7 +252,7 @@ export default {
             {
               headers: {
                 "Content-Type": "multipart/form-data",
-                "Authorization": "Bearer " + localStorage.getItem("token"),
+                Authorization: "Bearer " + localStorage.getItem("token"),
               },
             }
           )

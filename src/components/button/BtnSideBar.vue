@@ -27,6 +27,7 @@
       </div>
       <span
         class="d-flex align-items-center"
+        style="padding-left: 8px"
         :class="
           this.activeRoute === route && this.activeRoute === this.current
             ? 'border-0 text-success'

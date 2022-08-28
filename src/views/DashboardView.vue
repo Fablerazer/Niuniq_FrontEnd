@@ -4,7 +4,17 @@
     class="menu-item-list dashboard card p-4 border-0 shadow d-flex"
     style="border-radius: 8px"
   >
-    <span class="text-success fw-bold d-flex fs-2">Dashboard</span>
+    <span
+      class="text-success fw-bold d-flex fs-2"
+      style="
+        font-family: 'Inter';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 24px;
+        line-height: 32px;
+      "
+      >Dashboard</span
+    >
     <hr class="w-100 mb-4" />
     <div class="dashboard-items row">
       <div class="col pe-2">
@@ -12,13 +22,32 @@
           class="total-products card p-4 border-0 shadow"
           style="border-radius: 8px"
         >
-          <div class="d-flex w-100 align-items-start">
+          <div class="d-flex w-100 align-items-start" style="gap: 25px">
             <img src="@/assets/img/icon-grid.svg" class="me-2" />
             <div class="row text-white fw-bold d-flex">
-              <span class="fs-4 text-left d-flex">{{
-                this.productList.length
-              }}</span>
-              <span class="text-left d-flex" style="font-size: 14px"
+              <span
+                class="fs-4 text-left d-flex"
+                style="
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                "
+                >{{ this.productList.length }}</span
+              >
+              <span
+                class="text-left d-flex"
+                style="
+                  font-size: 14px;
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 24px;
+                  align-items: center;
+                  padding-left: 8px;
+                "
                 >Total Produk</span
               >
             </div>
@@ -27,13 +56,35 @@
       </div>
       <div class="col pe-2">
         <div class="card p-4 border-0 shadow" style="border-radius: 8px">
-          <div class="d-flex w-100 align-items-start">
+          <div class="d-flex w-100 align-items-start" style="gap: 25px">
             <img src="@/assets/img/icon-verification.svg" class="me-2" />
             <div class="row fw-bold d-flex">
-              <span class="fs-4 text-left d-flex">{{
-                this.productList.filter((x) => x.isVerification == 2).length
-              }}</span>
-              <span class="text-left d-flex" style="font-size: 14px"
+              <span
+                class="fs-4 text-left d-flex"
+                style="
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                "
+                >{{
+                  this.productList.filter((x) => x.isVerification == 2).length
+                }}</span
+              >
+              <span
+                class="text-left d-flex"
+                style="
+                  font-size: 14px;
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 24px;
+                  align-items: center;
+                  padding-left: 8px;
+                  color: #777B80;
+                "
                 >Menunggu Verifikasi</span
               >
             </div>
@@ -42,13 +93,35 @@
       </div>
       <div class="col pe-2">
         <div class="card p-4 border-0 shadow" style="border-radius: 8px">
-          <div class="d-flex w-100 align-items-start">
+          <div class="d-flex w-100 align-items-start" style="gap: 25px">
             <img src="@/assets/img/icon-verification-failed.svg" class="me-2" />
             <div class="row fw-bold d-flex">
-              <span class="fs-4 text-left d-flex">{{
-                this.productList.filter((x) => x.isVerification == 0).length
-              }}</span>
-              <span class="text-left d-flex" style="font-size: 14px"
+              <span
+                class="fs-4 text-left d-flex"
+                style="
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                "
+                >{{
+                  this.productList.filter((x) => x.isVerification == 0).length
+                }}</span
+              >
+              <span
+                class="text-left d-flex"
+                style="
+                  font-size: 14px;
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 24px;
+                  align-items: center;
+                  padding-left: 8px;
+                  color: #777B80;
+                "
                 >Gagal Verifikasi</span
               >
             </div>
@@ -57,16 +130,38 @@
       </div>
       <div class="col pe-2">
         <div class="card p-4 border-0 shadow" style="border-radius: 8px">
-          <div class="d-flex w-100 align-items-start">
+          <div class="d-flex w-100 align-items-start" style="gap: 25px">
             <img
               src="@/assets/img/icon-verification-success.svg"
               class="me-2"
             />
             <div class="row fw-bold d-flex">
-              <span class="fs-4 text-left d-flex">{{
-                this.productList.filter((x) => x.isVerification == 1).length
-              }}</span>
-              <span class="text-left d-flex" style="font-size: 14px"
+              <span
+                class="fs-4 text-left d-flex"
+                style="
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                "
+                >{{
+                  this.productList.filter((x) => x.isVerification == 1).length
+                }}</span
+              >
+              <span
+                class="text-left d-flex"
+                style="
+                  font-size: 14px;
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 14px;
+                  line-height: 24px;
+                  align-items: center;
+                  padding-left: 8px;
+                  color: #777B80;
+                "
                 >Berhasil Verifikasi</span
               >
             </div>
@@ -98,7 +193,8 @@ export default {
         method: "get",
         // jangan dihapus
         // url: "https://niuniq.herokuapp.com/api/web/niuniq/products"
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/stores/"+
+        url:
+          "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
           this.$route.params.id +
           "/products",
         headers: {
@@ -119,7 +215,8 @@ export default {
     getData() {
       var config = {
         method: "get",
-        url: "https://niuniq.herokuapp.com/api/web/niuniq/stores/"+
+        url:
+          "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
           this.$route.params.id +
           "/products",
         headers: {
