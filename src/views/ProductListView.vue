@@ -256,34 +256,115 @@
                     <Status :verification-status="product.isVerification" />
                   </td>
                   <td class="d-flex">
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action-main btn btn-success"
-                      >
-                        <img
-                          src="@/assets/img/ic-file-download.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                    <!-- Download Button -->
+                    <div v-if="product.isVerification == 1" :key="product._id">
+                      <div class="btn-action-wrapper">
+                        <a
+                          :href="
+                            path + '/documents/images/QRcodes/' + product.qrCode
+                          "
+                          target="_blank"
+                        >
+                          <button
+                            type="button"
+                            class="btn-action-main btn btn-success"
+                            @click="
+                              $bvModal.show(
+                                'bv-modal-download' + product.productId
+                              )
+                            "
+                          >
+                            <img
+                              src="@/assets/img/ic-file-download.svg"
+                              alt=""
+                              class="d-inline-block align-text-top"
+                            />
+                          </button>
+                          <b-modal
+                            :id="'bv-modal-download' + product.productId"
+                            centered
+                            hide-footer
+                          >
+                            <div class="d-block text-center mt-2 mb-4">
+                              <img
+                                src="@/assets/img/popup-save.png"
+                                alt="foto-produk"
+                              />
+                              <h6></h6>
+                              <br />
+                              <h4>QRCode berhasil di download!</h4>
+                            </div>
+                          </b-modal>
+                        </a>
+                      </div>
                     </div>
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action btn btn-outline-success"
-                      >
-                        <img
-                          src="@/assets/img/ic-edit-green.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                    <div v-else>
+                      <div class="btn-action-wrapper">
+                        <button
+                          type="button"
+                          class="btn-action-main btn btn-secondary"
+                          disabled
+                        >
+                          <img
+                            src="@/assets/img/ic-file-download.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </div>
                     </div>
+                    <!-- Edit Button -->
+                    <div
+                      v-if="
+                        product.isVerification == 1 ||
+                        product.isVerification == 0
+                      "
+                      :key="product._id"
+                    >
+                      <div class="btn-action-wrapper">
+                        <a
+                          :href="'/inputprodukview/' + product.productId"
+                          target="_blank"
+                        >
+                          <button
+                            type="button"
+                            class="btn-action-permanent btn btn-outline-success"
+                          >
+                            <img
+                              src="@/assets/img/ic-edit-green.svg"
+                              alt=""
+                              class="d-inline-block align-text-top"
+                            />
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div v-else>
+                      <div class="btn-action-wrapper">
+                        <button
+                          type="button"
+                          class="btn-action btn btn-outline-secondary"
+                          disabled
+                        >
+                          <img
+                            src="@/assets/img/ic-edit-grey.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Delete Button -->
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
                         class="btn-action-permanent btn btn-outline-success"
+                        @click="
+                          deleteProduct(product._id),
+                            $bvModal.show(
+                              'bv-modal-dihapus' + product.productId
+                            )
+                        "
                       >
                         <img
                           src="@/assets/img/ic-delete-green.svg"
@@ -291,18 +372,39 @@
                           class="d-inline-block align-text-top"
                         />
                       </button>
-                    </div>
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action-permanent btn btn-outline-success"
+                      <b-modal
+                        :id="'bv-modal-dihapus' + product.productId"
+                        centered
+                        hide-footer
                       >
-                        <img
-                          src="@/assets/img/ic-eye-green.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                        <div class="d-block text-center mt-2 mb-4">
+                          <img
+                            src="@/assets/img/popup-save.png"
+                            alt="foto-produk"
+                          />
+                          <h6></h6>
+                          <br />
+                          <h4>Data produk berhasil dihapus!</h4>
+                        </div>
+                      </b-modal>
+                    </div>
+                    <!-- View Button -->
+                    <div class="btn-action-wrapper">
+                      <a
+                        :href="'/detailview/' + product.productId"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn-action-permanent btn btn-outline-success"
+                        >
+                          <img
+                            src="@/assets/img/ic-eye-green.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -344,34 +446,115 @@
                     <Status :verification-status="product.isVerification" />
                   </td>
                   <td class="d-flex">
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action-main btn btn-success"
-                      >
-                        <img
-                          src="@/assets/img/ic-file-download.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                    <!-- Download Button -->
+                    <div v-if="product.isVerification == 1" :key="product._id">
+                      <div class="btn-action-wrapper">
+                        <a
+                          :href="
+                            path + '/documents/images/QRcodes/' + product.qrCode
+                          "
+                          target="_blank"
+                        >
+                          <button
+                            type="button"
+                            class="btn-action-main btn btn-success"
+                            @click="
+                              $bvModal.show(
+                                'bv-modal-download' + product.productId
+                              )
+                            "
+                          >
+                            <img
+                              src="@/assets/img/ic-file-download.svg"
+                              alt=""
+                              class="d-inline-block align-text-top"
+                            />
+                          </button>
+                          <b-modal
+                            :id="'bv-modal-download' + product.productId"
+                            centered
+                            hide-footer
+                          >
+                            <div class="d-block text-center mt-2 mb-4">
+                              <img
+                                src="@/assets/img/popup-save.png"
+                                alt="foto-produk"
+                              />
+                              <h6></h6>
+                              <br />
+                              <h4>QRCode berhasil di download!</h4>
+                            </div>
+                          </b-modal>
+                        </a>
+                      </div>
                     </div>
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action btn btn-outline-success"
-                      >
-                        <img
-                          src="@/assets/img/ic-edit-green.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                    <div v-else>
+                      <div class="btn-action-wrapper">
+                        <button
+                          type="button"
+                          class="btn-action-main btn btn-secondary"
+                          disabled
+                        >
+                          <img
+                            src="@/assets/img/ic-file-download.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </div>
                     </div>
+                    <!-- Edit Button -->
+                    <div
+                      v-if="
+                        product.isVerification == 1 ||
+                        product.isVerification == 0
+                      "
+                      :key="product._id"
+                    >
+                      <div class="btn-action-wrapper">
+                        <a
+                          :href="'/inputprodukview/' + product.productId"
+                          target="_blank"
+                        >
+                          <button
+                            type="button"
+                            class="btn-action-permanent btn btn-outline-success"
+                          >
+                            <img
+                              src="@/assets/img/ic-edit-green.svg"
+                              alt=""
+                              class="d-inline-block align-text-top"
+                            />
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div v-else>
+                      <div class="btn-action-wrapper">
+                        <button
+                          type="button"
+                          class="btn-action btn btn-outline-secondary"
+                          disabled
+                        >
+                          <img
+                            src="@/assets/img/ic-edit-grey.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Delete Button -->
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
                         class="btn-action-permanent btn btn-outline-success"
+                        @click="
+                          deleteProduct(product._id),
+                            $bvModal.show(
+                              'bv-modal-dihapus' + product.productId
+                            )
+                        "
                       >
                         <img
                           src="@/assets/img/ic-delete-green.svg"
@@ -379,18 +562,39 @@
                           class="d-inline-block align-text-top"
                         />
                       </button>
-                    </div>
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action-permanent btn btn-outline-success"
+                      <b-modal
+                        :id="'bv-modal-dihapus' + product.productId"
+                        centered
+                        hide-footer
                       >
-                        <img
-                          src="@/assets/img/ic-eye-green.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                        <div class="d-block text-center mt-2 mb-4">
+                          <img
+                            src="@/assets/img/popup-save.png"
+                            alt="foto-produk"
+                          />
+                          <h6></h6>
+                          <br />
+                          <h4>Data produk berhasil dihapus!</h4>
+                        </div>
+                      </b-modal>
+                    </div>
+                    <!-- View Button -->
+                    <div class="btn-action-wrapper">
+                      <a
+                        :href="'/detailview/' + product.productId"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn-action-permanent btn btn-outline-success"
+                        >
+                          <img
+                            src="@/assets/img/ic-eye-green.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </a>
                     </div>
                   </td>
                 </tr>
@@ -430,34 +634,115 @@
                     <Status :verification-status="product.isVerification" />
                   </td>
                   <td class="d-flex">
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action-main btn btn-success"
-                      >
-                        <img
-                          src="@/assets/img/ic-file-download.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                    <!-- Download Button -->
+                    <div v-if="product.isVerification == 1" :key="product._id">
+                      <div class="btn-action-wrapper">
+                        <a
+                          :href="
+                            path + '/documents/images/QRcodes/' + product.qrCode
+                          "
+                          target="_blank"
+                        >
+                          <button
+                            type="button"
+                            class="btn-action-main btn btn-success"
+                            @click="
+                              $bvModal.show(
+                                'bv-modal-download' + product.productId
+                              )
+                            "
+                          >
+                            <img
+                              src="@/assets/img/ic-file-download.svg"
+                              alt=""
+                              class="d-inline-block align-text-top"
+                            />
+                          </button>
+                          <b-modal
+                            :id="'bv-modal-download' + product.productId"
+                            centered
+                            hide-footer
+                          >
+                            <div class="d-block text-center mt-2 mb-4">
+                              <img
+                                src="@/assets/img/popup-save.png"
+                                alt="foto-produk"
+                              />
+                              <h6></h6>
+                              <br />
+                              <h4>QRCode berhasil di download!</h4>
+                            </div>
+                          </b-modal>
+                        </a>
+                      </div>
                     </div>
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action btn btn-outline-success"
-                      >
-                        <img
-                          src="@/assets/img/ic-edit-green.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                    <div v-else>
+                      <div class="btn-action-wrapper">
+                        <button
+                          type="button"
+                          class="btn-action-main btn btn-secondary"
+                          disabled
+                        >
+                          <img
+                            src="@/assets/img/ic-file-download.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </div>
                     </div>
+                    <!-- Edit Button -->
+                    <div
+                      v-if="
+                        product.isVerification == 1 ||
+                        product.isVerification == 0
+                      "
+                      :key="product._id"
+                    >
+                      <div class="btn-action-wrapper">
+                        <a
+                          :href="'/inputprodukview/' + product.productId"
+                          target="_blank"
+                        >
+                          <button
+                            type="button"
+                            class="btn-action-permanent btn btn-outline-success"
+                          >
+                            <img
+                              src="@/assets/img/ic-edit-green.svg"
+                              alt=""
+                              class="d-inline-block align-text-top"
+                            />
+                          </button>
+                        </a>
+                      </div>
+                    </div>
+                    <div v-else>
+                      <div class="btn-action-wrapper">
+                        <button
+                          type="button"
+                          class="btn-action btn btn-outline-secondary"
+                          disabled
+                        >
+                          <img
+                            src="@/assets/img/ic-edit-grey.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </div>
+                    </div>
+                    <!-- Delete Button -->
                     <div class="btn-action-wrapper">
                       <button
                         type="button"
                         class="btn-action-permanent btn btn-outline-success"
+                        @click="
+                          deleteProduct(product._id),
+                            $bvModal.show(
+                              'bv-modal-dihapus' + product.productId
+                            )
+                        "
                       >
                         <img
                           src="@/assets/img/ic-delete-green.svg"
@@ -465,18 +750,39 @@
                           class="d-inline-block align-text-top"
                         />
                       </button>
-                    </div>
-                    <div class="btn-action-wrapper">
-                      <button
-                        type="button"
-                        class="btn-action-permanent btn btn-outline-success"
+                      <b-modal
+                        :id="'bv-modal-dihapus' + product.productId"
+                        centered
+                        hide-footer
                       >
-                        <img
-                          src="@/assets/img/ic-eye-green.svg"
-                          alt=""
-                          class="d-inline-block align-text-top"
-                        />
-                      </button>
+                        <div class="d-block text-center mt-2 mb-4">
+                          <img
+                            src="@/assets/img/popup-save.png"
+                            alt="foto-produk"
+                          />
+                          <h6></h6>
+                          <br />
+                          <h4>Data produk berhasil dihapus!</h4>
+                        </div>
+                      </b-modal>
+                    </div>
+                    <!-- View Button -->
+                    <div class="btn-action-wrapper">
+                      <a
+                        :href="'/detailview/' + product.productId"
+                        target="_blank"
+                      >
+                        <button
+                          type="button"
+                          class="btn-action-permanent btn btn-outline-success"
+                        >
+                          <img
+                            src="@/assets/img/ic-eye-green.svg"
+                            alt=""
+                            class="d-inline-block align-text-top"
+                          />
+                        </button>
+                      </a>
                     </div>
                   </td>
                 </tr>

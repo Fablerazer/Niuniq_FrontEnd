@@ -3,7 +3,7 @@
     <CNavbarPenjual />
     <div style="background-color: #f9f9f9">
       <div class="container">
-        <h4>Pemberitahuan Status Produk</h4>
+        <h4 style="padding-bottom: 22px">Pemberitahuan Status Produk</h4>
         <div v-for="product in products" :key="product._id">
           <div v-if="product.isVerification == 1">
             <CNotifSuccess :product="product" />

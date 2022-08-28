@@ -1,11 +1,33 @@
 <template>
   <div>
-    <div class="container" style="width: 80%; height: 75vh">
+    <div class="container" style="width: 80%; height: 80vh">
       <div style="align-self: center">
-        <h1 style="text-align: center">
+        <h1
+          style="
+            text-align: center;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 56px;
+            padding-bottom: 24px;
+            margin-bottom: 0px;
+          "
+        >
           Lihat detail produk dengan memasukkan ID QRCode
         </h1>
-        <p style="text-align: center">
+        <p
+          style="
+            text-align: center;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 18px;
+            line-height: 30px;
+            padding-bottom: 24px;
+            margin-bottom: 0px;
+          "
+        >
           Masukan ID QRCode untuk mendapatkan detail produk
         </p>
         <div class="card">
