@@ -4,7 +4,7 @@
       <div class="col-md-6">
         <CWelcomeimg />
       </div>
-      <div class="col-md-6" style="align-self: center; padding-left: 11%">
+      <div class="col-md-6" style="align-self: center; padding-left: 7%">
         <CLogin />
       </div>
     </div>

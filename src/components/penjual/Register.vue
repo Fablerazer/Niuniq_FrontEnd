@@ -41,7 +41,7 @@
           font-family: 'Inter';
           font-style: normal;
           font-weight: 400;
-          font-size: 12px;
+          font-size: 17px;
         "
       >
         Lengkapi data-data dibawah ini untuk mendapatkan akun.
