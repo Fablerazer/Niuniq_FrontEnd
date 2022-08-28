@@ -66,6 +66,13 @@ export default {
       password: "",
     };
   },
+  async created() {
+    const response = await axios.get(
+      "https://niuniq.herokuapp.com/api/web/niuniq/auth/me"
+    );
+
+    console.log(response);
+  },
   methods: {
     async handleSubmit() {
       const response = await axios.post(
@@ -84,14 +91,14 @@ export default {
           "hasCreatedStore",
           response.data.data.hasCreatedStore
         );
-        if (response.data.data.store.length > 0){
-        this.$router.push({
-          path: "/profileview/" + response.data.data.store[0]._id,
-        });}
-        else{
+        if (response.data.data.store.length > 0) {
           this.$router.push({
-          path: "/inputtokoview/createStore",
-        });
+            path: "/profileview/" + response.data.data.store[0]._id,
+          });
+        } else {
+          this.$router.push({
+            path: "/inputtokoview/createStore",
+          });
         }
       }
     },
@@ -100,8 +107,8 @@ export default {
     let user = localStorage.getItem("user-info");
     if (user) {
       this.$router.push({
-        name: "ProfileView"
-        // path: "profileview/" + this.$route.params.id,
+        name: "ProfileView",
+        // path: "/profileview/" + response.data.data.store[0]._id,
       });
     }
   },

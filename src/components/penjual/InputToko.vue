@@ -56,14 +56,14 @@
         <div class="row">
           <div class="col-md-6">
             <div class="form-group">
-              <label for="exampleInputTelepon1">Kota/Kabupaten*</label>
+              <label for="exampleInputkota">Kota/Kabupaten*</label>
               <div class="input-group mb-2">
                 <input
-                  type="telepon"
+                  type="kota"
                   class="form-control"
-                  id="exampleInputTelepon1"
+                  id="exampleInputkota"
                   aria-describedby="teleponHelp"
-                  placeholder="Masukkan nama kota/kabupaten"
+                  placeholder="Diawali huruf besar, Contoh: Kota Bandung"
                   v-model="regency"
                 />
               </div>
@@ -71,14 +71,14 @@
           </div>
           <div class="col-md-6">
             <div class="form-group">
-              <label for="exampleInputTelepon1">Provinsi*</label>
+              <label for="exampleInputprovinsi">Provinsi*</label>
               <div class="input-group mb-2">
                 <input
-                  type="telepon"
+                  type="provinsi"
                   class="form-control"
-                  id="exampleInputTelepon1"
+                  id="exampleInputprovinsi"
                   aria-describedby="teleponHelp"
-                  placeholder="Masukkan nama provinsi"
+                  placeholder="Diawali huruf besar, Contoh: Jawa Barat"
                   v-model="province"
                 />
               </div>
@@ -86,12 +86,12 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="exampleInputTelepon1">Address</label>
+          <label for="exampleInputalamat">Address</label>
           <div class="input-group mb-2">
             <input
-              type="telepon"
+              type="alamat"
               class="form-control"
-              id="exampleInputTelepon1"
+              id="exampleInputalamat"
               aria-describedby="teleponHelp"
               placeholder="Masukkan alamat"
               v-model="address"

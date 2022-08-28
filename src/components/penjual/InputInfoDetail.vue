@@ -107,6 +107,7 @@
           <hr />
           <h5 class="informasiproduk">Foto Produk</h5>
           <div>
+            <p style=""><small>*Wajib 5 foto</small></p>
             <label class="btn btn-default">
               <input type="file" multiple @change="selectFile" />
             </label>
