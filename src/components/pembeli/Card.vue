@@ -26,11 +26,9 @@
         >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
           <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
-          <ul>
-            <li>
-              {{ product.productStorage }}
-            </li>
-          </ul>
+          <p>
+            {{ product.productStorage }}
+          </p>
         </div>
       </div>
     </div>
@@ -51,14 +49,9 @@
         >
           <img class="img-table mr-3" src="@/assets/img/icon.png" />
           <h5 class="card-title mt-3">Bahan Baku Produk</h5>
-          <div class="row">
-            <div class="col-md-6">
-              <ul>
-                <li>
-                  {{ product.rawMaterials }}
-                </li>
-              </ul>
-            </div>
+              <p>
+                {{ product.rawMaterials }}
+              </p>
             <!-- <div class="col-md-6">
               <ul>
                 <li>Lorem ipsum</li>
@@ -67,7 +60,6 @@
                 <li>Ut enim ad minim</li>
               </ul>
             </div> -->
-          </div>
         </div>
       </div>
     </div>

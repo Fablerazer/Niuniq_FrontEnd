@@ -1,7 +1,7 @@
 <template>
   <div>
     <CNavbar />
-    <div class="container">
+    <div class="container" style="padding-top: 48px">
       <CInfoproduksi :store="stores" :product="products" />
       <div>
         <CCarousel :product="products" />

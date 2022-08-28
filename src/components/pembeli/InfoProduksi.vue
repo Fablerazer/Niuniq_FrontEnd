@@ -1,6 +1,12 @@
 <template>
-  <div class="container-fluid mt-4" style="padding-left: 0; padding-right: 0">
-    <div class="card">
+  <div class="container-fluid" style="padding-left: 0; padding-right: 0">
+    <div
+      class="card"
+      style="
+        box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
+        border-radius: 8px;
+      "
+    >
       <div class="card-body">
         <h5 class="informasiproduk">Informasi Produksi</h5>
         <p class="informasiproduk">
@@ -49,8 +55,8 @@
                 />{{ store.name }}
                 <!-- src="@/assets/img/logo-rmhbmb.png" -->
               </td>
-              <td >{{ product.yearProduction }}</td>
-              <td >{{ store.address }}</td>
+              <td>{{ product.yearProduction }}</td>
+              <td>{{ store.address }}</td>
             </tr>
           </tbody>
         </table>
@@ -66,7 +72,7 @@ export default {
   data() {
     return {
       paths: "https://",
-      path: "https://niuniq.herokuapp.com"
+      path: "https://niuniq.herokuapp.com",
     };
   },
   mounted() {

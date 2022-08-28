@@ -5,7 +5,7 @@
       <p class="mb-video">
         Pada video ini anda bisa melihat proses pembuatan produk.
       </p>
-      <div class="embed-responsive embed-responsive-21by9 mb-20">
+      <div class="embed-responsive embed-responsive-21by9" style="margin-bottom: 120px">
         <iframe
           class="embed-responsive-item"
           :src="product.video"

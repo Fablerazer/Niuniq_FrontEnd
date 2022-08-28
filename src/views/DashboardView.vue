@@ -33,6 +33,7 @@
                   font-weight: 600;
                   font-size: 24px;
                   line-height: 32px;
+                  padding-right: 8px;
                 "
                 >{{ this.productList.length }}</span
               >
@@ -46,7 +47,6 @@
                   font-size: 14px;
                   line-height: 24px;
                   align-items: center;
-                  padding-left: 8px;
                 "
                 >Total Produk</span
               >
@@ -67,6 +67,7 @@
                   font-weight: 600;
                   font-size: 24px;
                   line-height: 32px;
+                  padding-right: 8px;
                 "
                 >{{
                   this.productList.filter((x) => x.isVerification == 2).length
@@ -82,8 +83,7 @@
                   font-size: 14px;
                   line-height: 24px;
                   align-items: center;
-                  padding-left: 8px;
-                  color: #777B80;
+                  color: #777b80;
                 "
                 >Menunggu Verifikasi</span
               >
@@ -104,6 +104,7 @@
                   font-weight: 600;
                   font-size: 24px;
                   line-height: 32px;
+                  padding-right: 8px;
                 "
                 >{{
                   this.productList.filter((x) => x.isVerification == 0).length
@@ -119,8 +120,7 @@
                   font-size: 14px;
                   line-height: 24px;
                   align-items: center;
-                  padding-left: 8px;
-                  color: #777B80;
+                  color: #777b80;
                 "
                 >Gagal Verifikasi</span
               >
@@ -144,6 +144,7 @@
                   font-weight: 600;
                   font-size: 24px;
                   line-height: 32px;
+                  padding-right: 8px;
                 "
                 >{{
                   this.productList.filter((x) => x.isVerification == 1).length
@@ -159,8 +160,7 @@
                   font-size: 14px;
                   line-height: 24px;
                   align-items: center;
-                  padding-left: 8px;
-                  color: #777B80;
+                  color: #777b80;
                 "
                 >Berhasil Verifikasi</span
               >
