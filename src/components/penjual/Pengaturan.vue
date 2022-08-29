@@ -137,8 +137,7 @@
                 class="form-control"
                 id="exampleInputTelepon1"
                 aria-describedby="teleponHelp"
-                readonly
-                value="**********"
+                v-model="currentPassword"
               />
             </div>
           </div>
@@ -239,6 +238,7 @@ export default {
       ShowPassword: "Show Password",
       HidePassword: "Hide Password",
       noTelepon: this.user?.noTelepon || "",
+      currentPassword: "",
       newPassword: "",
       confirmPassword: "",
     };
@@ -247,6 +247,7 @@ export default {
     async handleSubmit() {
       const response = await axios.put(
         "https://niuniq.herokuapp.com/api/web/niuniq/auth/updatepassword", {
+          currentPassword: this.currentPassword,
           newPassword: this.newPassword,
           confirmPassword: this.confirmPassword,
           // token: this.$route.params.token
