@@ -71,8 +71,40 @@
 </template>
 
 <script>
+import axios from "axios";
+
 export default {
   name: "CQrcodecard",
+  data() {
+    return {
+      slide: 0,
+      sliding: null,
+      products: [],
+      search: "",
+    };
+  },
+  created() {
+    this.getProducts();
+  },
+  methods: {
+    getProducts() {
+      var config = {
+        method: "get",
+        url: "https://niuniq.herokuapp.com/api/web/niuniq/products",
+        // this.$route.params.id
+        headers: {
+          Cookie: `token=${localStorage.getItem("token")}`,
+        },
+      };
+      axios(config)
+        .then((response) => {
+          this.products = response.data.data;
+        })
+        .catch((error) => {
+          console.log(error);
+        });
+    },
+  },
 };
 </script>
 

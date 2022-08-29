@@ -32,8 +32,8 @@
           </h2>
           <p
             style="
-              width: 539px;
-              height: 150px;
+              width: 100%;
+              height: 100%;
               left: 757px;
               top: 516px;
               font-family: 'Inter';
