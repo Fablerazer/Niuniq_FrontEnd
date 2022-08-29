@@ -44,13 +44,14 @@ export default {
       .get("https://niuniq.herokuapp.com/api/web/niuniq/products")
       .then((response) => this.setProducts(response.data.data))
       .catch((error) => console.log(error));
-    let user = localStorage.getItem("user-info");
-    if (user) {
-      this.$router.push({
-        // name: "ProfileView",
-        path: "/profileview/" + response.data.data.store[0]._id,
-      });
-    }
+
+    // let user = localStorage.getItem("user-info");
+    // if (user) {
+    //   this.$router.push({
+    //     // name: "ProfileView",
+    //     path: "/profileview/" + response.data.data.store[0]._id,
+    //   });
+    // }
   },
 };
 </script>

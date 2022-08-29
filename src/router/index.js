@@ -30,7 +30,8 @@ const routes = [
     props: true
   },
   {
-    path: "/pengaturanview/:id",
+    // path: "/pengaturanview/:id",
+    path: "/pengaturanview/:token",
     name: "PengaturanView",
     component: PengaturanView,
     props: true

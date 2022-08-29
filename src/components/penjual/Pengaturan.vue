@@ -25,7 +25,7 @@
             </h2>
           </div>
         </div>
-        <hr style="margin-top: 0"/>
+        <hr style="margin-top: 0" />
         <div class="form-group">
           <label
             for="exampleInputTelepon1"
@@ -101,120 +101,126 @@
       "
     >
       <div class="card-body" style="padding: 32px">
-        <div class="row">
-          <div class="col-md-6">
-            <h2
+        <form @submit.prevent="handleSubmit">
+          <div class="row">
+            <div class="col-md-6">
+              <h2
+                style="
+                  font-family: 'Inter';
+                  font-style: normal;
+                  font-weight: 600;
+                  font-size: 24px;
+                  line-height: 32px;
+                "
+              >
+                Ubah kata sandi
+              </h2>
+            </div>
+          </div>
+          <hr style="margin-top: 0" />
+          <div class="form-group">
+            <label
+              for="exampleInputTelepon1"
               style="
                 font-family: 'Inter';
                 font-style: normal;
                 font-weight: 600;
-                font-size: 24px;
-                line-height: 32px;
+                font-size: 14px;
+                line-height: 16px;
+                color: #777b80;
               "
+              >Kata sandi saat ini</label
             >
-              Ubah kata sandi
-            </h2>
-          </div>
-        </div>
-        <hr style="margin-top: 0"/>
-        <div class="form-group">
-          <label
-            for="exampleInputTelepon1"
-            style="
-              font-family: 'Inter';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 14px;
-              line-height: 16px;
-              color: #777b80;
-            "
-            >Kata sandi saat ini</label
-          >
-          <div class="input-group mb-2">
-            <input
-              :type="inputTypeIcon"
-              class="form-control"
-              id="exampleInputTelepon1"
-              aria-describedby="teleponHelp"
-              value="you've been bamboozled"
-            />
-          </div>
-        </div>
-        <div class="form-group">
-          <label
-            for="exampleInputTelepon1"
-            style="
-              font-family: 'Inter';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 14px;
-              line-height: 16px;
-              color: #777b80;
-            "
-            >Kata sandi baru</label
-          >
-          <div class="input-group mb-2">
-            <input
-              :type="inputTypeIcon"
-              class="form-control"
-              id="exampleInputTelepon1"
-              aria-describedby="teleponHelp"
-            />
-            <div class="input-group-append">
-              <button
-                class="input-group-text"
-                @click.prevent="ToggleButtonIcon"
-              >
-                <i v-if="inputTypeIcon == 'password'"><b-icon-eye /></i>
-                <i v-else><b-icon-eye-slash /></i>
-              </button>
+            <div class="input-group mb-2">
+              <input
+                :type="inputTypeIcon"
+                class="form-control"
+                id="exampleInputTelepon1"
+                aria-describedby="teleponHelp"
+                readonly
+                value="**********"
+              />
             </div>
           </div>
-        </div>
-        <div class="form-group">
-          <label
-            for="exampleInputTelepon1"
-            style="
-              font-family: 'Inter';
-              font-style: normal;
-              font-weight: 600;
-              font-size: 14px;
-              line-height: 16px;
-              color: #777b80;
-            "
-            >Konfirmasi kata sandi baru</label
-          >
-          <div class="input-group mb-2">
-            <input
-              :type="inputTypeIcon"
-              class="form-control"
-              id="exampleInputTelepon1"
-              aria-describedby="teleponHelp"
-              placeholder=""
-            />
-            <div class="input-group-append">
-              <button
-                class="input-group-text"
-                @click.prevent="ToggleButtonIcon"
-              >
-                <i v-if="inputTypeIcon == 'password'"><b-icon-eye /></i>
-                <i v-else><b-icon-eye-slash /></i>
-              </button>
+          <div class="form-group">
+            <label
+              for="exampleInputTelepon1"
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #777b80;
+              "
+              >Kata sandi baru</label
+            >
+            <div class="input-group mb-2">
+              <input
+                :type="inputTypeIcon"
+                class="form-control"
+                id="exampleInputTelepon1"
+                aria-describedby="teleponHelp"
+                v-model="newPassword"
+              />
+              <div class="input-group-append">
+                <button
+                  class="input-group-text"
+                  @click.prevent="ToggleButtonIcon"
+                >
+                  <i v-if="inputTypeIcon == 'password'"><b-icon-eye /></i>
+                  <i v-else><b-icon-eye-slash /></i>
+                </button>
+              </div>
             </div>
           </div>
-        </div>
-        <button
-          type="button"
-          class="btn btn-success btn-lg btn-block"
-          style="
-            background-color: #4e944f;
-            border-radius: 8px;
-            font-size: 16px;
-            margin-top: 30px;
-          "
-        >
-          Simpan
-        </button>
+          <div class="form-group">
+            <label
+              for="exampleInputTelepon1"
+              style="
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 16px;
+                color: #777b80;
+              "
+              >Konfirmasi kata sandi baru</label
+            >
+            <div class="input-group mb-2">
+              <input
+                :type="inputTypeIcon"
+                class="form-control"
+                id="exampleInputTelepon1"
+                aria-describedby="teleponHelp"
+                placeholder=""
+                v-model="confirmPassword"
+              />
+              <div class="input-group-append">
+                <button
+                  class="input-group-text"
+                  @click.prevent="ToggleButtonIcon"
+                >
+                  <i v-if="inputTypeIcon == 'password'"><b-icon-eye /></i>
+                  <i v-else><b-icon-eye-slash /></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <button
+            type="button"
+            class="btn btn-success btn-lg btn-block"
+            style="
+              background-color: #4e944f;
+              border-radius: 8px;
+              font-size: 16px;
+              margin-top: 30px;
+            "
+            @click="handleSubmit"
+          >
+            Simpan
+          </button>
+        </form>
       </div>
     </div>
   </div>
@@ -233,9 +239,22 @@ export default {
       ShowPassword: "Show Password",
       HidePassword: "Hide Password",
       noTelepon: this.user?.noTelepon || "",
+      newPassword: "",
+      confirmPassword: "",
     };
   },
   methods: {
+    async handleSubmit() {
+      const response = await axios.put(
+        "https://niuniq.herokuapp.com/api/web/niuniq/auth/updatepassword", {
+          newPassword: this.newPassword,
+          confirmPassword: this.confirmPassword,
+          // token: this.$route.params.token
+        }
+      );
+
+      console.log(response);
+    },
     ToggleButton() {
       this.inputType = this.inputType === "password" ? "text" : "password";
     },
