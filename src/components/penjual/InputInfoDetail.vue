@@ -235,9 +235,9 @@
             </div>
           </div>
           <hr />
-          <h5 class="informasiproduk" style="margin:0">Foto Produk</h5>
+          <h5 class="informasiproduk" style="margin: 0">Foto Produk</h5>
           <div>
-            <p style="margin:0"><small>*Wajib 5 foto</small></p>
+            <p style="margin: 0"><small>*Wajib 5 foto</small></p>
             <label class="btn btn-default" style="padding: 9px 0 13px 0">
               <input type="file" multiple @change="selectFile" />
             </label>
@@ -334,7 +334,10 @@ export default {
               },
             }
           )
-          .then((response) => console.log(response))
+          .then((response) => {
+            console.log(response),
+              alert("edit success, please close the tab");
+          })
           .catch((error) => {
             console.error("There was an error!", error);
           });

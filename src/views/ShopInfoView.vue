@@ -26,8 +26,8 @@
         <img
           :src="path + '/documents/images/logos/' + store.logo"
           alt=""
-          class="img-table-2 mr-3"
-          style="width: 60px; height: 60px"
+          class="img-table-2 mr-2"
+          style="width: 52px; height: 52px"
         />
         <span
           class="fs-1 fw-bold"
@@ -35,7 +35,7 @@
             font-family: 'Inter';
             font-style: normal;
             font-weight: 600;
-            font-size: 32px;
+            font-size: 26px;
             line-height: 40px;
           "
           >{{ store.name }}</span
