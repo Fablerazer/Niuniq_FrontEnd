@@ -98,6 +98,7 @@
         height: 85%;
         box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
         border-radius: 8px;
+        margin-bottom: 32px;
       "
     >
       <div class="card-body" style="padding: 32px">
@@ -246,7 +247,8 @@ export default {
   methods: {
     async handleSubmit() {
       const response = await axios.put(
-        "https://niuniq.herokuapp.com/api/web/niuniq/auth/updatepassword", {
+        "https://niuniq.herokuapp.com/api/web/niuniq/auth/updatepassword",
+        {
           currentPassword: this.currentPassword,
           newPassword: this.newPassword,
           confirmPassword: this.confirmPassword,
