@@ -7,7 +7,7 @@
         border-radius: 8px;
       "
     >
-      <div class="card-body">
+      <div class="card-body" style="padding: 26px">
         <h5
           class="informasiproduk"
           style="
