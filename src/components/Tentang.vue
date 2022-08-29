@@ -13,8 +13,8 @@
           <h2
             class="card-title"
             style="
-              width: 297px;
-              height: 48px;
+              width: 80%;
+              height: 100%;
               left: 754px;
               top: 444px;
               font-family: 'Inter';
@@ -32,7 +32,7 @@
           </h2>
           <p
             style="
-              width: 100%;
+              width: 80%;
               height: 100%;
               left: 757px;
               top: 516px;

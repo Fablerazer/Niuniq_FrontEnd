@@ -3,7 +3,8 @@
     style="
       box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
       border-radius: 18px;
-      padding: 0 32px 32px 24px;
+      padding: 0 32px 24px 24px;
+      margin-bottom: 32px;
     "
   >
     <div class="row">
