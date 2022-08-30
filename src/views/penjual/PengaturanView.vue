@@ -1,7 +1,7 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div style="background-color: #f9f9f9">
+    <div style="background-color: #f9f9f9; padding-bottom: 10px;">
       <div v-if="user" class="container">
         <CPengaturan :user="user" />
       </div>

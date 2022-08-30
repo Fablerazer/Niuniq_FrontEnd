@@ -1,7 +1,10 @@
 <template>
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <router-link class="navbar-brand" :to="'/profileview/' + this.$route.params.id"
+      <router-link
+        class="navbar-brand"
+        :to="'/profileview/' + this.$route.params.id"
+        style="z-index: 10"
         ><img class="img-table-1" src="@/assets/img/logo-niuniq.png"
       /></router-link>
       <button
@@ -50,7 +53,7 @@
             >
             <hr />
             <b-dropdown-item v-on:click="logout" href="#"
-              ><b-icon-box-arrow-right/> Keluar</b-dropdown-item
+              ><b-icon-box-arrow-right /> Keluar</b-dropdown-item
             >
           </b-dropdown>
         </div>
@@ -64,7 +67,7 @@ export default {
   name: "CNavbarPenjual",
   methods: {
     logout() {
-      console.warn("logout")
+      console.warn("logout");
       localStorage.clear();
       this.$router.push({ name: "LoginView" });
     },

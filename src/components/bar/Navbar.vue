@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar navbar-expand-lg changecolor">
     <div class="container-fluid">
-      <router-link class="navbar-brand" to="/homeview"
+      <router-link class="navbar-brand" to="/homeview" style="z-index: 10;"
         ><img class="img-table-1" src="@/assets/img/logo-niuniq.png"
       /></router-link>
       <button

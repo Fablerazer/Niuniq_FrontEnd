@@ -3,7 +3,7 @@
     <div class="row flex-nowrap">
       <div
         class="col-auto col-xl-2 px-sm-2 px-0 bg-white position-fixed"
-        style="width: 15%; z-index=999"
+        style="width: 15%; z-index=0; padding-top: 45px; top: 0;"
       >
         <div
           class="d-flex flex-column align-items-center align-items-sm-start px-3 pt-2 text-white min-vh-100"

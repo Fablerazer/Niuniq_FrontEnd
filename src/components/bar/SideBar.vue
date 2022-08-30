@@ -81,7 +81,11 @@ export default {
     axios
       .get(
         "https://niuniq.herokuapp.com/api/web/niuniq/stores/" +
-          this.$route.params.id
+          this.$route.params.id,{
+              headers: {
+                Authorization: "Bearer " + localStorage.getItem("token"),
+              },
+            }
       )
       .then((response) => {
         this.setStores(response.data.data);

@@ -1,7 +1,7 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div style="background-color: #f9f9f9">
+    <div style="background-color: #f9f9f9; padding-bottom: 55px">
       <div class="container">
         <h4 style="padding-bottom: 22px">Pemberitahuan Status Produk</h4>
         <div v-for="product in products" :key="product._id">

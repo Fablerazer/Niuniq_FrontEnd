@@ -1,7 +1,10 @@
 <template>
   <div>
     <CNavbarPenjual />
-    <div class="flex-row" style="background-color: #f9f9f9">
+    <div
+      class="flex-row"
+      style="background-color: #f9f9f9; padding-bottom: 5px"
+    >
       <SideBarInputProduk />
       <div
         v-if="products || !isEdit"

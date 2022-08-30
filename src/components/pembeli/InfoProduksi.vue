@@ -80,7 +80,7 @@
           />
           <!-- :src="@/assets/img/infoproduk-pict.png" -->
         </div>
-        <table class="table table-striped">
+        <table class="table table-striped" style="margin-bottom: 0">
           <thead style="background: #edf4ed">
             <tr>
               <th scope="col">Diproduksi Oleh</th>
