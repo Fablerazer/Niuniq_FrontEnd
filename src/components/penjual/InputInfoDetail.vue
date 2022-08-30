@@ -246,7 +246,7 @@
               <div class="input-group mb-2">
                 <b-form-textarea
                   id="textarea"
-                  placeholder="Masukkan link video produk"
+                  placeholder="Masukkan link video produk, contoh: "
                   rows="3"
                   max-rows="6"
                   v-model="video"
@@ -335,8 +335,11 @@ export default {
             }
           )
           .then((response) => {
-            console.log(response),
-              alert("edit success, please close the tab");
+            console.log(response)
+              // alert("edit success, please close the tab");
+              this.$router.push({
+                path: "/profileview/" + response.data.data.store,
+              });
           })
           .catch((error) => {
             console.error("There was an error!", error);
