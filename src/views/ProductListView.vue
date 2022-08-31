@@ -89,7 +89,7 @@
                           class="btn-action-main btn btn-success"
                           @click="
                             $bvModal.show(
-                              'bv-modal-download' + product.productId
+                              'bv-modal-download-semua' + product.productId
                             )
                           "
                         >
@@ -100,7 +100,7 @@
                           />
                         </button>
                         <b-modal
-                          :id="'bv-modal-download' + product.productId"
+                          :id="'bv-modal-download-semua' + product.productId"
                           centered
                           hide-footer
                         >
@@ -179,7 +179,7 @@
                       class="btn-action-permanent btn btn-outline-success"
                       @click="
                         deleteProduct(product._id),
-                          $bvModal.show('bv-modal-dihapus' + product.productId)
+                          $bvModal.show('bv-modal-dihapus-semua' + product.productId)
                       "
                     >
                       <img
@@ -189,7 +189,7 @@
                       />
                     </button>
                     <b-modal
-                      :id="'bv-modal-dihapus' + product.productId"
+                      :id="'bv-modal-dihapus-semua' + product.productId"
                       centered
                       hide-footer
                     >
@@ -270,7 +270,7 @@
                             class="btn-action-main btn btn-success"
                             @click="
                               $bvModal.show(
-                                'bv-modal-download' + product.productId
+                                'bv-modal-download-menunggu' + product.productId
                               )
                             "
                           >
@@ -281,7 +281,7 @@
                             />
                           </button>
                           <b-modal
-                            :id="'bv-modal-download' + product.productId"
+                            :id="'bv-modal-download-menunggu' + product.productId"
                             centered
                             hide-footer
                           >
@@ -362,7 +362,7 @@
                         @click="
                           deleteProduct(product._id),
                             $bvModal.show(
-                              'bv-modal-dihapus' + product.productId
+                              'bv-modal-dihapus-menunggu' + product.productId
                             )
                         "
                       >
@@ -373,7 +373,7 @@
                         />
                       </button>
                       <b-modal
-                        :id="'bv-modal-dihapus' + product.productId"
+                        :id="'bv-modal-dihapus-menunggu' + product.productId"
                         centered
                         hide-footer
                       >
@@ -460,7 +460,7 @@
                             class="btn-action-main btn btn-success"
                             @click="
                               $bvModal.show(
-                                'bv-modal-download' + product.productId
+                                'bv-modal-download-gagal' + product.productId
                               )
                             "
                           >
@@ -471,7 +471,7 @@
                             />
                           </button>
                           <b-modal
-                            :id="'bv-modal-download' + product.productId"
+                            :id="'bv-modal-download-gagal' + product.productId"
                             centered
                             hide-footer
                           >
@@ -552,7 +552,7 @@
                         @click="
                           deleteProduct(product._id),
                             $bvModal.show(
-                              'bv-modal-dihapus' + product.productId
+                              'bv-modal-dihapus-gagal' + product.productId
                             )
                         "
                       >
@@ -563,7 +563,7 @@
                         />
                       </button>
                       <b-modal
-                        :id="'bv-modal-dihapus' + product.productId"
+                        :id="'bv-modal-dihapus-gagal' + product.productId"
                         centered
                         hide-footer
                       >
@@ -648,7 +648,7 @@
                             class="btn-action-main btn btn-success"
                             @click="
                               $bvModal.show(
-                                'bv-modal-download' + product.productId
+                                'bv-modal-download-selesai' + product.productId
                               )
                             "
                           >
@@ -659,7 +659,7 @@
                             />
                           </button>
                           <b-modal
-                            :id="'bv-modal-download' + product.productId"
+                            :id="'bv-modal-download-selesai' + product.productId"
                             centered
                             hide-footer
                           >
@@ -740,7 +740,7 @@
                         @click="
                           deleteProduct(product._id),
                             $bvModal.show(
-                              'bv-modal-dihapus' + product.productId
+                              'bv-modal-dihapus-berhasil' + product.productId
                             )
                         "
                       >
@@ -751,7 +751,7 @@
                         />
                       </button>
                       <b-modal
-                        :id="'bv-modal-dihapus' + product.productId"
+                        :id="'bv-modal-dihapus-berhasil' + product.productId"
                         centered
                         hide-footer
                       >
