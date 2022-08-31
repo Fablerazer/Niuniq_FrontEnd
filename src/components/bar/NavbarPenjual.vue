@@ -67,7 +67,7 @@ export default {
   name: "CNavbarPenjual",
   methods: {
     logout() {
-      console.warn("logout");
+      alert("Anda telah ter-logout");
       localStorage.clear();
       this.$router.push({ name: "LoginView" });
     },

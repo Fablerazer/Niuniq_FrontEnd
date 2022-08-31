@@ -246,7 +246,7 @@
               <div class="input-group mb-2">
                 <b-form-textarea
                   id="textarea"
-                  placeholder="Masukkan link video produk, contoh: "
+                  placeholder="Contoh: https://www.youtube.com/embed/4YaYBDy77VI"
                   rows="3"
                   max-rows="6"
                   v-model="video"

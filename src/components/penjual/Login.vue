@@ -169,10 +169,9 @@ export default {
   mounted() {
     let user = localStorage.getItem("user-info");
     if (user) {
-      this.$router.push({
-        name: "ProfileView",
-        // path: "/profileview/" + response.data.data.store[0]._id,
-      });
+      alert("Anda telah ter-logout, silahkan log-in kembali");
+      localStorage.clear();
+      this.$router.push({ name: "LoginView" });
     }
   },
 };

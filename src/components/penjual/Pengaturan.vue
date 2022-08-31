@@ -252,7 +252,6 @@ export default {
           currentPassword: this.currentPassword,
           newPassword: this.newPassword,
           confirmPassword: this.confirmPassword,
-          // token: this.$route.params.token
         }
       );
 
