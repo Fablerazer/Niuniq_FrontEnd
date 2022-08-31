@@ -148,7 +148,12 @@
         <button
           type="button"
           class="btn btn-success btn-lg btn-block mb-2"
-          style="background-color: #4e944f; border-radius: 8px; margin-top:32px;font-size: 16px"
+          style="
+            background-color: #4e944f;
+            border-radius: 8px;
+            margin-top: 32px;
+            font-size: 16px;
+          "
           @click="onSubmit"
         >
           Simpan

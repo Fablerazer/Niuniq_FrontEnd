@@ -179,7 +179,9 @@
                       class="btn-action-permanent btn btn-outline-success"
                       @click="
                         deleteProduct(product._id),
-                          $bvModal.show('bv-modal-dihapus-semua' + product.productId)
+                          $bvModal.show(
+                            'bv-modal-dihapus-semua' + product.productId
+                          )
                       "
                     >
                       <img
@@ -281,7 +283,9 @@
                             />
                           </button>
                           <b-modal
-                            :id="'bv-modal-download-menunggu' + product.productId"
+                            :id="
+                              'bv-modal-download-menunggu' + product.productId
+                            "
                             centered
                             hide-footer
                           >
@@ -659,7 +663,9 @@
                             />
                           </button>
                           <b-modal
-                            :id="'bv-modal-download-selesai' + product.productId"
+                            :id="
+                              'bv-modal-download-selesai' + product.productId
+                            "
                             centered
                             hide-footer
                           >
@@ -907,7 +913,13 @@ export default {
         .delete("https://niuniq.herokuapp.com/api/web/niuniq/products/" + _id)
         .then((response) => {
           console.log(response);
-          this.$router.go();
+          // this.$router.go();
+          if (response.status == 404) {
+            this.$router.go();
+          } else {
+            console.log(response);
+            this.$router.go();
+          }
         })
         .catch((error) => {
           console.error("There was an error!", error);
