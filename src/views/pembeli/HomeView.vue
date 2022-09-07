@@ -41,7 +41,13 @@ export default {
   mounted() {
     axios
       .get("https://niuniq.herokuapp.com/api/web/niuniq/products")
-      .then((response) => this.setProducts(response.data.data))
+      .then((response) => {
+        this.setProducts(response.data.data)
+        console.log(response);
+        if (response.status == 404) {
+          alert("Produk tidak ditemukan");
+          }
+      })
       .catch((error) => console.log(error));
 
     // let user = localStorage.getItem("user-info");

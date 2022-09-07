@@ -53,6 +53,9 @@ export default {
         this.setProducts(response.data.data);
         console.log(response.data.data);
         this.setStores(response.data.data.store);
+        if (response.status == 404) {
+          alert("Produk tidak ditemukan");
+          }
         // axios
         // .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+response.data.data.store)
         // .then((response) => {
