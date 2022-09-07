@@ -92,6 +92,9 @@
       <h4 class="informasiproduk">
         {{ product.name }}
       </h4>
+      <p>
+        {{ this.$route.params.id }}
+      </p>
       <hr />
       <h5 class="informasiproduk">Deskripsi Produk</h5>
       <p>

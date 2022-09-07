@@ -3,16 +3,15 @@
     <CNavbar />
     <Qrcodeid />
     <div class="container" style="width: 100%; max-width: 1080px">
-      <CStorepreview :product="products" />
+      <!-- <CStorepreview :product="products" /> -->
     </div>
   </div>
 </template>
 
 <script>
-// @ is an alias to /src
 import CNavbar from "@/components/bar/Navbar.vue";
 import Qrcodeid from "@/components/pembeli/Qrcodeid.vue";
-import CStorepreview from "@/components/pembeli/StorePreview.vue";
+// import CStorepreview from "@/components/pembeli/StorePreview.vue";
 import axios from "axios";
 
 export default {
@@ -20,7 +19,7 @@ export default {
   components: {
     CNavbar,
     Qrcodeid,
-    CStorepreview,
+    // CStorepreview,
   },
   data() {
     return {
