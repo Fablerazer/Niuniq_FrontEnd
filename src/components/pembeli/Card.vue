@@ -27,7 +27,7 @@
               margin-bottom: 20px;
             "
           >
-            <img class="img-table mr-3" src="@/assets/img/icon.png" />
+            <img class="img-table mr-3" src="@/assets/img/icon1.png" />
             <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
             <p>
               {{ product.productStorage }}
@@ -48,7 +48,7 @@
               margin-bottom: 20px;
             "
           >
-            <img class="img-table mr-3" src="@/assets/img/icon.png" />
+            <img class="img-table mr-3" src="@/assets/img/icon2.png" />
             <h5 class="card-title mt-3">Bahan Baku Produk</h5>
             <p>
               {{ product.rawMaterials }}
