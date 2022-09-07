@@ -1,13 +1,5 @@
 <template>
   <div class="container-fluid" style="padding-left: 0; padding-right: 0">
-    <div
-      class="card"
-      style="
-        box-shadow: 0px 4px 16px rgba(51, 58, 81, 0.08);
-        border-radius: 8px;
-      "
-    >
-      <div class="card-body" style="padding: 26px">
         <h5
           class="informasiproduk"
           style="
@@ -80,7 +72,43 @@
           <!-- :src="@/assets/img/infoproduk-pict.png" -->
         </div>
       <hr/>
-        <h5
+        <!-- <h5
+          class="informasiproduk"
+          style="
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 600;
+            font-size: 24px;
+            line-height: 32px;
+          "
+        >
+          Informasi Detail Produk
+        </h5>
+        <p class="informasiproduk">
+          Informasi detail produk merupakan keterangan dari produk tersebut. berikut merupakan detail informasi produk.
+        </p> -->
+        <!-- <table class="table table-striped" style="margin-bottom: 0">
+          <thead style="background: #edf4ed">
+            <tr>
+              <th scope="col">Diproduksi Oleh</th>
+              <th scope="col">Tahun Produksi</th>
+              <th scope="col">Lokasi Produksi</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr style="background: white">
+              <td>
+                <img
+                  class="img-table-2 mr-2"
+                  :src="path + '/documents/images/logos/' + store.logo"
+                />{{ store.name }}
+              </td>
+              <td>{{ product.yearProduction }}</td>
+              <td>{{ store.address }}</td>
+            </tr>
+          </tbody>
+        </table> -->
+    <h5
           class="informasiproduk"
           style="
             font-family: 'Inter';
@@ -117,8 +145,6 @@
             </tr>
           </tbody>
         </table>
-      </div>
-    </div>
   </div>
 </template>
 
