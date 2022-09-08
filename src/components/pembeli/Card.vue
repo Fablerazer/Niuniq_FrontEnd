@@ -20,6 +20,7 @@
           <div
             class="card-body"
             style="
+              overflow: auto;
               text-align: start;
               margin-top: 20px;
               margin-left: 20px;
@@ -41,6 +42,7 @@
           <div
             class="card-body"
             style="
+              overflow: auto;
               text-align: start;
               margin-top: 20px;
               margin-left: 20px;

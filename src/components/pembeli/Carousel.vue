@@ -97,7 +97,7 @@
       </p>
       <hr />
       <h5 class="informasiproduk">Deskripsi Produk</h5>
-      <p>
+      <p style="text-align: justify">
         {{ product.description }}
       </p>
     </div>
