@@ -16,22 +16,24 @@
         </a>
         <p>
           Niuniq merupakan platform untuk memudahkan UMKM Handicraft membagikan
-          informasi mengenai <span
+          informasi mengenai produk yang dibuat serta menunjukkan keaslian
+          produk yang dibuat dengan...
+          <span
             ><router-link
               to="/tentangview"
               style="color: #4e944f"
               class="text-primary-blue text-decoration-none"
-              > Read More</router-link
+            >
+              Read More</router-link
             ></span
           >
-          
         </p>
       </div>
       <div class="col-lg-3 py-3">
         <div class="d-flex gap-3">
           <div class="d-flex align-items-center" style="margin-right: 10px">
             <img
-              src="https://helpmeong.com/img/icons/phone-calling.svg"
+              src="@/assets/img/phone-calling.svg"
               width="50"
               class=""
               alt=""
@@ -54,7 +56,7 @@
         <div class="d-flex gap-3">
           <div class="d-flex align-items-center" style="margin-right: 10px">
             <img
-              src="https://helpmeong.com/img/icons/mail.svg"
+              src="@/assets/img/mail.svg"
               width="50"
               class=""
               alt=""
@@ -65,7 +67,7 @@
               Ingin bergabung?
             </p>
             <a
-              href="#"
+              href="/registerview"
               style="color: #4e944f; font-size: 14px"
               class="fs-4 font-weight-semibold"
               >Join Sebagai Penjual</a
