@@ -88,18 +88,28 @@
         </b-carousel-slide>
       </b-carousel>
     </div>
-    <div class="col-md-6" style="align-self: center">
-      <h4 class="informasiproduk">
+    <div class="col-md-6" style="align-self: auto">
+      <h2 class="informasiproduk" style="color: #2a2e33">
         {{ product.name }}
-      </h4>
-      <p>
-        {{ this.$route.params.id }}
+      </h2>
+      <p
+        style="
+          font-weight: 600;
+          line-height: 32px;
+          color: #2a2e33;
+          margin-bottom: 8px;
+          font-size: 20px;
+        "
+      >
+        ID Produk: {{ this.$route.params.id }}
       </p>
-      <hr />
-      <h5 class="informasiproduk">Deskripsi Produk</h5>
-      <p style="text-align: justify">
-        {{ product.description }}
-      </p>
+      <hr style="margin-top: 0; border-top: 2px solid rgba(0, 0, 0, 0.2)" />
+      <h5 class="informasiproduk" style="font-weight: 600">Deskripsi Produk</h5>
+      <div style="overflow: auto; height: 410px">
+        <p style="text-align: justify">
+          {{ product.description }}
+        </p>
+      </div>
     </div>
   </div>
 </template>
