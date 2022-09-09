@@ -8,6 +8,7 @@
         <CCard :product="products" />
         <CVideo :product="products" />
       </div>
+      <CFooter/>
     </div>
   </div>
 </template>
@@ -18,6 +19,7 @@ import CInfoproduksi from "@/components/pembeli/InfoProduksi.vue";
 import CCarousel from "@/components/pembeli/Carousel.vue";
 import CCard from "@/components/pembeli/Card.vue";
 import CVideo from "@/components/pembeli/Video.vue";
+import CFooter from "@/components/pembeli/Footer.vue";
 import axios from "axios";
 
 export default {
@@ -28,6 +30,7 @@ export default {
     CCarousel,
     CCard,
     CVideo,
+    CFooter,
   },
   data() {
     return {

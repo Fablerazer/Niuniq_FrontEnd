@@ -7,8 +7,8 @@
       </p>
       <div
         class="embed-responsive embed-responsive-21by9"
-        style="margin-bottom: 120px"
       >
+      <!-- style="margin-bottom: 120px" -->
         <iframe
           class="embed-responsive-item"
           :src="product.video"
