@@ -44,7 +44,7 @@
           font-size: 17px;
         "
       >
-        Lengkapi data-data dibawah ini untuk mendapatkan akun.
+        Lengkapi data-data dibawah ini untuk membuat akun baru.
       </h6>
     </div>
     <div>

@@ -90,7 +90,7 @@
       </div>
       <div class="col-md-4">
         <p class="text-md-right" style="margin-right: 0; margin-bottom: 0">
-          Niuniq, © 2022 All Rights Reserved
+          Niuniq © 2022 All Rights Reserved
         </p>
       </div>
     </div>

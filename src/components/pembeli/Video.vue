@@ -3,7 +3,10 @@
     <div class="col-md-12" style="margin-bottom: 20px">
       <h5 class="informasiproduk">Video Pembuatan Produk</h5>
       <p class="mb-video">
-        Pada video ini anda bisa melihat proses pembuatan produk.
+        Pihak "{{ store.name }}" telah membuat dokumentasi berbentuk video pada
+        produk yang telah anda beli. Anda bisa melihat proses pembuatan produk,
+        kelebihan dari produk, dan cerita dibalik produk yang telah
+        anda beli. Berikut video yang bisa anda putar di bawah ini.
       </p>
       <div class="embed-responsive embed-responsive-21by9">
         <!-- style="margin-bottom: 120px" -->
@@ -20,7 +23,7 @@
 <script>
 export default {
   name: "CVideo",
-  props: ["product"],
+  props: ["store", "product"],
 };
 </script>
 

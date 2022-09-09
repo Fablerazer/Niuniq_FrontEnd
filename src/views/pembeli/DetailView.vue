@@ -6,7 +6,7 @@
       <div>
         <CCarousel :product="products" />
         <CCard :product="products" />
-        <CVideo :product="products" />
+        <CVideo :store="stores" :product="products" />
       </div>
       <CFooter/>
     </div>

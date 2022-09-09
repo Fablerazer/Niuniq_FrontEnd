@@ -12,6 +12,17 @@
       >
         Masuk
       </h3>
+      <h6
+        class="lognreg"
+        style="
+          font-family: 'Inter';
+          font-style: normal;
+          font-weight: 400;
+          font-size: 17px;
+        "
+      >
+      Masukkan email dan password yang sudah terdaftar.
+      </h6>
     </div>
     <div>
       <form @submit.prevent="handleSubmit">
