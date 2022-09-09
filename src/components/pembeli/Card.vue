@@ -15,7 +15,7 @@
       >
         <div
           class="card"
-          style="border-radius: 20px; width: 28rem; height: 17rem"
+          style="border-radius: 20px; width: 30rem; height: 17rem"
         >
           <div
             class="card-body"
@@ -37,7 +37,7 @@
         </div>
         <div
           class="card"
-          style="border-radius: 20px; width: 28rem; height: 17rem"
+          style="border-radius: 20px; width: 30rem; height: 17rem"
         >
           <div
             class="card-body"

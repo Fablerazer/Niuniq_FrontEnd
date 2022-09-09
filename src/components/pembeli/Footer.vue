@@ -2,6 +2,7 @@
   <footer id="footer" class="bg-gray-secondary">
     <div
       class="footer-widget py-5 d-flex flex-wrap align-items-center justify-content-between"
+      style="padding-bottom: 1rem !important; padding-top: 3rem !important"
     >
       <div class="col-lg-5">
         <a
@@ -10,65 +11,55 @@
         >
           <img
             class="d-flex mr-auto"
-            style="padding-bottom: 5px"
-            src="@/assets/img/logo-niuniq2.png"
+            style="padding-bottom: 16px; width: 100px"
+            src="@/assets/img/logo-niuniq.svg"
           />
         </a>
-        <p>
-          Niuniq merupakan platform untuk memudahkan UMKM Handicraft membagikan
-          informasi mengenai produk yang dibuat serta menunjukkan keaslian
-          produk yang dibuat dengan...
-          <span
-            ><a
-              href="/tentangview"
-              style="color: #4e944f"
-              class="text-primary-blue text-decoration-none"
-            >
-              Read More</a
-            ></span
-          >
+        <p style="font-weight: 500">
+          Jl. Telekomunikasi No. 1, Terusan Buahbatu, <br />Bojongsoang,
+          Sukapura, Kec. Dayeuhkolot,<br />
+          Kabupaten Bandung, Jawa Barat 40257<br />
+          Indonesia
         </p>
       </div>
       <div class="col-lg-3 py-3">
         <div class="d-flex gap-3">
           <div class="d-flex align-items-center" style="margin-right: 10px">
-            <img
-              src="@/assets/img/phone-calling.svg"
-              width="50"
-              class=""
-              alt=""
-            />
+            <img src="@/assets/img/call.svg" width="50" class="" alt="" />
           </div>
           <div class="text-primary">
-            <p class="mb-0" style="color: #4e944f; font-size: 14px" href="#">
+            <p
+              class="mb-0"
+              style="font-weight: 600; color: #2a2e33; font-size: 14px"
+              href="#"
+            >
               Punya Pertanyaan?
             </p>
             <a
               href="#"
-              style="color: #4e944f; font-size: 14px"
+              style="color: #2a2e33; font-size: 14px"
               class="fs-4 font-weight-semibold"
               >087722162211</a
             >
           </div>
         </div>
       </div>
-      <div class="col-lg-3 py-3">
-        <div class="d-flex gap-3">
+      <div class="col-lg-3 py-3" style="padding-right: 0 !important">
+        <div class="d-flex">
           <div class="d-flex align-items-center" style="margin-right: 10px">
-            <img
-              src="@/assets/img/mail.svg"
-              width="50"
-              class=""
-              alt=""
-            />
+            <img src="@/assets/img/group.svg" width="50" class="" alt="" />
           </div>
           <div class="text-primary">
-            <p class="mb-0" style="color: #4e944f; font-size: 14px" href="#">
+            <p
+              class="mb-0"
+              style="font-weight: 600; color: #2a2e33; font-size: 14px"
+              href="#"
+            >
               Ingin bergabung?
             </p>
             <a
               href="/registerview"
-              style="color: #4e944f; font-size: 14px"
+              style="color: #2a2e33; font-size: 14px"
               class="fs-4 font-weight-semibold"
               >Join Sebagai Penjual</a
             >
@@ -98,7 +89,9 @@
         </div>
       </div>
       <div class="col-md-4">
-        <p class="text-md-right m-0">© 2022, Niuniq</p>
+        <p class="text-md-right" style="margin-right: 0; margin-bottom: 0">
+          Niuniq, © 2022 All Rights Reserved
+        </p>
       </div>
     </div>
   </footer>

@@ -28,7 +28,7 @@
         <a
           href="/registerview"
           type="button"
-          style="background-color: #4e944f"
+          style="background-color: #4e944f; padding-right: 2rem !important; padding-left: 2rem !important;"
           class="btn btn-green rounded-pill shadow font-weight-bold text-white px-5 py-3"
           >Daftar Sekarang</a
         >
