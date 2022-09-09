@@ -55,10 +55,9 @@
               <tr class="align-middle">
                 <th scope="col">No</th>
                 <th scope="col" v-on:click="sortBy(column)">
-                  <span
-                    >Nama Produk<img src="@/assets/img/ic-sort.svg" alt=""
-                  /></span>
+                  <span>Nama Produk</span>
                 </th>
+                <th scope="col">ID Produk</th>
                 <th scope="col">Status Verifikasi</th>
                 <th scope="col">Aksi</th>
               </tr>
@@ -71,6 +70,7 @@
               >
                 <td scope="row">{{ index + 1 }}.</td>
                 <td>{{ product.name }}</td>
+                <td>{{ product.productId }}</td>
                 <td>
                   <Status :verification-status="product.isVerification" />
                 </td>
@@ -237,10 +237,9 @@
               <tr class="align-middle">
                 <th scope="col">No</th>
                 <th scope="col">
-                  <span
-                    >Nama Produk<img src="@/assets/img/ic-sort.svg" alt=""
-                  /></span>
+                  <span>Nama Produk</span>
                 </th>
+                <th scope="col">ID Produk</th>
                 <th scope="col">Status Verifikasi</th>
                 <th scope="col">Aksi</th>
               </tr>
@@ -254,6 +253,7 @@
                 >
                   <td scope="row">{{ index + 1 }}.</td>
                   <td>{{ product.name }}</td>
+                  <td>{{ product.productId }}</td>
                   <td>
                     <Status :verification-status="product.isVerification" />
                   </td>
@@ -427,10 +427,9 @@
               <tr class="align-middle">
                 <th scope="col">No</th>
                 <th scope="col">
-                  <span
-                    >Nama Produk<img src="@/assets/img/ic-sort.svg" alt=""
-                  /></span>
+                  <span>Nama Produk</span>
                 </th>
+                <th scope="col">ID Produk</th>
                 <th scope="col">Status Verifikasi</th>
                 <th scope="col">Aksi</th>
               </tr>
@@ -446,6 +445,7 @@
                 >
                   <td scope="row">{{ index + 1 }}.</td>
                   <td>{{ product.name }}</td>
+                  <td>{{ product.productId }}</td>
                   <td>
                     <Status :verification-status="product.isVerification" />
                   </td>
@@ -617,10 +617,9 @@
               <tr class="align-middle">
                 <th scope="col">No</th>
                 <th scope="col">
-                  <span
-                    >Nama Produk<img src="@/assets/img/ic-sort.svg" alt=""
-                  /></span>
+                  <span>Nama Produk</span>
                 </th>
+                <th scope="col">ID Produk</th>
                 <th scope="col">Status Verifikasi</th>
                 <th scope="col">Aksi</th>
               </tr>
@@ -634,6 +633,7 @@
                 >
                   <td scope="row">{{ index + 1 }}.</td>
                   <td>{{ product.name }}</td>
+                  <td>{{ product.productId }}</td>
                   <td>
                     <Status :verification-status="product.isVerification" />
                   </td>

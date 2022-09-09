@@ -174,6 +174,8 @@ export default {
             path: "/inputtokoview/createStore",
           });
         }
+      } else {
+        alert("Email atau Password tidak valid");
       }
     },
   },

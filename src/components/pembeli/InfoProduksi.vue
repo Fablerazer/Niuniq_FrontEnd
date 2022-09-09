@@ -89,8 +89,8 @@
     </h5>
     <p class="informasiproduk">
       Informasi detail produk merupakan keterangan dari produk yang telah anda
-      cari atau yang telah anda beli. berikut merupakan detail informasi dari produk
-      "{{ product.name }}" yang bisa anda lihat di bawah ini.
+      cari atau yang telah anda beli. berikut merupakan detail informasi dari
+      produk "{{ product.name }}" yang bisa anda lihat di bawah ini.
     </p>
     <table class="table table-striped" style="margin-bottom: 0">
       <thead style="background: #edf4ed">
