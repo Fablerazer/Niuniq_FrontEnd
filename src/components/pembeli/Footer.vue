@@ -19,12 +19,12 @@
           informasi mengenai produk yang dibuat serta menunjukkan keaslian
           produk yang dibuat dengan...
           <span
-            ><router-link
-              to="/tentangview"
+            ><a
+              href="/tentangview"
               style="color: #4e944f"
               class="text-primary-blue text-decoration-none"
             >
-              Read More</router-link
+              Read More</a
             ></span
           >
         </p>
@@ -83,7 +83,7 @@
         <div class="navbar navbar-expand-md flex-wrap px-0">
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link pl-0" href="#">Tentang</a>
+              <a class="nav-link pl-0" href="/tentangview">Tentang</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Kontak Kami</a>

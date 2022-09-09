@@ -17,7 +17,7 @@
           Lihat keaslian produk <br /><span style="color: #2a2e33"
             >yang kamu beli dengan</span
           >
-          <br />menggunakan niuniq!
+          <br />menggunakan Niuniq!
         </h2>
         <p>
           Anda dapat melihat keaslian produk menggunakan Niuniq dengan melakukan
