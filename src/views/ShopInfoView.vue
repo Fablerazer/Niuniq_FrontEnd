@@ -20,6 +20,7 @@
     <img
       :src="path + '/documents/images/stores/' + store.photo"
       class="card-img-bottom mt-3 mb-3"
+      style="width: -webkit-fill-available; height: 320px; object-fit: cover"
     />
     <div class="d-flex w-100 mb-3 align-items-center justify-content-between">
       <div class="d-flex align-items-center">
