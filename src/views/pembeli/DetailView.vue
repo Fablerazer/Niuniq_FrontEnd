@@ -57,9 +57,6 @@ export default {
         this.setProducts(response.data.data);
         console.log(response.data.data);
         this.setStores(response.data.data.store);
-        // axios
-        // .get("https://niuniq.herokuapp.com/api/web/niuniq/stores/"+response.data.data.store)
-        // .then((response) => {
       })
       .catch((error) => {
         console.log(error);

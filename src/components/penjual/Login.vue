@@ -21,7 +21,7 @@
           font-size: 17px;
         "
       >
-      Masukkan email dan password yang sudah terdaftar.
+        Masukkan email dan password yang sudah terdaftar.
       </h6>
     </div>
     <div>
@@ -149,33 +149,37 @@ export default {
   },
   methods: {
     async handleSubmit() {
-      const response = await axios.post(
-        "https://niuniq.herokuapp.com/api/web/niuniq/auth/login",
-        {
-          email: this.email,
-          password: this.password,
-        }
-      );
-
-      // console.log(response.data.data.store[0]);
-      if (response.status == 200) {
-        localStorage.setItem("user-info", JSON.stringify(response.data));
-        localStorage.setItem("token", response.data.token);
-        localStorage.setItem(
-          "hasCreatedStore",
-          response.data.data.hasCreatedStore
+      try {
+        const response = await axios.post(
+          "https://niuniq.herokuapp.com/api/web/niuniq/auth/login",
+          {
+            email: this.email,
+            password: this.password,
+          }
         );
-        if (response.data.data.store.length > 0) {
-          this.$router.push({
-            path: "/profileview/" + response.data.data.store[0]._id,
-          });
-        } else {
-          this.$router.push({
-            path: "/inputtokoview/createStore",
-          });
+
+        // console.log(response.data.data.store[0]);
+        console.log(response.status);
+        if (response.status == 200) {
+          console.log(response.status);
+          localStorage.setItem("user-info", JSON.stringify(response.data));
+          localStorage.setItem("token", response.data.token);
+          localStorage.setItem(
+            "hasCreatedStore",
+            response.data.data.hasCreatedStore
+          );
+          if (response.data.data.store.length > 0) {
+            this.$router.push({
+              path: "/profileview/" + response.data.data.store[0]._id,
+            });
+          } else {
+            this.$router.push({
+              path: "/inputtokoview/createStore",
+            });
+          }
         }
-      } else {
-        alert("Email atau Password tidak valid");
+      } catch (error) {
+        alert("Email atau password tidak valid");
       }
     },
   },
