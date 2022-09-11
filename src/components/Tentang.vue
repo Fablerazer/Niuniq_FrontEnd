@@ -6,7 +6,11 @@
           <img
             src="@/assets/img/tentang-pict.svg"
             class="img-fluid"
-            style="padding-top: 35px; padding-left: 70px; padding-right: 55px !important;"
+            style="
+              padding-top: 35px;
+              padding-left: 70px;
+              padding-right: 55px !important;
+            "
             alt="Responsive image"
           />
         </div>
@@ -56,12 +60,18 @@
         </div>
       </div>
     </div>
+    <CAsal style="padding-top: 80px"/>
   </section>
 </template>
 
 <script>
+import CAsal from "@/components/pembeli/Asal.vue";
+
 export default {
   name: "CAboutpage",
+  components: {
+    CAsal,
+  },
 };
 </script>
 
