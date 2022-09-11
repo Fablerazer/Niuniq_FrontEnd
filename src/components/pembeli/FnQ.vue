@@ -12,7 +12,7 @@
       <h5
         class="informasiproduk"
         style="
-          padding-top: 9px;
+          padding-top: 14px;
           font-family: 'Inter';
           font-style: normal;
           font-weight: 700;

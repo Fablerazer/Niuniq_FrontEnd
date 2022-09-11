@@ -35,7 +35,7 @@
           </p>
         </div>
       </div>
-      <div class="row">
+      <div class="row" style="padding-bottom: 40px">
         <div class="col">
           <h2
             class="font-weight-bold"
@@ -113,7 +113,7 @@
             </div>
           </div>
         </div>
-        <div class="col">
+        <div class="col" style="padding-left: 80px">
           <h2
             class="font-weight-bold"
             style="
