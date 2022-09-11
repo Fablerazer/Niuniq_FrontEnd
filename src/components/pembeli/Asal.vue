@@ -42,7 +42,7 @@
             toko tersebut.<br /><br />Niuniq memiliki arti “Ni” merupakan ingin
             menunjukkan suatu produk kepada semua orang. Sedangkan “uniq” kata
             dari unik yang menunjukkan produk memiliki kode unik untuk
-            menunjukkan keaslian produk. Sehingga ingin menu
+            menunjukkan keaslian produk.
           </p>
         </div>
         <div class="col-md-4" style="align-self: center">

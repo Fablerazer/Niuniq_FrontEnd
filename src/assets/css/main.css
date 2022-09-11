@@ -171,6 +171,7 @@ section.lognreg {
 
 .router-link-exact-active {
   font-weight: bold;
+  color: #4e944f;
 }
 
 .field-icon {
