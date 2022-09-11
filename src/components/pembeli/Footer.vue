@@ -30,14 +30,14 @@
           <div class="text-primary">
             <p
               class="mb-0"
-              style="font-weight: 600; color: #2a2e33; font-size: 14px"
+              style="font-weight: 600; color: #2a2e33; font-size: 16px"
               href="#"
             >
               Punya Saran?
             </p>
             <a
               href="#"
-              style="color: #2a2e33; font-size: 14px"
+              style="font-weight: 500; color: #2a2e33; font-size: 14px"
               class="fs-4 font-weight-semibold"
               >niuniq@gmail.com</a
             >
@@ -52,16 +52,16 @@
           <div class="text-primary">
             <p
               class="mb-0"
-              style="font-weight: 600; color: #2a2e33; font-size: 14px"
+              style="font-weight: 600; color: #2a2e33; font-size: 16px"
               href="#"
             >
               Ingin bergabung?
             </p>
             <a
               href="/registerview"
-              style="color: #2a2e33; font-size: 14px"
+              style="font-weight: 500;color: #2a2e33; font-size: 14px"
               class="fs-4 font-weight-semibold"
-              >Join Sebagai Penjual</a
+              >Masuk Sebagai Penjual</a
             >
           </div>
         </div>

@@ -23,12 +23,13 @@
         <h2 class="font-weight-bold" style="color: #2a2e33">
           Verifikasi Produk
         </h2>
-        <p style="padding-top: 13px">
+        <p style="padding-top: 13px; font-weight: 600; color: #3c4249">
           Verifikasi produk memiliki fungsi untuk membuktikan kepada pembeli
           bahwa produk yang dibeli merupakan produk asli dengan mendapatkan id
           atau QR Code yang unik, informasi mengenai verifikasi produk berupa
           penjelasan bagaimana produk tersebut berhasil diverifikasi dan mengapa
-          produk... <span
+          produk...
+          <span
             ><a
               href="/informasiview"
               style="color: #4e944f"

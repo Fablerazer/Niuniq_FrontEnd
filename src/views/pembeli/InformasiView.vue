@@ -25,7 +25,7 @@
           <h2 class="font-weight-bold" style="color: #2a2e33">
             Verifikasi Produk
           </h2>
-          <p style="padding-top: 13px">
+          <p style="padding-top: 13px; font-weight: 600; color: #3c4249">
             Verifikasi produk memiliki fungsi untuk membuktikan kepada pembeli
             bahwa produk yang dibeli merupakan produk asli dengan mendapatkan id
             atau QR Code yang unik. <br />
@@ -51,7 +51,6 @@
           <h4
             style="
               text-align: left;
-              color: black;
               font-family: 'Inter';
               font-style: normal;
               font-weight: 600;
@@ -59,6 +58,7 @@
               line-height: 30px;
               align-self: center;
               padding-bottom: 14px;
+              color: #3c4249;
             "
           >
             Berikut merupakan syarat agar produk anda berhasil diverifikasi:
@@ -67,7 +67,7 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/check_circle.svg" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11" style="font-weight: 500; color: #3c4249">
               Mengisi informasi produk dengan lengkap dan jelas.
             </div>
           </div>
@@ -75,13 +75,15 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/check_circle.svg" />
             </div>
-            <div class="col-md-11">Tidak mengunggah foto yang sama.</div>
+            <div class="col-md-11" style="font-weight: 500; color: #3c4249">
+              Tidak mengunggah foto yang sama.
+            </div>
           </div>
           <div class="row">
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/check_circle.svg" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11" style="font-weight: 500; color: #3c4249">
               Menggunakan foto yang jelas dan tidak buram.
             </div>
           </div>
@@ -89,7 +91,10 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/check_circle.svg" />
             </div>
-            <div class="col-md-11 mb-2">
+            <div
+              class="col-md-11 mb-2"
+              style="font-weight: 500; color: #3c4249"
+            >
               Mengunggah 5 foto yang terdiri dari foto produk bagian depan,
               bagian samping kiri, bagian samping kanan, bagian belakang dan
               foto full produk.
@@ -99,7 +104,10 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/check_circle.svg" />
             </div>
-            <div class="col-md-11 mb-2">
+            <div
+              class="col-md-11 mb-2"
+              style="font-weight: 500; color: #3c4249"
+            >
               Mengunggah foto dengan lebar 608 dan tinggi 525 agar foto tidak
               pipih saat ditampilkan dihalaman informasi.
             </div>
@@ -108,7 +116,10 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/check_circle.svg" />
             </div>
-            <div class="col-md-11 mb-2">
+            <div
+              class="col-md-11 mb-2"
+              style="font-weight: 500; color: #3c4249"
+            >
               Video harus jelas berisi tahapan dan rekaman video tidak buram.
             </div>
           </div>
@@ -128,7 +139,6 @@
           <h4
             style="
               text-align: left;
-              color: black;
               font-family: 'Inter';
               font-style: normal;
               font-weight: 600;
@@ -136,6 +146,7 @@
               line-height: 30px;
               align-self: center;
               padding-bottom: 14px;
+              color: #3c4249;
             "
           >
             Berikut merupakan alasan mengapa produk tersebut gagal verifikasi:
@@ -144,7 +155,7 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/close.svg" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11" style="font-weight: 500; color: #3c4249">
               Informasi produk tidak jelas atau tidak lengkap.
             </div>
           </div>
@@ -152,7 +163,7 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/close.svg" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11" style="font-weight: 500; color: #3c4249">
               Terdapat foto produk yang sama dan buram.
             </div>
           </div>
@@ -160,7 +171,7 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/close.svg" />
             </div>
-            <div class="col-md-11">
+            <div class="col-md-11" style="font-weight: 500; color: #3c4249">
               Tidak mengunggah foto dari berbagai sisi.
             </div>
           </div>
@@ -168,7 +179,10 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/close.svg" />
             </div>
-            <div class="col-md-11 mb-2">
+            <div
+              class="col-md-11 mb-2"
+              style="font-weight: 500; color: #3c4249"
+            >
               Tidak mengunggah foto dengan panjang dan lebar yang sudah
               ditentukan.
             </div>
@@ -177,7 +191,10 @@
             <div class="col-md-1 mb-3">
               <img class="img-table" src="@/assets/img/close.svg" />
             </div>
-            <div class="col-md-11 mb-2">
+            <div
+              class="col-md-11 mb-2"
+              style="font-weight: 500; color: #3c4249"
+            >
               Video yang diunggah tidak berisi tahapan pembuatan dan rekaman
               video buram.
             </div>

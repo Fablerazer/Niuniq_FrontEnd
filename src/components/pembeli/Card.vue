@@ -30,7 +30,7 @@
           >
             <img class="img-table mr-3" src="@/assets/img/icon1.svg" />
             <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
-            <p>
+            <p style="font-weight: 500; color: #3c4249">
               {{ product.productStorage }}
             </p>
           </div>
@@ -52,7 +52,7 @@
           >
             <img class="img-table mr-3" src="@/assets/img/icon2.svg" />
             <h5 class="card-title mt-3">Bahan Baku Produk</h5>
-            <p>
+            <p style="font-weight: 500; color: #3c4249">
               {{ product.rawMaterials }}
             </p>
           </div>

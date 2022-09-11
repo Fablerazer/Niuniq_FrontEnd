@@ -15,11 +15,17 @@
       <div class="col-lg-6">
         <h2 class="font-weight-bold" style="color: #4e944f">
           Lihat keaslian produk <br /><span style="color: #2a2e33"
-            >yang kamu beli dengan</span
+            >yang kamu beli dengan <br />menggunakan</span
           >
-          <br />menggunakan Niuniq!
+           Niuniq!
         </h2>
-        <p style="padding-top: 13px">
+        <p
+          style="
+            padding-top: 13px;
+            font-weight: 600;
+            color: #3C4249;
+          "
+        >
           Anda dapat melihat keaslian produk menggunakan Niuniq dengan melakukan
           scan QR Code yang terdapat pada produk atau dengan cara melakukan
           input id QR Code produk juga anda dapat melihat detail keaslian dari

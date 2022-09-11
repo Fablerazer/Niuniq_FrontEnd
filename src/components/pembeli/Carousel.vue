@@ -106,7 +106,7 @@
       <hr style="margin-top: 0; border-top: 2px solid rgba(0, 0, 0, 0.13)" />
       <h5 class="informasiproduk" style="font-weight: 600">Deskripsi Produk</h5>
       <div style="overflow: auto; height: 410px">
-        <p style="text-align: justify">
+        <p style="text-align: justify; font-weight: 500; color: #3c4249">
           {{ product.description }}
         </p>
       </div>

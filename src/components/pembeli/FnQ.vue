@@ -28,10 +28,19 @@
       >
         Frequently Asked Question
       </h2>
-      <p style="padding-top: 8px; text-align: left; padding-bottom: 5px">
+      <p
+        style="
+          font-weight: 500;
+          color: #3c4249;
+          padding-top: 8px;
+          text-align: left;
+          padding-bottom: 5px;
+        "
+      >
         Merupakan daftar kumpulan pertanyaan beserta jawaban yang sering
-        ditanyakan oleh pengguna seputar produk yang ditawarkan. <br/> Tujuan FAQ
-        untuk membantu pengguna mendapatkan jawaban dalam proses yang singkat.
+        ditanyakan oleh pengguna seputar produk yang ditawarkan. <br />
+        Tujuan FAQ untuk membantu pengguna mendapatkan jawaban dalam proses yang
+        singkat.
       </p>
       <div class="accordion" role="tablist" style="padding-top: 8px">
         <b-card no-body class="mb-1" style="border-radius: 10px">

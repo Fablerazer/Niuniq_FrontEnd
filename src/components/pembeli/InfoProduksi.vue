@@ -102,15 +102,17 @@
       </thead>
       <tbody>
         <tr style="background: white">
-          <td>
+          <td style="font-size: 14px;font-weight: 500; color: #3c4249">
             <img
               class="img-table-2 mr-2"
               :src="path + '/documents/images/logos/' + store.logo"
             />{{ store.name }}
             <!-- src="@/assets/img/logo-rmhbmb.png" -->
           </td>
-          <td>{{ product.yearProduction }}</td>
-          <td>{{ store.address }}</td>
+          <td style="font-size: 14px;font-weight: 500; color: #3c4249">
+            {{ product.yearProduction }}
+          </td>
+          <td style="font-size: 14px;font-weight: 500; color: #3c4249">{{ store.address }}</td>
         </tr>
       </tbody>
     </table>
