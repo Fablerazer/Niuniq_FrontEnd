@@ -29,12 +29,12 @@
           atau QR Code yang unik, informasi mengenai verifikasi produk berupa
           penjelasan bagaimana produk tersebut berhasil diverifikasi dan mengapa
           produk....<span
-            ><router-link
-              to="/tentangview"
+            ><a
+              href="/informasiview"
               style="color: #4e944f"
               class="text-primary-blue text-decoration-none"
             >
-              Lihat lebih lanjut</router-link
+              Lihat lebih lanjut</a
             ></span
           >
         </p>

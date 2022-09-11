@@ -25,6 +25,9 @@
           >
         </li>
         <li class="nav-item" style="align-self: center">
+          <router-link class="nav-link" to="/informasiview">Informasi</router-link>
+        </li>
+        <li class="nav-item" style="align-self: center">
           <router-link class="nav-link" to="/tentangview">Tentang</router-link>
         </li>
         <li class="nav-item">

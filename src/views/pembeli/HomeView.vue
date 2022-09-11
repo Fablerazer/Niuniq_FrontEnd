@@ -2,9 +2,10 @@
   <div>
     <CNavbar />
     <Qrcodeid />
-    <div style="padding-left: 10rem; padding-right: 10rem">
+    <div style="padding-left: 9rem; padding-right: 10rem">
       <CHomeFillerKenapa />
       <CHomeFillerInformasi />
+      <CHomeFillerKesulitan />
       <CHomeFillerTentang />
     </div>
     <div class="container" style="padding-top: 0">
@@ -18,6 +19,7 @@ import CNavbar from "@/components/bar/Navbar.vue";
 import Qrcodeid from "@/components/pembeli/Qrcodeid.vue";
 import CFooter from "@/components/pembeli/Footer.vue";
 import CHomeFillerKenapa from "@/components/pembeli/HomeFillerKenapa.vue";
+import CHomeFillerKesulitan from "@/components/pembeli/HomeFillerKesulitan.vue";
 import CHomeFillerTentang from "@/components/pembeli/HomeFillerTentang.vue";
 import CHomeFillerInformasi from "@/components/pembeli/HomeFillerInformasi.vue";
 // import CStorepreview from "@/components/pembeli/StorePreview.vue";
@@ -32,6 +34,7 @@ export default {
     CHomeFillerKenapa,
     CHomeFillerTentang,
     CHomeFillerInformasi,
+    CHomeFillerKesulitan,
     // CStorepreview,
   },
   data() {

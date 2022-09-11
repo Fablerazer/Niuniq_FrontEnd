@@ -32,7 +32,7 @@
         merupakan daftar kumpulan dari pertanyaan dan jawaban yang sering
         dipertanyakan mengenai topik tertentu.
       </p>
-      <div class="accordion" role="tablist" style="padding-top: 8px;">
+      <div class="accordion" role="tablist" style="padding-top: 8px">
         <b-card no-body class="mb-1" style="border-radius: 10px">
           <b-card-header
             header-tag="header"
@@ -75,9 +75,15 @@
             role="tabpanel"
           >
             <b-card-body>
-              <b-card-text style="float: left;font-weight: 500;color: #3C4249"
-                >Bagaimana langkah-langkah dalam melakukan verifikasi
-                produk?</b-card-text
+              <b-card-text style="float: left; font-weight: 500; color: #3c4249"
+                >Langkah dalam melakukan verifikasi produk yaitu harus membuat
+                akun Niuniq, kemudian melakukan input informasi toko. Setelah
+                mengisi informasi toko maka pengguna dapa melakukan tambah
+                produk yang ingin diverifikasi. Jika sudah menambah produk maka
+                status verifikasi menjadi menunggu, jika berhasil verifikasi
+                maka status akan berubah menjadi berhasil dan jika gagal
+                verifikasi maka akan berganti menjadi gagal dan dapat notifikasi
+                mengapa produk tersebut gagal untuk diverifikasi.</b-card-text
               >
               <b-card-text>{{ text }}</b-card-text>
             </b-card-body>
@@ -130,9 +136,9 @@
             role="tabpanel"
           >
             <b-card-body>
-              <b-card-text style="float: left;font-weight: 500;color: #3C4249"
-                >Apa arti dari status menunggu saat melakukan verifikasi
-                produk?</b-card-text
+              <b-card-text style="float: left; font-weight: 500; color: #3c4249"
+                >Status menunggu saat verifikasi produk memiliki arti bahwa
+                status tersebut masih dalam pemeriksaan admin.</b-card-text
               >
               <b-card-text>{{ text }}</b-card-text>
             </b-card-body>
@@ -184,9 +190,10 @@
             role="tabpanel"
           >
             <b-card-body>
-              <b-card-text style="float: left;font-weight: 500;color: #3C4249"
-                >Kapan dapat mengunduh QR Code produk?</b-card-text
-              >
+              <b-card-text style="float: left; font-weight: 500; color: #3c4249"
+                >Kamu dapat mengunduh QR Code untuk produk saat produk tersebut
+                sudah berhasil diverifikasi.
+              </b-card-text>
               <b-card-text>{{ text }}</b-card-text>
             </b-card-body>
           </b-collapse>
@@ -237,8 +244,9 @@
             role="tabpanel"
           >
             <b-card-body>
-              <b-card-text style="float: left;font-weight: 500;color: #3C4249;"
-                >Kapan dapat mengedit informasi produk?</b-card-text
+              <b-card-text style="float: left; font-weight: 500; color: #3c4249"
+                >Kamu dapat mengedit informasi produk saat produk tersebut sudah
+                berhasil diverifikasi</b-card-text
               >
               <b-card-text>{{ text }}</b-card-text>
             </b-card-body>

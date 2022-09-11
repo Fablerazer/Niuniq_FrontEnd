@@ -14,6 +14,8 @@ import ShopInfo from "../views/ShopInfoView.vue";
 import Dashboard from "../views/DashboardView.vue";
 import ProfileView from "../views/ProfileView.vue";
 import ProductList from "../views/ProductListView.vue";
+import InformasiView from "../views/pembeli/InformasiView.vue";
+
 
 Vue.use(VueRouter);
 
@@ -39,6 +41,11 @@ const routes = [
     path: "/tentangview",
     name: "TentangView",
     component: TentangView,
+  },
+  {
+    path: "/informasiview",
+    name: "InformasiView",
+    component: InformasiView,
   },
   {
     path: "/tentangviewpenjual/:id",

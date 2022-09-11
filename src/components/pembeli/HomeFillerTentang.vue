@@ -21,11 +21,11 @@
           informasi mengenai produk yang dibuat serta menunjukkan keaslian
           produk yang dibuat dengan memberikan label QRCode untuk
           memudahkan...<span
-            ><router-link
-              to="/tentangview"
+            ><a
+              href="/tentangview"
               style="color: #4e944f"
               class="text-primary-blue text-decoration-none"
-              > Lihat lebih lanjut</router-link
+              > Lihat lebih lanjut</a
             ></span
           >
         </p>
