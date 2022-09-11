@@ -4,8 +4,9 @@
       <div class="row mt-4 mb-4">
         <div class="col-md-6">
           <img
-            src="@/assets/img/tentang-pict.png"
+            src="@/assets/img/tentang-pict.svg"
             class="img-fluid"
+            style="padding-top: 35px; padding-left: 70px; padding-right: 55px !important;"
             alt="Responsive image"
           />
         </div>
@@ -20,12 +21,13 @@
               font-family: 'Inter';
               font-style: normal;
               font-weight: 700;
-              font-size: 40px;
+              font-size: 35px;
               line-height: 48px;
               display: flex;
               align-items: center;
               text-align: center;
               color: #2a2e33;
+              padding-bottom: 10px;
             "
           >
             <strong>Tentang Niuniq</strong>
@@ -39,7 +41,7 @@
               font-family: 'Inter';
               font-style: normal;
               font-weight: 500;
-              font-size: 20px;
+              font-size: 18px;
               line-height: 30px;
               display: flex;
               align-items: center;
@@ -58,7 +60,6 @@
 </template>
 
 <script>
-
 export default {
   name: "CAboutpage",
 };
