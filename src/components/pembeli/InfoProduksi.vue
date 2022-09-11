@@ -14,9 +14,8 @@
     </h5>
     <p class="informasiproduk">
       Menjelaskan tentang informasi atau keterangan dari toko yang membuat
-      produk tersebut. Berikut merupakan beberapa toko online yang bisa anda
-      kunjungi, terdapat beberapa produk yang bisa anda beli secara online
-      disana, silahkan kunjungi toko online dari "{{ store.name }}".
+      produk tersebut. Untuk melihat beberapa produk toko yang bisa anda beli
+      secara online silahkan kunjungi toko online dari "{{ store.name }}".
     </p>
     <div class="mb-3">
       <a :href="paths + store.linkShopee" target="_blank">
@@ -95,24 +94,73 @@
     <table class="table table-striped" style="margin-bottom: 0">
       <thead style="background: #edf4ed">
         <tr>
-          <th scope="col">Diproduksi Oleh</th>
-          <th scope="col">Tahun Produksi</th>
-          <th scope="col">Lokasi Produksi</th>
+          <th
+            scope="col"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 30px;
+            "
+          >
+            Diproduksi Oleh
+          </th>
+          <th
+            scope="col"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 30px;
+            "
+          >
+            Tahun Produksi
+          </th>
+          <th
+            scope="col"
+            style="
+              font-family: 'Inter';
+              font-style: normal;
+              font-weight: 600;
+              font-size: 16px;
+              line-height: 30px;
+            "
+          >
+            Lokasi Produksi
+          </th>
         </tr>
       </thead>
       <tbody>
         <tr style="background: white">
-          <td style="font-size: 14px;font-weight: 500; color: #3c4249">
+          <td style="font-size: 15px; font-weight: 500; color: #3c4249">
             <img
               class="img-table-2 mr-2"
               :src="path + '/documents/images/logos/' + store.logo"
             />{{ store.name }}
             <!-- src="@/assets/img/logo-rmhbmb.png" -->
           </td>
-          <td style="font-size: 14px;font-weight: 500; color: #3c4249">
+          <td
+            style="
+              padding-top: 22px;
+              font-size: 15px;
+              font-weight: 500;
+              color: #3c4249;
+            "
+          >
             {{ product.yearProduction }}
           </td>
-          <td style="font-size: 14px;font-weight: 500; color: #3c4249">{{ store.address }}</td>
+          <td
+            style="
+              padding-top: 22px;
+              font-size: 15px;
+              font-weight: 500;
+              color: #3c4249;
+            "
+          >
+            {{ store.address }}
+          </td>
         </tr>
       </tbody>
     </table>

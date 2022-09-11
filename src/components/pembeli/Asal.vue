@@ -45,7 +45,7 @@
             menunjukkan keaslian produk.
           </p>
         </div>
-        <div class="col-md-4" style="align-self: center">
+        <div class="col-md-4" style="padding-top: 50px; align-self: center">
           <img
             src="@/assets/img/asal.svg"
             class="img-fluid"
