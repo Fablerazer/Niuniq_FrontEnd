@@ -25,7 +25,8 @@
               href="/tentangview"
               style="color: #4e944f"
               class="text-primary-blue text-decoration-none"
-              > Lihat lebih lanjut</a
+            >
+              <strong> Lihat lebih lanjut disini</strong></a
             ></span
           >
         </p>
@@ -35,6 +36,7 @@
           src="@/assets/img/gambar-filler2.png"
           class="d-block mx-auto py-5 img-fluid"
           alt=""
+          style="padding-left: 25px"
         />
       </div>
     </div>

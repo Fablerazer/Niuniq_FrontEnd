@@ -5,7 +5,7 @@
         class="navbar-brand"
         :to="'/profileview/' + this.$route.params.id"
         style="z-index: 10"
-        ><img class="img-table-1" src="@/assets/img/logo-niuniq.png"
+        ><img class="img-table-1" src="@/assets/img/logo-niuniq.svg"
       /></router-link>
       <button
         class="navbar-toggler"

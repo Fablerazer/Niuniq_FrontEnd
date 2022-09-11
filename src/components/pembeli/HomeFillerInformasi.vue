@@ -28,13 +28,13 @@
           bahwa produk yang dibeli merupakan produk asli dengan mendapatkan id
           atau QR Code yang unik, informasi mengenai verifikasi produk berupa
           penjelasan bagaimana produk tersebut berhasil diverifikasi dan mengapa
-          produk....<span
+          produk... <span
             ><a
               href="/informasiview"
               style="color: #4e944f"
               class="text-primary-blue text-decoration-none"
             >
-              Lihat lebih lanjut</a
+              <strong> Lihat lebih lanjut disini</strong></a
             ></span
           >
         </p>

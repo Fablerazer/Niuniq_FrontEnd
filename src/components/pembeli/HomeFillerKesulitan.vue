@@ -3,7 +3,7 @@
     <img
       src="@/assets/img/kesulitan.svg"
       class="d-block mx-auto py-3 img-fluid"
-      style="width: 92%"
+      style="width: 87%"
       alt=""
     />
   </div>
