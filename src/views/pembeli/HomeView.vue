@@ -4,6 +4,7 @@
     <Qrcodeid />
     <div style="padding-left: 10rem; padding-right: 10rem">
       <CHomeFillerKenapa />
+      <CHomeFillerInformasi />
       <CHomeFillerTentang />
     </div>
     <div class="container" style="padding-top: 0">
@@ -18,6 +19,7 @@ import Qrcodeid from "@/components/pembeli/Qrcodeid.vue";
 import CFooter from "@/components/pembeli/Footer.vue";
 import CHomeFillerKenapa from "@/components/pembeli/HomeFillerKenapa.vue";
 import CHomeFillerTentang from "@/components/pembeli/HomeFillerTentang.vue";
+import CHomeFillerInformasi from "@/components/pembeli/HomeFillerInformasi.vue";
 // import CStorepreview from "@/components/pembeli/StorePreview.vue";
 import axios from "axios";
 
@@ -29,6 +31,7 @@ export default {
     CFooter,
     CHomeFillerKenapa,
     CHomeFillerTentang,
+    CHomeFillerInformasi,
     // CStorepreview,
   },
   data() {

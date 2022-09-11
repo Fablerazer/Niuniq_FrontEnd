@@ -19,7 +19,7 @@
           >
           <br />menggunakan Niuniq!
         </h2>
-        <p>
+        <p style="padding-top: 13px">
           Anda dapat melihat keaslian produk menggunakan Niuniq dengan melakukan
           scan QR Code yang terdapat pada produk atau dengan cara melakukan
           input id QR Code produk juga anda dapat melihat detail keaslian dari
@@ -28,7 +28,12 @@
         <a
           href="/registerview"
           type="button"
-          style="background-color: #4e944f; padding-right: 2rem !important; padding-left: 2rem !important;"
+          style="
+            background-color: #4e944f;
+            padding-right: 2rem !important;
+            padding-left: 2rem !important;
+            margin-top: 6px;
+          "
           class="btn btn-green rounded-pill shadow font-weight-bold text-white px-5 py-3"
           >Daftar Sekarang</a
         >
@@ -36,7 +41,7 @@
       <div class="col-lg-6">
         <img
           src="@/assets/img/gambar-filler.png"
-          class="d-block mx-auto py-5 img-fluid"
+          class="d-block mx-auto py-3 img-fluid"
           alt=""
         />
       </div>

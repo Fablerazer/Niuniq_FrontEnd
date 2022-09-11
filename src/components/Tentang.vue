@@ -46,10 +46,10 @@
               color: #2a2e33;
             "
           >
-            Niuniq merupakan platform untuk memudahkan UMKM
-            Handicraft membagikan informasi mengenai produk yang dibuat
-            serta menunjukkan keaslian produk yang dibuat dengan memberikan
-            label QRCode untuk memudahkan pembeli melihat informasi produk.
+            Niuniq merupakan platform untuk memudahkan UMKM Handicraft
+            membagikan informasi mengenai produk yang dibuat serta menunjukkan
+            keaslian produk yang dibuat dengan memberikan label QRCode untuk
+            memudahkan pembeli melihat informasi produk.
           </p>
         </div>
       </div>
@@ -58,6 +58,7 @@
 </template>
 
 <script>
+
 export default {
   name: "CAboutpage",
 };

@@ -24,8 +24,8 @@
       </div>
       <div class="col-lg-3 py-3">
         <div class="d-flex gap-3">
-          <div class="d-flex align-items-center" style="margin-right: 10px">
-            <img src="@/assets/img/call.svg" width="50" class="" alt="" />
+          <div class="d-flex align-items-center" style="margin-right: 16px">
+            <img src="@/assets/img/email.svg" width="50" class="" alt="" />
           </div>
           <div class="text-primary">
             <p
@@ -33,20 +33,20 @@
               style="font-weight: 600; color: #2a2e33; font-size: 14px"
               href="#"
             >
-              Punya Pertanyaan?
+              Punya Saran?
             </p>
             <a
               href="#"
               style="color: #2a2e33; font-size: 14px"
               class="fs-4 font-weight-semibold"
-              >087722162211</a
+              >niuniq@gmail.com</a
             >
           </div>
         </div>
       </div>
       <div class="col-lg-3 py-3" style="padding-right: 0 !important">
         <div class="d-flex">
-          <div class="d-flex align-items-center" style="margin-right: 10px">
+          <div class="d-flex align-items-center" style="margin-right: 16px">
             <img src="@/assets/img/group.svg" width="50" class="" alt="" />
           </div>
           <div class="text-primary">
