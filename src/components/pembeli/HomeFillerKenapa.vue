@@ -11,7 +11,7 @@
     >
       Kenapa harus <span style="color: #4e944f">Niuniq</span> ?
     </h2>
-    <div class="row align-items-center" style="padding-top: 1rem !important">
+    <div class="row align-items-center" style="padding-top: 3rem !important">
       <div class="col-lg-6">
         <h2 class="font-weight-bold" style="color: #4e944f">
           Lihat keaslian produk <br /><span style="color: #2a2e33"
