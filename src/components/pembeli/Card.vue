@@ -20,7 +20,7 @@
           <div
             class="card-body"
             style="
-              overflow: auto;
+              /* overflow: auto; */
               text-align: start;
               margin-top: 20px;
               margin-left: 20px;
@@ -28,11 +28,13 @@
               margin-bottom: 20px;
             "
           >
-            <img class="img-table mr-3" src="@/assets/img/icon1.svg" />
-            <h5 class="card-title mt-3">Cara Menyimpan Produk</h5>
-            <p style="font-weight: 500; color: #3c4249">
-              {{ product.productStorage }}
-            </p>
+            <img class="img-table mr-3 mb-2" src="@/assets/img/icon1.svg" />
+            <div style="overflow: auto; height: 140px">
+              <h5 class="card-title mt-1">Cara Menyimpan Produk</h5>
+              <p style="font-weight: 500; color: #3c4249">
+                {{ product.productStorage }}
+              </p>
+            </div>
           </div>
         </div>
         <div
@@ -42,7 +44,7 @@
           <div
             class="card-body"
             style="
-              overflow: auto;
+              /* overflow: auto; */
               text-align: start;
               margin-top: 20px;
               margin-left: 20px;
@@ -50,11 +52,13 @@
               margin-bottom: 20px;
             "
           >
-            <img class="img-table mr-3" src="@/assets/img/icon2.svg" />
-            <h5 class="card-title mt-3">Bahan Baku Produk</h5>
-            <p style="font-weight: 500; color: #3c4249">
-              {{ product.rawMaterials }}
-            </p>
+            <img class="img-table mr-3 mb-2" src="@/assets/img/icon2.svg" />
+            <div style="overflow: auto; height: 140px">
+              <h5 class="card-title mt-1">Bahan Baku Produk</h5>
+              <p style="font-weight: 500; color: #3c4249">
+                {{ product.rawMaterials }}
+              </p>
+            </div>
           </div>
         </div>
       </div>
